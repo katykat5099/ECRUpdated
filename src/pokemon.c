@@ -2945,6 +2945,7 @@ static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
     [SPECIES_TERRAKION - 1]  = 10,
     [SPECIES_VIRIZION - 1]   = 15,
     [SPECIES_TRUMBEAK - 1]   = 20,
+    [SPECIES_ROCKRUFF - 1]   = 5,
     [SPECIES_TAPU_FINI - 1]  = 5,
     [SPECIES_ROTOM_FAN - 1]  = 7,
     [SPECIES_BRAVIARY_HISUIAN - 1] = 15,
