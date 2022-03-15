@@ -36,6 +36,8 @@
 #include "tx_randomizer_and_challenges.h"
 #include "constants/battle_config.h"
 #include "constants/items.h"
+#include "tx_difficulty_challenges.h"
+#include "battle_setup.h" //tx_difficulty_challenges
 
 struct TestingBar
 {
@@ -3340,6 +3342,14 @@ bool32 CanThrowLastUsedBall(void)
     if (gBattleTypeFlags & (BATTLE_TYPE_TRAINER | BATTLE_TYPE_FRONTIER))
         return FALSE;
     if (!CheckBagHasItem(gLastThrownBall, 1))
+        return FALSE;
+    if (gSaveBlock1Ptr->txRandNuzlocke && NuzlockeIsCaptureBlocked) //tx_difficulty_challenges
+        return FALSE;
+    if (gSaveBlock1Ptr->txRandNuzlocke && NuzlockeIsSpeciesClauseActive == 2) //already have THIS_mon
+        return FALSE;
+    if (gSaveBlock1Ptr->txRandTypeChallenge && TypeChallengeCaptureBlocked) //pkmn not of the TYPE CHALLENGE type
+        return FALSE;
+    if (gSaveBlock1Ptr->txRandNuzlocke && NuzlockeIsSpeciesClauseActive)
         return FALSE;
 
     return TRUE;
