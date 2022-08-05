@@ -10216,11 +10216,12 @@ void UpdateSpeciesSpritePSS(struct BoxPokemon *boxMon)
         }
     }
     sJustOpenedBag = FALSE;
+}
 
 //tx_randomizer_and_challenges
 // searches for first pokemon in PC starting at Box 1
 // returns index of that pokemon, or 420 (boxes count * in box count) for none found
-u16 GetFirstBoxPokemon(void) // @Kurausukun
+u16 GetFirstBoxPokemon(u8 boxId) // @Kurausukun
 {
     u16 i;
     u16 j;
@@ -10238,6 +10239,7 @@ u16 GetFirstBoxPokemon(void) // @Kurausukun
     }
     return IN_BOX_COUNT * TOTAL_BOXES_COUNT; // none found
 }
+
 void MoveFirstBoxPokemon(void) // @Kurausukun
 {
     u16 position = GetFirstBoxPokemon();
