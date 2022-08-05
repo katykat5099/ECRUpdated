@@ -43,7 +43,10 @@
 #include "constants/items.h"
 #include "constants/songs.h"
 
-static void SetUpItemUseCallback(u8);
+#include "tx_randomizer_and_challenges.h"
+#include "battle_setup.h" //tx_randomizer_and_challenges
+
+static void SetUpItemUseCallback(u8 taskId);
 static void FieldCB_UseItemOnField(void);
 static void Task_CallItemUseOnFieldCallback(u8);
 static void Task_UseItemfinder(u8);
@@ -138,7 +141,7 @@ static void Task_CallItemUseOnFieldCallback(u8 taskId)
         sItemUseOnFieldCB(taskId);
 }
 
-static void DisplayCannotUseItemMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnField, const u8 *str)
+void DisplayCannotUseItemMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnField, const u8 *str) //static //tx_randomizer_and_challenges
 {
     StringExpandPlaceholders(gStringVar4, str);
     if (!isUsingRegisteredKeyItemOnField)
@@ -959,12 +962,26 @@ static u32 GetBallThrowableState(void)
     if (IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT))
      && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))
         return BALL_THROW_UNABLE_TWO_MONS;
+
     else if (IsPlayerPartyAndPokemonStorageFull() == TRUE)
         return BALL_THROW_UNABLE_NO_ROOM;
-#if B_SEMI_INVULNERABLE_CATCH >= GEN_4
+
+    #if B_SEMI_INVULNERABLE_CATCH >= GEN_4
     else if (gStatuses3[GetCatchingBattler()] & STATUS3_SEMI_INVULNERABLE)
         return BALL_THROW_UNABLE_SEMI_INVULNERABLE;
-#endif
+    #endif
+
+    else if (NuzlockeIsCaptureBlocked) //tx_randomizer_and_challenges
+        return BALL_THROW_NUZLOCKE_ROUTE_BLOCK;
+
+    else if (NuzlockeIsSpeciesClauseActive == 2) //already have THIS_mon
+        return BALL_THROW_NUZLOCKE_ALREADY_CAUGHT;
+
+    else if (OneTypeChallengeCaptureBlocked) //pkmn not of the TYPE CHALLENGE type
+        return BALL_THROW_ONE_TYPE_CHALLENGE_CAPTURE_BLOCKED;
+
+    else if (NuzlockeIsSpeciesClauseActive)
+        return BALL_THROW_NUZLOCKE_SPECIES_CLAUSE;
 
     return BALL_THROW_ABLE;
 }
@@ -1008,6 +1025,18 @@ void ItemUseInBattle_PokeBall(u8 taskId)
             DisplayItemMessageInBattlePyramid(taskId, sText_CantThrowPokeBall_SemiInvulnerable, Task_CloseBattlePyramidBagMessage);
         break;
     #endif
+    case BALL_THROW_NUZLOCKE_ROUTE_BLOCK:
+        DisplayCannotUseItemMessage(taskId, FALSE, gText_NuzlockeCantThrowPokeBallRoute);
+        break;
+    case BALL_THROW_NUZLOCKE_ALREADY_CAUGHT:
+        DisplayCannotUseItemMessage(taskId, FALSE, gText_NuzlockeCantThrowPokeBallAlreadyCaught);
+        break;
+    case BALL_THROW_ONE_TYPE_CHALLENGE_CAPTURE_BLOCKED:
+        DisplayCannotUseItemMessage(taskId, FALSE, gText_OneTypeChallengeCantThrowPokeBall);
+        break;
+    case BALL_THROW_NUZLOCKE_SPECIES_CLAUSE:
+        DisplayCannotUseItemMessage(taskId, FALSE, gText_NuzlockeCantThrowPokeBallSpeciesClause);
+        break;
     }
 }
 

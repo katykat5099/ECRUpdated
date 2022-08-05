@@ -47,6 +47,8 @@
 #include "constants/region_map_sections.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "constants/species.h"
+#include "tx_randomizer_and_challenges.h"
 #include "constants/battle_config.h"
 
 enum {
@@ -2325,7 +2327,8 @@ static bool8 CanReplaceMove(void)
 {
     if (sMonSummaryScreen->firstMoveIndex == MAX_MON_MOVES
         || sMonSummaryScreen->newMove == MOVE_NONE
-        || IsMoveHm(sMonSummaryScreen->summary.moves[sMonSummaryScreen->firstMoveIndex]) != TRUE)
+        || IsMoveHm(sMonSummaryScreen->summary.moves[sMonSummaryScreen->firstMoveIndex]) != TRUE //)
+        || IsNuzlockeActive()) //tx_randomizer_and_challenges
         return TRUE;
     else
         return FALSE;
@@ -3331,6 +3334,8 @@ static void PrintEggState(void)
 
     if (sMonSummaryScreen->summary.sanity == TRUE)
         text = gText_EggWillTakeALongTime;
+    else if (sum->friendship == 0 && IsNuzlockeActive())
+        text = gText_EggReadyToHatch_Nuzlocke;
     else if (sum->friendship <= 5)
         text = gText_EggAboutToHatch;
     else if (sum->friendship <= 10)
@@ -3895,10 +3900,10 @@ static void SetMonTypeIcons(void)
     }
     else
     {
-        SetTypeSpritePosAndPal(gBaseStats[summary->species].type1, 120, 48, SPRITE_ARR_ID_TYPE);
-        if (gBaseStats[summary->species].type1 != gBaseStats[summary->species].type2)
+        SetTypeSpritePosAndPal(GetTypeBySpecies(summary->species, 1), 120, 48, SPRITE_ARR_ID_TYPE); //tx_randomizer_and_challenges
+        if (GetTypeBySpecies(summary->species, 1) != GetTypeBySpecies(summary->species, 2)) //tx_randomizer_and_challenges
         {
-            SetTypeSpritePosAndPal(gBaseStats[summary->species].type2, 160, 48, SPRITE_ARR_ID_TYPE + 1);
+            SetTypeSpritePosAndPal(GetTypeBySpecies(summary->species, 2), 160, 48, SPRITE_ARR_ID_TYPE + 1); //tx_randomizer_and_challenges
             SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 1, FALSE);
         }
         else

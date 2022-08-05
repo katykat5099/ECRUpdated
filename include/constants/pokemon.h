@@ -184,6 +184,7 @@
 #define MON_DATA_SPEED2            86
 #define MON_DATA_SPATK2            87
 #define MON_DATA_SPDEF2            88
+#define MON_DATA_NUZLOCKE_RIBBON   89
 
 // Ribbon IDs used by TV and Pokénav
 #define CHAMPION_RIBBON       0
@@ -388,7 +389,14 @@
 #define EVO_DARK_SCROLL                   37     // interacts with Scroll of Darkness
 #define EVO_WATER_SCROLL                  38     // interacts with Scroll of Waters
 
+//tx_randomizer_and_challenges
+#ifndef POKEMON_EXPANSION 
+#define EVOS_PER_MON 5
+#define EVOS_PER_LINE 6
+#else
 #define EVOS_PER_MON 10
+#define EVOS_PER_LINE 22
+#endif
 
 // Evolution 'modes,' for GetEvolutionTargetSpecies
 #define EVO_MODE_NORMAL            0

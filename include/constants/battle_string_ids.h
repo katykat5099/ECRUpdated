@@ -625,7 +625,13 @@
 #define STRINGID_ZMOVEHPTRAP                          623
 #define STRINGID_TERRAINREMOVED                       624
 
-#define BATTLESTRINGS_COUNT                           625
+//tx_randomizer_and_challenges
+#define STRINGID_ONETYPECAPTUREBLOCKED                625
+#define STRINGID_NUZLOCKECAPTUREBLOCKED               626
+#define STRINGID_SPECIESCLAUSECAPTUREBLOCKED          627
+#define STRINGID_SAMESPECIESCAPTUREBLOCKED            628
+
+#define BATTLESTRINGS_COUNT                           629
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
