@@ -10221,7 +10221,7 @@ void UpdateSpeciesSpritePSS(struct BoxPokemon *boxMon)
 //tx_randomizer_and_challenges
 // searches for first pokemon in PC starting at Box 1
 // returns index of that pokemon, or 420 (boxes count * in box count) for none found
-u16 GetFirstBoxPokemon(u8 boxId) // @Kurausukun
+u16 GetFirstBoxPokemon(void) // @Kurausukun
 {
     u16 i;
     u16 j;

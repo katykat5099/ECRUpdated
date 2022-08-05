@@ -74,7 +74,7 @@ bool32 IsWaldaPhraseEmpty(void);
 
 //tx_randomizer_and_challenges
 void PurgeMonOrBoxMon(u8 boxId, u8 position);
-u16 GetFirstBoxPokemon(u8 boxId);
+u16 GetFirstBoxPokemon(void);
 void MoveFirstBoxPokemon(void);
 
 #endif // GUARD_POKEMON_STORAGE_SYSTEM_H

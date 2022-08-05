@@ -369,7 +369,7 @@ void DoWhiteOut(void)
 {
     if (IsNuzlockeActive()) //tx_randomizer_and_challenges
     {
-        if (GetFirstBoxPokemon(IN_BOX_COUNT * TOTAL_BOXES_COUNT))
+        if (GetFirstBoxPokemon() == IN_BOX_COUNT * TOTAL_BOXES_COUNT)
             DoSoftReset();
     }
     ScriptContext2_RunNewScript(EventScript_WhiteOut);
