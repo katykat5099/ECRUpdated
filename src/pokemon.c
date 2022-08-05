@@ -11969,8 +11969,8 @@ void PokemonToBattleMon(struct Pokemon *src, struct BattlePokemon *dst)
     dst->spDefense = GetMonData(src, MON_DATA_SPDEF, NULL);
     dst->abilityNum = GetMonData(src, MON_DATA_ABILITY_NUM, NULL);
     dst->otId = GetMonData(src, MON_DATA_OT_ID, NULL);
-    dst->type1 = GetTypeBySpecies(gBaseStats[dst->species], 1); //tx_randomizer_and_challenges //gBaseStats[dst->species].type1;
-    dst->type2 = GetTypeBySpecies(gBaseStats[dst->species], 2); //tx_randomizer_and_challenges //gBaseStats[dst->species].type2;
+    dst->type1 = GetTypeBySpecies(dst->species, 1); //tx_randomizer_and_challenges //gBaseStats[dst->species].type1;
+    dst->type2 = GetTypeBySpecies(dst->species, 2); //tx_randomizer_and_challenges //gBaseStats[dst->species].type2;
     dst->type3 = TYPE_MYSTERY;
     dst->ability = GetAbilityBySpecies(dst->species, dst->abilityNum);
     GetMonData(src, MON_DATA_NICKNAME, nickname);
