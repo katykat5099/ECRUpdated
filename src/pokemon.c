@@ -76,7 +76,7 @@ static u16 GiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move);
 static bool8 ShouldSkipFriendshipChange(void);
 static void RandomizeSpeciesListEWRAMNormal(u16 seed);
 static void RandomizeSpeciesListEWRAMLegendary(u16 seed);
-static u8 SendMonToPC(struct Pokemon* mon);
+u8 SendMonToPC(struct Pokemon* mon);
 static void RemoveIVIndexFromList(u8 *ivs, u8 selectedIv);
 void TrySpecialOverworldEvo();
 
@@ -11969,8 +11969,8 @@ void PokemonToBattleMon(struct Pokemon *src, struct BattlePokemon *dst)
     dst->spDefense = GetMonData(src, MON_DATA_SPDEF, NULL);
     dst->abilityNum = GetMonData(src, MON_DATA_ABILITY_NUM, NULL);
     dst->otId = GetMonData(src, MON_DATA_OT_ID, NULL);
-    dst->type1 = GetTypeBySpecies(gBaseStats[dst->species].species, 1); //tx_randomizer_and_challenges //gBaseStats[dst->species].type1;
-    dst->type2 = GetTypeBySpecies(gBaseStats[dst->species].species, 2); //tx_randomizer_and_challenges //gBaseStats[dst->species].type2;
+    dst->type1 = GetTypeBySpecies(gBaseStats[dst->species], 1); //tx_randomizer_and_challenges //gBaseStats[dst->species].type1;
+    dst->type2 = GetTypeBySpecies(gBaseStats[dst->species], 2); //tx_randomizer_and_challenges //gBaseStats[dst->species].type2;
     dst->type3 = TYPE_MYSTERY;
     dst->ability = GetAbilityBySpecies(dst->species, dst->abilityNum);
     GetMonData(src, MON_DATA_NICKNAME, nickname);
@@ -15051,7 +15051,7 @@ void TrySpecialOverworldEvo(void)
 
     sTriedEvolving = 0;
     SetMainCallback2(CB2_ReturnToField);
-
+}
 //******************* tx_randomizer_and_challenges
 void RandomizeSpeciesListEWRAM(u16 seed)
 {
