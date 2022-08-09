@@ -1,24 +1,118 @@
+.set LOCALID_STONE, 1
 .set LOCALID_STEVEN, 2
 
 MegaStoneCave_MapScripts::
     map_script MAP_SCRIPT_ON_LOAD, MegaStoneCave_OnLoad
 	.byte 0
 
-MegaStoneCave_EventScript_Steven::
-	end
+MegaStoneCave_OnLoad::
+    dotimebasedevents
+    goto_if_set FLAG_DAILY_MEGASTONE, MegaStoneCave_EventScript_DailyStoneTrue
+    goto_if_unset FLAG_DAILY_MEGASTONE, MegaStoneCave_EventScript_DailyStoneFalse
+    end
+
+MegaStoneCave_EventScript_DailyStoneTrue::
+    removeobject LOCALID_STONE
+    end
+
+MegaStoneCave_EventScript_DailyStoneFalse::
+    end
 
 MegaStoneCave_EventScript_Trigger1::
+    lock
+    applymovement LOCALID_STEVEN, Common_Movement_ExclamationMark
+    applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
+    waitmovement 0
+    applymovement LOCALID_STEVEN, MegaStoneCave_Movement_Trigger1
+    call MegaStoneCave_EventScript_Steven
+    applymovement LOCALID_STEVEN, MegaStoneCave_Movement_StevenLeave1
+    removeobject LOCALID_STEVEN
+    release
     end
+
+MegaStoneCave_Movement_Trigger1:
+    walk_down
+    walk_down
+    walk_down
+    step_end
+
+MegaStoneCave_Movement_StevenLeave1:
+    walk_left
+    walk_down
+    walk_down
+    walk_right
+    face_down
+    step_end
 
 MegaStoneCave_EventScript_Trigger2::
+    lock
+    applymovement LOCALID_STEVEN, Common_Movement_ExclamationMark
+    applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
+    waitmovement 0
+    applymovement LOCALID_STEVEN, MegaStoneCave_Movement_Trigger2
+    call MegaStoneCave_EventScript_Steven
+    applymovement LOCALID_STEVEN, MegaStoneCave_Movement_StevenLeave2
+    removeobject LOCALID_STEVEN
+    release
     end
+
+MegaStoneCave_Movement_Trigger2:
+    walk_right
+    walk_down
+    walk_down
+    walk_down
+    step_end
+
+MegaStoneCave_Movement_StevenLeave2:
+    walk_left
+    walk_down
+    walk_down
+    step_end
 
 MegaStoneCave_EventScript_Trigger3::
+    lock
+    applymovement LOCALID_STEVEN, Common_Movement_ExclamationMark
+    applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
+    waitmovement 0
+    applymovement LOCALID_STEVEN, MegaStoneCave_Movement_Trigger3
+    call MegaStoneCave_EventScript_Steven
+    applymovement LOCALID_STEVEN, MegaStoneCave_Movement_StevenLeave3
+    removeobject LOCALID_STEVEN
+    release
     end
 
-MegaStoneCave_EventScript_DailyStoneCheck::
-	lock
-	faceplayer
+MegaStoneCave_Movement_Trigger3:
+    walk_left
+    walk_down
+    walk_down
+    walk_down
+    step_end
+
+MegaStoneCave_Movement_StevenLeave3:
+    walk_right
+    walk_down
+    walk_down
+    step_end
+
+MegaStoneCave_EventScript_Steven::
+    msgbox MegaStoneCave_Text_StevenGiveKeystone, MSGBOX_DEFAULT
+    giveitem ITEM_MEGA_RING
+    msgbox MegaStoneCave_Text_StevenGivenKeystone, MSGBOX_DEFAULT
+    closemessage
+    return
+
+MegaStoneCave_Text_StevenGiveKeystone:
+	.string "…\p"
+	.string "I was not expecting to see you here.\n"
+	.string "In this cave you will find these stones\l"
+	.string "known as MEGA STONES.\n"
+	.string "Here, I think you may find this handy.$"
+
+MegaStoneCave_Text_StevenGivenKeystone:
+    .string "Good luck on your adventure.$"
+
+MegaStoneCave_EventScript_DailyStoneSet::
+	lockall
 	dotimebasedevents
 	goto_if_set FLAG_DAILY_RECEIVED_APPLE, Route120_EventScript_AlreadyGotApple
 	msgbox Route120_Text_PaintingAnApple, MSGBOX_DEFAULT
