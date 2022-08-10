@@ -15452,265 +15452,265 @@ u16 CheckPartyMegaPokemon(void)
     s16 megaIndex = 0;
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_BULBASAUR | SPECIES_IVYSAUR | SPECIES_VENUSAUR))
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_BULBASAUR || SPECIES_IVYSAUR || SPECIES_VENUSAUR))
         {
             megaIndex = 1;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_CHARMANDER | SPECIES_CHARMELEON | SPECIES_CHARIZARD))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_CHARMANDER || SPECIES_CHARMELEON || SPECIES_CHARIZARD))
         {
             megaIndex = 2;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_SQUIRTLE | SPECIES_WARTORTLE | SPECIES_BLASTOISE))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_SQUIRTLE || SPECIES_WARTORTLE || SPECIES_BLASTOISE))
         {
             megaIndex = 3;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_ABRA | SPECIES_KADABRA | SPECIES_ALAKAZAM))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_ABRA || SPECIES_KADABRA || SPECIES_ALAKAZAM))
         {
             megaIndex = 4;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_GASTLY | SPECIES_HAUNTER | SPECIES_GENGAR))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_GASTLY || SPECIES_HAUNTER || SPECIES_GENGAR))
         {
             megaIndex = 5;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_KANGASKHAN)
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_KANGASKHAN)
         {
             megaIndex = 6;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_PINSIR)
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_PINSIR)
         {
             megaIndex = 7;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_MAGIKARP | SPECIES_GYARADOS))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_MAGIKARP || SPECIES_GYARADOS))
         {
             megaIndex = 8;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_AERODACTYL)
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_AERODACTYL)
         {
             megaIndex = 9;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_MEWTWO)
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_MEWTWO)
         {
             megaIndex = 10;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_MAREEP | SPECIES_FLAAFFY | SPECIES_AMPHAROS))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_MAREEP || SPECIES_FLAAFFY || SPECIES_AMPHAROS))
         {
             megaIndex = 11;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_SCYTHER | SPECIES_SCIZOR))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_SCYTHER || SPECIES_SCIZOR))
         {
             megaIndex = 12;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_HERACROSS)
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_HERACROSS)
         {
             megaIndex = 13;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_HOUNDOUR | SPECIES_HOUNDOOM))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_HOUNDOUR || SPECIES_HOUNDOOM))
         {
             megaIndex = 14;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_LARVITAR | SPECIES_PUPITAR | SPECIES_TYRANITAR))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_LARVITAR || SPECIES_PUPITAR || SPECIES_TYRANITAR))
         {
             megaIndex = 15;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_TORCHIC | SPECIES_COMBUSKEN | SPECIES_BLAZIKEN))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_TORCHIC || SPECIES_COMBUSKEN || SPECIES_BLAZIKEN))
         {
             megaIndex = 16;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_RALTS | SPECIES_KIRLIA | SPECIES_GARDEVOIR | SPECIES_GALLADE))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_RALTS || SPECIES_KIRLIA || SPECIES_GARDEVOIR || SPECIES_GALLADE))
         {
             megaIndex = 17;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_MAWILE)
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_MAWILE)
         {
             megaIndex = 18;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_ARON | SPECIES_LAIRON | SPECIES_AGGRON))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_ARON || SPECIES_LAIRON || SPECIES_AGGRON))
         {
             megaIndex = 19;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_MEDITITE | SPECIES_MEDICHAM))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_MEDITITE || SPECIES_MEDICHAM))
         {
             megaIndex = 20;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_ELECTRIKE | SPECIES_MANECTRIC))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_ELECTRIKE || SPECIES_MANECTRIC))
         {
             megaIndex = 21;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_SHUPPET | SPECIES_BANETTE))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_SHUPPET || SPECIES_BANETTE))
         {
             megaIndex = 22;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_ABSOL))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_ABSOL))
         {
             megaIndex = 23;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_LATIAS)
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_LATIAS)
         {
             megaIndex = 24;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_LATIOS)
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_LATIOS)
         {
             megaIndex = 25;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_GIBLE | SPECIES_GABITE | SPECIES_GARCHOMP))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_GIBLE || SPECIES_GABITE || SPECIES_GARCHOMP))
         {
             megaIndex = 26;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_RIOLU | SPECIES_LUCARIO))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_RIOLU || SPECIES_LUCARIO))
         {
             megaIndex = 27;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_SNOVER | SPECIES_ABOMASNOW))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_SNOVER || SPECIES_ABOMASNOW))
         {
             megaIndex = 28;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_WEEDLE | SPECIES_KAKUNA | SPECIES_BEEDRILL))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_WEEDLE || SPECIES_KAKUNA || SPECIES_BEEDRILL))
         {
             megaIndex = 29;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_PIDGEY | SPECIES_PIDGEOTTO | SPECIES_PIDGEOT))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_PIDGEY || SPECIES_PIDGEOTTO || SPECIES_PIDGEOT))
         {
             megaIndex = 30;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_SLOWPOKE | SPECIES_SLOWBRO))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_SLOWPOKE || SPECIES_SLOWBRO))
         {
             megaIndex = 31;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_ONIX | SPECIES_STEELIX))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_ONIX || SPECIES_STEELIX))
         {
             megaIndex = 32;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_TREECKO | SPECIES_GROVYLE | SPECIES_SCEPTILE))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_TREECKO || SPECIES_GROVYLE || SPECIES_SCEPTILE))
         {
             megaIndex = 33;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_MUDKIP | SPECIES_MARSHTOMP | SPECIES_SWAMPERT))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_MUDKIP || SPECIES_MARSHTOMP || SPECIES_SWAMPERT))
         {
             megaIndex = 34;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_SABLEYE)
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_SABLEYE)
         {
             megaIndex = 35;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_CARVANHA | SPECIES_SHARPEDO))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_CARVANHA || SPECIES_SHARPEDO))
         {
             megaIndex = 36;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_NUMEL | SPECIES_CAMERUPT))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_NUMEL || SPECIES_CAMERUPT))
         {
             megaIndex = 37;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_SWABLU | SPECIES_ALTARIA))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_SWABLU || SPECIES_ALTARIA))
         {
             megaIndex = 38;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_SNORUNT | SPECIES_GLALIE))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_SNORUNT || SPECIES_GLALIE))
         {
             megaIndex = 39;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_BAGON | SPECIES_SHELGON | SPECIES_SALAMENCE))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_BAGON || SPECIES_SHELGON || SPECIES_SALAMENCE))
         {
             megaIndex = 40;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_BAGON | SPECIES_METANG | SPECIES_METAGROSS))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_BAGON || SPECIES_METANG || SPECIES_METAGROSS))
         {
             megaIndex = 41;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_BUNEARY | SPECIES_LOPUNNY))
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == (SPECIES_BUNEARY || SPECIES_LOPUNNY))
         {
             megaIndex = 42;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_AUDINO)
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_AUDINO)
         {
             megaIndex = 43;
             return megaIndex;
         }
 
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_DIANCIE)
+        else if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, 0) == SPECIES_DIANCIE)
         {
             megaIndex = 44;
             return megaIndex;
