@@ -492,5 +492,5 @@ MegaStoneCave_EventScript_GiveNothing::
 
 MegaStoneCave_Text_NoMegaStone:
 	.string "…\p"
-	.string "You find a pile of what looks like\l"
+	.string "You find a pile of what looks like\n"
 	.string "broken up marbles.$"
