@@ -4313,9 +4313,12 @@ bool32 InUnionRoom(void)
 
 bool32 InSaveableMap(void)//too lazy to make a real place to store this. Copying union room
 {
-    return (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PETALBURG_CITY)
-        && gSaveBlock1Ptr->location.mapNum == MAP_NUM(PETALBURG_CITY))
-        ? TRUE : FALSE;
+    if(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PETALBURG_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(PETALBURG_CITY))
+        {
+        return (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PETALBURG_CITY)
+            && gSaveBlock1Ptr->location.mapNum == MAP_NUM(PETALBURG_CITY))
+            ? TRUE : FALSE;
+        }
 }
 
 static bool32 HasAtLeastTwoMonsOfLevel30OrLower(void)
