@@ -282,6 +282,7 @@ void LinkVSync(void);
 void Timer3Intr(void);
 void SerialCB(void);
 bool32 InUnionRoom(void);
+bool32 InSaveableMap(void);//too lazy to make a real place to store this. Copying union room
 void LoadWirelessStatusIndicatorSpriteGfx(void);
 bool8 IsLinkTaskFinished(void);
 void CreateWirelessStatusIndicatorSprite(u8, u8);

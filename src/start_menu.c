@@ -218,6 +218,7 @@ static const struct WindowTemplate sSaveInfoWindowTemplate = {
 static void BuildStartMenuActions(void);
 static void AddStartMenuAction(u8 action);
 static void BuildNormalStartMenu(void);
+static void BuildNewStartMenu(void);
 static void BuildDebugStartMenu(void);
 static void BuildSafariZoneStartMenu(void);
 static void BuildLinkModeStartMenu(void);
