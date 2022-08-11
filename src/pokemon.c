@@ -7049,7 +7049,6 @@ static const u16 sRandomSpecies3StageEvoStarters[] =
     SPECIES_DREEPY            , //
     SPECIES_GEODUDE_ALOLAN     , //
     SPECIES_ZIGZAGOON_GALARIAN , //
-    #endif
 };
 
 #define RANDOM_SPECIES_EVO_0_COUNT ARRAY_COUNT(sRandomSpeciesEvo0)
