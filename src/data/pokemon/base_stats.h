@@ -22839,6 +22839,30 @@ const struct BaseStats gBaseStats[] =
         .flags = FLAG_LEGENDARY,
     },
 
+    [SPECIES_WYRDEER] =
+    {
+        .baseHP        = 103,
+        .baseAttack    = 105,
+        .baseDefense   = 72,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 75,
+        .type1 = TYPE_NORMAL,
+        .type2 = TYPE_PSYCHIC,
+        .catchRate = 25,
+        .expYield = 200,
+        .evYield_Attack      = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 120,
+        .friendship = 100,
+        .growthRate = GROWTH_SLOW,
+        .eggGroup1 = EGG_GROUP_FIELD,
+        .eggGroup2 = EGG_GROUP_FIELD,
+        .abilities = {ABILITY_INTIMIDATE, ABILITY_FRISK},
+        .bodyColor = BODY_COLOR_GRAY,
+        .noFlip = FALSE,
+    },
+
     [SPECIES_VENUSAUR_MEGA] =
     {
         .baseHP        = 80,

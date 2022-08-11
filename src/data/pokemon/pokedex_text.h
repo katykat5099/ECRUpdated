@@ -5348,3 +5348,9 @@ const u8 gCalyrexPokedexText[] = _(
     "providing healing and blessings. It\n"
     "reigned over the Galar region in times\n"
     "of yore.");
+
+const u8 gWyrdeerPokedexText[] = _(
+    "The black orbs shine with an uncanny light\n"
+    "when the Pokémon is erecting invisible\n"
+    "barriers. It's fur is useful material for\n"
+    "Winter clothing.");

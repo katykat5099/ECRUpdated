@@ -4499,6 +4499,12 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = MON_COORDS_SIZE(56, 48),
         .y_offset = 10,
     },
+    //Arceus
+    [SPECIES_WYRDEER] =
+    {
+        .size = MON_COORDS_SIZE(56, 48),
+        .y_offset = 10,
+    },
     // Megas
     [SPECIES_VENUSAUR_MEGA] =
     {

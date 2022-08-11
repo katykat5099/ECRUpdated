@@ -20193,6 +20193,14 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM22_SOLAR_BEAM)
                                             | TMHM(TM11_SUNNY_DAY)),
 
+    [SPECIES_WYRDEER]     = TMHM_LEARNSET(TMHM(TM04_CALM_MIND)
+                                            | TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM23_IRON_TAIL)
+                                            | TMHM(TM24_THUNDERBOLT)
+                                            | TMHM(TM29_PSYCHIC)
+                                            | TMHM(TM30_SHADOW_BALL)
+                                            | TMHM(TM44_REST)),
+
     [SPECIES_RATTATA_ALOLAN]  = TMHM_LEARNSET(TMHM(TM14_BLIZZARD)
                                                | TMHM(HM01_CUT)
                                                | TMHM(TM28_DIG)

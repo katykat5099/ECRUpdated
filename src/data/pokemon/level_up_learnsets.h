@@ -18087,6 +18087,18 @@ static const struct LevelUpMove sCalyrexLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sWyrdeerLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 5, MOVE_CONFUSION),
+    LEVEL_UP_MOVE( 9, MOVE_HYPNOSIS),
+    LEVEL_UP_MOVE(15, MOVE_CALM_MIND),
+    //LEVEL_UP_MOVE(21, MOVE_PSYSHIELD_BASH),
+    LEVEL_UP_MOVE(29, MOVE_EXTRASENSORY),
+    LEVEL_UP_MOVE(37, MOVE_ZEN_HEADBUTT),
+    LEVEL_UP_MOVE(47, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sRattataAlolanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
