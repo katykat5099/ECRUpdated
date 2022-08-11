@@ -6928,6 +6928,130 @@ static const u16 sRandomSpeciesLegendary[] =
     #endif
     // SPECIES_EGG       ,
 };
+
+#define RANDOM_SPECIES_THREE_STAGE_STARTERS ARRAY_COUNT(sRandomSpecies3StageEvoStarters)
+static const u16 sRandomSpecies3StageEvoStarters[] =
+{
+    SPECIES_BULBASAUR       ,    // Ivysaur, Venusaur, Mega Venusar
+    SPECIES_CHARMANDER      ,    // Charmeleon, Charizard, Mega Charizard
+    SPECIES_SQUIRTLE        ,    // Wartortle, Blastoise, Mega Blastoise
+    SPECIES_CATERPIE        ,    // Metapod, Butterfree
+    SPECIES_WEEDLE          ,    // Kakuna, Beedrill
+    SPECIES_PIDGEY          ,    // Pidgeotto, Pidgeot, Mega Pidgeot
+    SPECIES_NIDORAN_F       ,    // Nidorina, Nidoqueen
+    SPECIES_NIDORAN_M       ,    // Nidorino, Nidoking
+    SPECIES_ZUBAT           ,    // Golbat, Crobat
+    SPECIES_ODDISH          ,    // Gloom, Bellossom/Viloplume
+    SPECIES_POLIWAG         ,    // Poliwhirl, Politoad/Poliwrath
+    SPECIES_ABRA            ,    // Kadabra, Alakazam, Mega Alakazam
+    SPECIES_MACHOP          ,    // Machoke, Machamp
+    SPECIES_BELLSPROUT      ,    //
+    SPECIES_GEODUDE         ,    // Graveller, Golem
+    SPECIES_MAGNEMITE       ,    // Magneton,
+    SPECIES_GASTLY          ,    // Haunter, Gengar, Mega Gengar
+    SPECIES_ONIX            ,    // Steelix, Mega Steelix
+    SPECIES_RHYHORN         ,    // Rhydon, Rhyperior
+    SPECIES_HORSEA          ,    // Seadra, Kingdra
+    SPECIES_SCYTHER         ,    // Scizor, Mega Scizor
+    SPECIES_MAGIKARP        ,    // Gyarados, Mega Gyarados
+    SPECIES_PORYGON         ,    // Porygon2, PorygonZ
+    SPECIES_DRATINI         ,    // Dragonair, Dragonite
+    SPECIES_CHIKORITA       ,    // Bayleef,
+    SPECIES_CYNDAQUIL       ,    // Quilava, Typhlosian
+    SPECIES_TOTODILE        ,    // Feraligatr
+    SPECIES_PICHU           ,    // Pikachu, Raichu
+    SPECIES_CLEFFA          ,    // Clefairy, Clefable
+    SPECIES_IGGLYBUFF       ,    // Jigglypuff, Wigglytuff
+    SPECIES_TOGEPI          ,    // Togetic, Togekiss
+    SPECIES_MAREEP          ,    // Flaaffy, Ampharos, Mega Ampharos
+    SPECIES_HOPPIP          ,    // Jumpluff
+    //SPECIES_TEDDIURSA       ,    // Ursaring, Ursaluna
+    SPECIES_SWINUB          ,    // Piloswine,
+    SPECIES_HOUNDOUR        ,    // Houndoom, Mega Houndoom
+    SPECIES_ELEKID          ,    // Electabuzz, Electivire
+    SPECIES_MAGBY           ,    // Magmar, Magmortar
+    SPECIES_LARVITAR        ,    // Pupitar, Tyranitar, Mega Tyranitar
+    SPECIES_TREECKO         ,    // Grovyle, Sceptile, Mega Sceptile
+    SPECIES_TORCHIC         ,    // Combuskin, Blaziken, Mega Blaziken
+    SPECIES_MUDKIP          ,    // Marshtomp, Swampert, Mega Swampert
+    SPECIES_WURMPLE         ,    // Silcoon/Cascoon, Dustox/Beautifly
+    SPECIES_LOTAD           ,    // Lombre,
+    SPECIES_SEEDOT          ,    // Nuzleaf,
+    SPECIES_CARVANHA        ,    // Sharpedo, Mega Sharpedo
+    SPECIES_TRAPINCH        ,    // Vibrava, Flygon
+    SPECIES_ELECTRIKE       ,    // Manectric, Mega Manectric
+    SPECIES_NUMEL           ,    // Camerupt, Mega Caperupt
+    SPECIES_SPHEAL          ,    //
+    SPECIES_SNORUNT         ,    // Glalie, Mega Glalie
+    SPECIES_AZURILL         ,    // Marill, Azumarill
+    SPECIES_MEDITITE        ,    // Medicham, Mega Medicham
+    SPECIES_SWABLU          ,    // Altaria, Mega Altaria
+    SPECIES_DUSKULL         ,    //
+    SPECIES_SLAKOTH         ,    // Vigoroth, Slaking
+    SPECIES_WHISMUR         ,    //
+    SPECIES_SHUPPET         ,    // Banette, Mega Banette
+    SPECIES_ARON            ,    // Lairon, Aggron, Mega Aggron
+    SPECIES_RALTS           ,    // Kirlia, Gardevoir/Gallade, Mega Gardevoir/Mega Gallade
+    SPECIES_BAGON           ,    // Shelgon, Salamence, Mega Salamence
+    SPECIES_BELDUM          ,    // Metang, Metagross, Mega Metagross
+    SPECIES_TURTWIG           , // Grotle, Torterra
+    SPECIES_CHIMCHAR          , // Monferno, Infernape
+    SPECIES_PIPLUP            , // Prinplup, Empoleon
+    SPECIES_STARLY            , // Staravia, Staraptor
+    SPECIES_SHINX             , // Luxio, Luxray
+    SPECIES_BUDEW             , // Roselia, Roserade
+    SPECIES_BUNEARY           , // Lopunny, Mega Lopunny
+    SPECIES_HAPPINY           , // Chansey, Blissey
+    SPECIES_GIBLE             , // Gabite, Garchomp
+    SPECIES_RIOLU             , // Lucario, Mega Lucario
+    SPECIES_SNOVER            , // Abomasnow, Mega Abomasnow
+    SPECIES_SNIVY             , // Servine, Serperior
+    SPECIES_TEPIG             , // Pignite, Emboar
+    SPECIES_OSHAWOTT          , // Dewott, Samurott
+    SPECIES_LILLIPUP          , // Heridier,
+    SPECIES_PIDOVE            , // Tranquil, Unfezant
+    SPECIES_ROGGENROLA        , // Boldure, Gigalith
+    SPECIES_TIMBURR           , //
+    SPECIES_TYMPOLE           , //
+    SPECIES_SEWADDLE          , //
+    SPECIES_VENIPEDE          , //
+    SPECIES_SANDILE           , //
+    SPECIES_GOTHITA           , //
+    SPECIES_SOLOSIS           , //
+    SPECIES_VANILLITE         , //
+    SPECIES_KLINK             , //
+    SPECIES_TYNAMO            , //
+    SPECIES_LITWICK           , //
+    SPECIES_AXEW              , //
+    SPECIES_DEINO             , //
+    SPECIES_CHESPIN           , //
+    SPECIES_FENNEKIN          , //
+    SPECIES_FROAKIE           , //
+    SPECIES_FLETCHLING        , //
+    SPECIES_SCATTERBUG        , //
+    SPECIES_FLABEBE           , //
+    SPECIES_HONEDGE           , //
+    SPECIES_GOOMY             , //
+    SPECIES_ROWLET            , //
+    SPECIES_LITTEN            , //
+    SPECIES_POPPLIO           , //
+    SPECIES_PIKIPEK           , //
+    SPECIES_GRUBBIN           , //
+    SPECIES_JANGMO_O          , //
+    SPECIES_GROOKEY           , //
+    SPECIES_SCORBUNNY         , //
+    SPECIES_SOBBLE            , //
+    SPECIES_ROOKIDEE          , //
+    SPECIES_BLIPBUG           , //
+    SPECIES_ROLYCOLY          , //
+    SPECIES_HATENNA           , //
+    SPECIES_IMPIDIMP          , //
+    SPECIES_DREEPY            , //
+    SPECIES_GEODUDE_ALOLAN     , //
+    SPECIES_ZIGZAGOON_GALARIAN , //
+    #endif
+};
+
 #define RANDOM_SPECIES_EVO_0_COUNT ARRAY_COUNT(sRandomSpeciesEvo0)
 static const u16 sRandomSpeciesEvo0[] =
 {
@@ -15244,9 +15368,9 @@ u16 PickRandomStarter(u16 *speciesList, u8 starterId)
     
     if (gSaveBlock1Ptr->tx_Random_Similar)
     {
-        u16 *stemp = Alloc(sizeof(sRandomSpeciesEvo0));
-        DmaCopy16(3, sRandomSpeciesEvo0, stemp, sizeof(sRandomSpeciesEvo0));
-        ShuffleListU16(stemp, RANDOM_SPECIES_EVO_0_COUNT, 12289);
+        u16 *stemp = Alloc(sizeof(sRandomSpecies3StageEvoStarters));
+        DmaCopy16(3, sRandomSpecies3StageEvoStarters, stemp, sizeof(sRandomSpecies3StageEvoStarters));
+        ShuffleListU16(stemp, RANDOM_SPECIES_THREE_STAGE_STARTERS, 12289);
         species = stemp[starterId*27];
         free(stemp);
         return species;
