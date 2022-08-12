@@ -4502,13 +4502,13 @@ const struct MonCoords gMonBackPicCoords[] =
     //Arceus
     [SPECIES_WYRDEER] =
     {
-        .size = MON_COORDS_SIZE(56, 48),
-        .y_offset = 10,
+        .size = MON_COORDS_SIZE(42, 62),
+        .y_offset = 0,
     },
     [SPECIES_KLEAVOR] =
     {
-        .size = MON_COORDS_SIZE(56, 48),
-        .y_offset = 10,
+        .size = MON_COORDS_SIZE(55, 62),
+        .y_offset = 0,
     },
     [SPECIES_URSALUNA] =
     {
