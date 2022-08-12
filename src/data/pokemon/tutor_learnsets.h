@@ -10193,6 +10193,12 @@ static const u32 sTutorLearnsets[] =
     [SPECIES_KLEAVOR]       = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)
                                             | TUTOR(MOVE_ROCK_SLIDE)),
 
+    [SPECIES_URSALUNA]      = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)
+                                            | TUTOR(MOVE_FIRE_PUNCH)
+                                            | TUTOR(MOVE_THUNDER_PUNCH)
+                                            | TUTOR(MOVE_ICE_PUNCH)
+                                            | TUTOR(MOVE_ROCK_SLIDE)),
+
     [SPECIES_MEOWTH_GALARIAN]  = TUTOR_LEARNSET(TUTOR(MOVE_BODY_SLAM)
                                             | TUTOR(MOVE_DOUBLE_EDGE)
                                             | TUTOR(MOVE_ENDURE)

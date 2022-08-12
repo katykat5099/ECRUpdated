@@ -22887,6 +22887,30 @@ const struct BaseStats gBaseStats[] =
             .noFlip = FALSE,
         },
 
+    [SPECIES_URSALUNA] =
+    {
+        .baseHP        = 130,
+        .baseAttack    = 140,
+        .baseDefense   = 105,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 80,
+        .type1 = TYPE_GROUND,
+        .type2 = TYPE_NORMAL,
+        .catchRate = 25,
+        .expYield = 260,
+        .evYield_Attack      = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 120,
+        .friendship = 100,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroup1 = EGG_GROUP_FIELD,
+        .eggGroup2 = EGG_GROUP_FIELD,
+        .abilities = {ABILITY_GUTS, ABILITY_BULLETPROOF},
+        .bodyColor = BODY_COLOR_BROWN,
+        .noFlip = FALSE,
+    },
+
     [SPECIES_VENUSAUR_MEGA] =
     {
         .baseHP        = 80,

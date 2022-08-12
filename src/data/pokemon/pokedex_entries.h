@@ -10811,4 +10811,16 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+
+    [NATIONAL_DEX_URSALUNA] =
+    {
+        .categoryName = _("Peat"),
+        .height = 24,
+        .weight = 2900,
+        .description = gUrsalunaPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

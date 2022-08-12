@@ -900,6 +900,7 @@ gCryTable::
 	cry Cry_Calyrex
 	cry Cry_Wyrdeer
 	cry Cry_Kleavor
+	cry Cry_Ursaluna
 	@ Megas
 	cry Cry_VenusaurMega
 	cry Cry_CharizardMegaX
@@ -2176,6 +2177,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Calyrex
 	cry_reverse Cry_Wyrdeer
 	cry_reverse Cry_Kleavor
+	cry_reverse Cry_Ursaluna
 	@ Megas
 	cry_reverse Cry_VenusaurMega
 	cry_reverse Cry_CharizardMegaX
