@@ -901,6 +901,7 @@ gCryTable::
 	cry Cry_Wyrdeer
 	cry Cry_Kleavor
 	cry Cry_Ursaluna
+	cry Cry_Basculegion
 	@ Megas
 	cry Cry_VenusaurMega
 	cry Cry_CharizardMegaX
@@ -1274,6 +1275,8 @@ gCryTable::
 	@ Calyrex
 	cry Cry_CalyrexIceRider
 	cry Cry_CalyrexShadowRider
+	@ Basculegion
+	cry Cry_BasculegionFemale
 
 	.align 2
 gCryTable_Reverse::
@@ -2178,6 +2181,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Wyrdeer
 	cry_reverse Cry_Kleavor
 	cry_reverse Cry_Ursaluna
+	cry_reverse Cry_Basculegion
 	@ Megas
 	cry_reverse Cry_VenusaurMega
 	cry_reverse Cry_CharizardMegaX
@@ -2551,3 +2555,5 @@ gCryTable_Reverse::
 	@ Calyrex
 	cry_reverse Cry_CalyrexIceRider
 	cry_reverse Cry_CalyrexShadowRider
+    @ Basculegion
+    cry_reverse Cry_BasculegionFemale

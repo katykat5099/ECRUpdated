@@ -4515,6 +4515,11 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = MON_COORDS_SIZE(56, 48),
         .y_offset = 10,
     },
+    [SPECIES_BASCULEGION] =
+    {
+        .size = MON_COORDS_SIZE(60, 61),
+        .y_offset = 0,
+    },
     // Megas
     [SPECIES_VENUSAUR_MEGA] =
     {
@@ -6119,6 +6124,12 @@ const struct MonCoords gMonBackPicCoords[] =
     {
         .size = MON_COORDS_SIZE(64, 56),
         .y_offset = 7,
+    },
+    //Basculegion
+    [SPECIES_BASCULEGION_FEMALE] =
+    {
+        .size = MON_COORDS_SIZE(60, 61),
+        .y_offset = 0,
     },
     // Egg
     [SPECIES_EGG] =

@@ -5366,3 +5366,8 @@ const u8 gUrsalunaPokedexText[] = _(
     "when the Pokémon is erecting invisible\n"
     "barriers. It's fur is useful material for\n"
     "Winter clothing.");
+
+const u8 gBasculegionPokedexText[] = _(
+    "Clads itself in the souls of comrades that\n"
+    "perished before fulfilling their goals of\n"
+    "journeying upstream.");

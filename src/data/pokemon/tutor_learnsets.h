@@ -10199,6 +10199,9 @@ static const u32 sTutorLearnsets[] =
                                             | TUTOR(MOVE_ICE_PUNCH)
                                             | TUTOR(MOVE_ROCK_SLIDE)),
 
+    [SPECIES_BASCULEGION]   = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)
+                                            | TUTOR(MOVE_ICY_WIND)),
+
     [SPECIES_MEOWTH_GALARIAN]  = TUTOR_LEARNSET(TUTOR(MOVE_BODY_SLAM)
                                             | TUTOR(MOVE_DOUBLE_EDGE)
                                             | TUTOR(MOVE_ENDURE)

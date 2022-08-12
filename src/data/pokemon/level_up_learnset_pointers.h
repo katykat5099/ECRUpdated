@@ -903,6 +903,7 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_WYRDEER] = sWyrdeerLevelUpLearnset,
     [SPECIES_KLEAVOR] = sKleavorLevelUpLearnset,
     [SPECIES_URSALUNA] = sUrsalunaLevelUpLearnset,
+    [SPECIES_BASCULEGION] = sBasculegionLevelUpLearnset,
     // Megas
     [SPECIES_VENUSAUR_MEGA] = sVenusaurLevelUpLearnset,
     [SPECIES_CHARIZARD_MEGA_X] = sCharizardLevelUpLearnset,
@@ -1276,4 +1277,6 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     // Calyrex
     [SPECIES_CALYREX_ICE_RIDER] = sCalyrexIceRiderLevelUpLearnset,
     [SPECIES_CALYREX_SHADOW_RIDER] = sCalyrexShadowRiderLevelUpLearnset,
+    // Basculegion
+    [SPECIES_BASCULEGION_FEMALE] = sBasculegionLevelUpLearnset,
 };

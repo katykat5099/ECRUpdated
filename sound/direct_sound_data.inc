@@ -3991,6 +3991,10 @@ Cry_Ursaluna::
 	.incbin "sound/direct_sound_samples/cries/ursaluna.bin"
 
 	.align 2
+Cry_Basculegion::
+	.incbin "sound/direct_sound_samples/cries/basculegion.bin"
+
+	.align 2
 Cry_VenusaurMega::
 	.incbin "sound/direct_sound_samples/cries/mega_venusaur.bin"
 
@@ -4317,6 +4321,10 @@ Cry_CalyrexIceRider::
 	.align 2
 Cry_CalyrexShadowRider::
 	.incbin "sound/direct_sound_samples/cries/calyrex_shadow_rider.bin"
+
+	.align 2
+Cry_BasculegionFemale::
+	.incbin "sound/direct_sound_samples/cries/basculegion.bin"
 
 	.align 2
 DirectSoundWaveData_register_noise::

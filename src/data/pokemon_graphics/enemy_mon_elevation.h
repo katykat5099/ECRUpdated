@@ -154,6 +154,9 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_ETERNATUS] = 4,
     [SPECIES_REGIELEKI] = 8,
     [SPECIES_REGIDRAGO] = 5,
+    //Arceus
+    [SPECIES_BASCULEGION] = 5,
+    [SPECIES_BASCULEGION_FEMALE] = 5,
     // Megas
     [SPECIES_BEEDRILL_MEGA] = 5,
     [SPECIES_PIDGEOT_MEGA] = 8,

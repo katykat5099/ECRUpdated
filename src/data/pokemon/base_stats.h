@@ -22911,6 +22911,30 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
+    [SPECIES_BASCULEGION] =
+    {
+        .baseHP        = 120,
+        .baseAttack    = 112,
+        .baseDefense   = 65,
+        .baseSpeed     = 78,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 75,
+        .type1 = TYPE_WATER,
+        .type2 = TYPE_GHOST,
+        .catchRate = 25,
+        .expYield = 260,
+        .evYield_HP      = 2,
+        .genderRatio = MON_MALE,
+        .eggCycles = 120,
+        .friendship = 100,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroup1 = EGG_GROUP_WATER_2,
+        .eggGroup2 = EGG_GROUP_WATER_2,
+        .abilities = {ABILITY_RATTLED, ABILITY_ADAPTABILITY},
+        .bodyColor = BODY_COLOR_GREEN,
+        .noFlip = FALSE,
+    },
+
     [SPECIES_VENUSAUR_MEGA] =
     {
         .baseHP        = 80,
@@ -26320,6 +26344,30 @@ const struct BaseStats gBaseStats[] =
         .eggGroup2 = EGG_GROUP_UNDISCOVERED,
         .abilities = {ABILITY_AS_ONE_SHADOW_RIDER, ABILITY_NONE},
         .bodyColor = BODY_COLOR_BLACK,
+        .noFlip = FALSE,
+    },
+
+    [SPECIES_BASCULEGION_FEMALE] =
+    {
+        .baseHP        = 120,
+        .baseAttack    = 92,
+        .baseDefense   = 65,
+        .baseSpeed     = 78,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 75,
+        .type1 = TYPE_WATER,
+        .type2 = TYPE_GHOST,
+        .catchRate = 25,
+        .expYield = 260,
+        .evYield_HP      = 2,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 120,
+        .friendship = 100,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroup1 = EGG_GROUP_WATER_2,
+        .eggGroup2 = EGG_GROUP_WATER_2,
+        .abilities = {ABILITY_RATTLED, ABILITY_ADAPTABILITY},
+        .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
     },
 };

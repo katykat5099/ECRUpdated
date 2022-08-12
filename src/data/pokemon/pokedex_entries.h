@@ -10823,4 +10823,16 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+
+    [NATIONAL_DEX_BASCULEGION] =
+    {
+        .categoryName = _("Big Fish"),
+        .height = 30,
+        .weight = 1100,
+        .description = gBasculegionPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };
