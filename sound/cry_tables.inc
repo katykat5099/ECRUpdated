@@ -899,6 +899,7 @@ gCryTable::
 	cry Cry_Spectrier
 	cry Cry_Calyrex
 	cry Cry_Wyrdeer
+	cry Cry_Kleavor
 	@ Megas
 	cry Cry_VenusaurMega
 	cry Cry_CharizardMegaX
@@ -2174,6 +2175,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Spectrier
 	cry_reverse Cry_Calyrex
 	cry_reverse Cry_Wyrdeer
+	cry_reverse Cry_Kleavor
 	@ Megas
 	cry_reverse Cry_VenusaurMega
 	cry_reverse Cry_CharizardMegaX

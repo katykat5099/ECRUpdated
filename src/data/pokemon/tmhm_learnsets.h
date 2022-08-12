@@ -20201,6 +20201,12 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM30_SHADOW_BALL)
                                             | TMHM(TM44_REST)),
 
+    [SPECIES_KLEAVOR]     = TMHM_LEARNSET(TMHM(TM04_CALM_MIND)
+                                            | TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM40_AERIAL_ACE)
+                                            | TMHM(TM44_REST)
+                                            | TMHM(HM06_ROCK_SMASH)),
+
     [SPECIES_RATTATA_ALOLAN]  = TMHM_LEARNSET(TMHM(TM14_BLIZZARD)
                                                | TMHM(HM01_CUT)
                                                | TMHM(TM28_DIG)

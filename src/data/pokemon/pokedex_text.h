@@ -5354,3 +5354,9 @@ const u8 gWyrdeerPokedexText[] = _(
     "when the Pokémon is erecting invisible\n"
     "barriers. It's fur is useful material for\n"
     "Winter clothing.");
+
+const u8 gKleavorPokedexText[] = _(
+    "N/A\n"
+    "when the Pokémon is erecting invisible\n"
+    "barriers. It's fur is useful material for\n"
+    "Winter clothing.");

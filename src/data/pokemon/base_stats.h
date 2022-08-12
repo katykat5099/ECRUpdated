@@ -22863,6 +22863,30 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
+    [SPECIES_KLEAVOR] =
+        {
+            .baseHP        = 70,
+            .baseAttack    = 135,
+            .baseDefense   = 95,
+            .baseSpeed     = 85,
+            .baseSpAttack  = 45,
+            .baseSpDefense = 70,
+            .type1 = TYPE_BUG,
+            .type2 = TYPE_ROCK,
+            .catchRate = 25,
+            .expYield = 200,
+            .evYield_Attack      = 2,
+            .genderRatio = PERCENT_FEMALE(50),
+            .eggCycles = 120,
+            .friendship = 100,
+            .growthRate = GROWTH_MEDIUM_FAST,
+            .eggGroup1 = EGG_GROUP_BUG,
+            .eggGroup2 = EGG_GROUP_BUG,
+            .abilities = {ABILITY_SWARM, ABILITY_SHEER_FORCE},
+            .bodyColor = BODY_COLOR_BROWN,
+            .noFlip = FALSE,
+        },
+
     [SPECIES_VENUSAUR_MEGA] =
     {
         .baseHP        = 80,
