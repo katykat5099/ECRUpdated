@@ -1277,6 +1277,8 @@ gCryTable::
 	cry Cry_CalyrexShadowRider
 	@ Basculegion
 	cry Cry_BasculegionFemale
+    @Basculin
+    cry Cry_Basculin
 
 	.align 2
 gCryTable_Reverse::
@@ -2557,3 +2559,5 @@ gCryTable_Reverse::
 	cry_reverse Cry_CalyrexShadowRider
     @ Basculegion
     cry_reverse Cry_BasculegionFemale
+    @Basculin
+    cry_reverse Cry_Basculin

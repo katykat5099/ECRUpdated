@@ -5376,6 +5376,11 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = MON_COORDS_SIZE(56, 40),
         .y_offset = 16,
     },
+    [SPECIES_BASCULIN_WHITE_STRIPED] =
+    {
+        .size = MON_COORDS_SIZE(41, 35),
+        .y_offset = 13,
+    },
     // Darmanitan
     [SPECIES_DARMANITAN_ZEN_MODE] =
     {

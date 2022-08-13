@@ -1093,6 +1093,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_ARCEUS_FAIRY] = _("Arceus"),
     // Basculin
     [SPECIES_BASCULIN_BLUE_STRIPED] = _("Basculin"),
+    [SPECIES_BASCULIN_WHITE_STRIPED] = _("Basculin"),
     // Darmanitan
     [SPECIES_DARMANITAN_ZEN_MODE] = _("Darmanitan"),
     [SPECIES_DARMANITAN_ZEN_MODE_GALARIAN] = _("Darmanitan"),

@@ -22318,6 +22318,10 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM06_TOXIC)
                                             | TMHM(HM07_WATERFALL)),
 
+    [SPECIES_BASCULIN_WHITE_STRIPED] = TMHM_LEARNSET(TMHM(TM13_ICE_BEAM)
+                                            | TMHM(TM44_REST)),
+                                            //| TMHM(HM03_SURF)),
+
     [SPECIES_DEERLING_SUMMER]  = TMHM_LEARNSET(TMHM(TM45_ATTRACT)
                                             | TMHM(TM32_DOUBLE_TEAM)
                                             | TMHM(TM42_FACADE)

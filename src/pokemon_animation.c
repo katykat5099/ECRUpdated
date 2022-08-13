@@ -607,6 +607,7 @@ static const u8 sSpeciesToBackAnimSet[NUM_SPECIES] =
     [SPECIES_BASCULEGION] = BACK_ANIM_JOLT_RIGHT,
 
     [SPECIES_BASCULEGION_FEMALE] = BACK_ANIM_JOLT_RIGHT,
+    [SPECIES_BASCULIN_WHITE_STRIPED] = BACK_ANIM_JOLT_RIGHT,
 };
 
 // Equivalent to struct YellowFlashData, but doesn't match as a struct

@@ -2587,6 +2587,11 @@ Cry_Basculin::
 	.incbin "sound/direct_sound_samples/cries/basculin.bin"
 
 	.align 2
+Cry_BasculinWhiteStriped::
+	.incbin "sound/direct_sound_samples/cries/basculin.bin"
+
+
+	.align 2
 Cry_Sandile::
 	.incbin "sound/direct_sound_samples/cries/sandile.bin"
 
