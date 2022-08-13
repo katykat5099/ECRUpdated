@@ -1245,6 +1245,7 @@ const u8 *const gMonIconTable[] =
     [SPECIES_CALYREX_SHADOW_RIDER] = gMonIcon_CalyrexShadowRider,
     [SPECIES_BASCULEGION_FEMALE] = gMonIcon_BasculegionFemale,
     [SPECIES_SNEASEL_HISUIAN] = gMonIcon_SneaselHisuian,
+    [SPECIES_LILLIGANT_HISUIAN] = gMonIcon_LilligantHisuian,
     [SPECIES_EGG] = gMonIcon_Egg,
 };
 
@@ -2449,6 +2450,7 @@ const u8 gMonIconPaletteIndices[] =
     [SPECIES_CALYREX_SHADOW_RIDER] = 0,
     [SPECIES_BASCULEGION_FEMALE] = 2,
     [SPECIES_SNEASEL_HISUIAN] = 2,
+    [SPECIES_LILLIGANT_HISUIAN] = 1,
     [SPECIES_EGG] = 1,
 };
 

@@ -18177,6 +18177,24 @@ static const struct LevelUpMove sBasculinWhiteStripedLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sLilligantHisuianLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_ABSORB),
+    LEVEL_UP_MOVE( 1, MOVE_ROCK_SMASH),
+    LEVEL_UP_MOVE( 5, MOVE_LEAFAGE),
+    LEVEL_UP_MOVE( 9, MOVE_STUN_SPORE),
+    LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
+    LEVEL_UP_MOVE(21, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE(29, MOVE_SLEEP_POWDER),
+    LEVEL_UP_MOVE(34, MOVE_DRAIN_PUNCH),
+    LEVEL_UP_MOVE(37, MOVE_RECOVER),
+    LEVEL_UP_MOVE(37, MOVE_LEAF_BLADE),
+    //LEVEL_UP_MOVE(42, MOVE_VICTORY_DANCE),
+    LEVEL_UP_MOVE(47, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE(53, MOVE_PETAL_DANCE),
+    LEVEL_UP_MOVE(57, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sRattataAlolanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),

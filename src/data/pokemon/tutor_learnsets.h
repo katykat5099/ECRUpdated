@@ -10614,4 +10614,6 @@ static const u32 sTutorLearnsets[] =
                                             | TUTOR(MOVE_ICE_PUNCH)
                                             | TUTOR(MOVE_ICY_WIND)),
 
+    [SPECIES_LILLIGANT_HISUIAN]     = TUTOR_LEARNSET(0),
+
 };

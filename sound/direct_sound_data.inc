@@ -4339,6 +4339,10 @@ Cry_BasculegionFemale::
 Cry_SneaselHisuian::
 	.incbin "sound/direct_sound_samples/cries/sneasel.bin"
 
+	.align 2
+Cry_LilligantHisuian::
+	.incbin "sound/direct_sound_samples/cries/lilligant.bin"
+
 
 	.align 2
 DirectSoundWaveData_register_noise::

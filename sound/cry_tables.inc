@@ -1282,6 +1282,7 @@ gCryTable::
     cry Cry_Basculin
 	@ Sneasel
 	cry Cry_SneaselHisuian
+	cry Cry_LilligantHisuian
 
 	.align 2
 gCryTable_Reverse::
@@ -2567,3 +2568,4 @@ gCryTable_Reverse::
     cry_reverse Cry_Basculin
     @ Sneasel
     cry_reverse Cry_SneaselHisuian
+    cry_reverse Cry_LilligantHisuian

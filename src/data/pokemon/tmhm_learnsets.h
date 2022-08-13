@@ -24802,4 +24802,9 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM44_REST)
                                             | TMHM(HM06_ROCK_SMASH)),
 
+    [SPECIES_LILLIGANT_HISUIAN]     = TMHM_LEARNSET(TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM40_AERIAL_ACE)
+                                            | TMHM(TM44_REST)
+                                            | TMHM(HM06_ROCK_SMASH)),
+
 };

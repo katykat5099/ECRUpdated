@@ -1283,4 +1283,5 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_BASCULEGION_FEMALE] = sBasculegionLevelUpLearnset,
     // Sneasel
     [SPECIES_SNEASEL_HISUIAN] = sSneaselHisuianLevelUpLearnset,
+    [SPECIES_LILLIGANT_HISUIAN] = sLilligantHisuianLevelUpLearnset,
 };

@@ -6147,6 +6147,12 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = MON_COORDS_SIZE(48, 49),
         .y_offset = 0,
     },
+    //Lilligant
+    [SPECIES_LILLIGANT_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(48, 62),
+        .y_offset = 1,
+    },
     // Egg
     [SPECIES_EGG] =
     {

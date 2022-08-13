@@ -1284,4 +1284,5 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_BASCULEGION_FEMALE] = _("Basculegin"),
     //Sneasel
     [SPECIES_SNEASEL_HISUIAN] = _("Sneasel"),
+    [SPECIES_LILLIGANT_HISUIAN] = _("Lilligant"),
 };
