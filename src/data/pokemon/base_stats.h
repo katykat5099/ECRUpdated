@@ -6331,6 +6331,30 @@ const struct BaseStats gBaseStats[] =
         .noFlip = TRUE,
     },
 
+    [SPECIES_OVERQWIL] =
+    {
+        .baseHP        = 85,
+        .baseAttack    = 115,
+        .baseDefense   = 95,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 65,
+        .type1 = TYPE_DARK,
+        .type2 = TYPE_POISON,
+        .catchRate = 20,
+        .expYield = 86,
+        .evYield_Attack    = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 35,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroup1 = EGG_GROUP_WATER_2,
+        .eggGroup2 = EGG_GROUP_WATER_2,
+        .abilities = {ABILITY_POISON_POINT, ABILITY_SWIFT_SWIM},
+        .bodyColor = BODY_COLOR_BLACK,
+        .noFlip = FALSE,
+    },
+
     [SPECIES_TEDDIURSA] =
     {
         .baseHP        = 60,
@@ -26469,4 +26493,30 @@ const struct BaseStats gBaseStats[] =
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
     },
+
+    [SPECIES_QWILFISH_HISUIAN] =
+    {
+        .baseHP        = 65,
+        .baseAttack    = 95,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 55,
+        .baseDefense   = 85,
+        .type1 = TYPE_DARK,
+        .type2 = TYPE_POISON,
+        .catchRate = 45,
+        .expYield = 88,
+        .evYield_Attack    = 1,
+        .itemRare = ITEM_POISON_BARB,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 70,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroup1 = EGG_GROUP_WATER_2,
+        .eggGroup2 = EGG_GROUP_WATER_2,
+        .abilities = {ABILITY_POISON_POINT, ABILITY_SWIFT_SWIM, ABILITY_INTIMIDATE},
+        .bodyColor = BODY_COLOR_BLACK,
+        .noFlip = FALSE,
+    },
+
 };

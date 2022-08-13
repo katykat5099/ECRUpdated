@@ -4525,6 +4525,11 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = MON_COORDS_SIZE(44, 60),
         .y_offset = 1,
     },
+    [SPECIES_OVERQWIL] =
+    {
+        .size = MON_COORDS_SIZE(62, 60),
+        .y_offset = 2,
+    },
     // Megas
     [SPECIES_VENUSAUR_MEGA] =
     {
@@ -6152,6 +6157,12 @@ const struct MonCoords gMonFrontPicCoords[] =
     {
         .size = MON_COORDS_SIZE(48, 62),
         .y_offset = 1,
+    },
+    // Qwilfish
+    [SPECIES_QWILFISH_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(44, 32),
+        .y_offset = 14,
     },
     // Egg
     [SPECIES_EGG] =

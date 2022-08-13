@@ -904,5 +904,6 @@ const u8 *const gMonFootprintTable[] =
     [SPECIES_URSALUNA] = gMonFootprint_Ursaluna,
     [SPECIES_BASCULEGION] = gMonFootprint_Basculegion,
     [SPECIES_SNEASLER] = gMonFootprint_Sneasler,
+    [SPECIES_OVERQWIL] = gMonFootprint_Overqwil,
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

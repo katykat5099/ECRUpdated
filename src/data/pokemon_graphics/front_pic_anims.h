@@ -8557,6 +8557,12 @@ static const union AnimCmd sAnim_SNEASLER_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_OVERQWIL_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_VENUSAUR_MEGA_1[] =
 {
     ANIMCMD_FRAME(0, 1),
@@ -14098,6 +14104,11 @@ static const union AnimCmd *const sAnims_SNEASLER[] ={
     sAnim_SNEASLER_1,
 };
 
+static const union AnimCmd *const sAnims_OVERQWIL[] ={
+    sAnim_GeneralFrame0,
+    sAnim_OVERQWIL_1,
+};
+
 static const union AnimCmd *const sAnims_VENUSAUR_MEGA[] ={
     sAnim_GeneralFrame0,
     sAnim_VENUSAUR_MEGA_1,
@@ -15635,6 +15646,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(URSALUNA),
     ANIM_CMD(BASCULEGION),
     ANIM_CMD(SNEASLER),
+    ANIM_CMD(OVERQWIL),
     ANIM_CMD(VENUSAUR_MEGA),
     ANIM_CMD(CHARIZARD_MEGA_X),
     ANIM_CMD(CHARIZARD_MEGA_Y),
@@ -15947,6 +15959,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD_FULL(BASCULEGION_FEMALE, sAnims_BASCULEGION),
     ANIM_CMD_FULL(SNEASEL_HISUIAN, sAnims_SNEASEL),
     ANIM_CMD_FULL(LILLIGANT_HISUIAN, sAnims_LILLIGANT),
+    ANIM_CMD_FULL(QWILFISH_HISUIAN, sAnims_QWILFISH),
     ANIM_CMD(EGG),
 };
 

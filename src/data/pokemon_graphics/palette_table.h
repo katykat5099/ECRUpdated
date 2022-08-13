@@ -905,6 +905,7 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     SPECIES_PAL(URSALUNA, gMonPalette_Ursaluna),
     SPECIES_PAL(BASCULEGION, gMonPalette_Basculegion),
     SPECIES_PAL(SNEASLER, gMonPalette_Sneasler),
+    SPECIES_PAL(OVERQWIL, gMonPalette_Overqwil),
 
     SPECIES_PAL(VENUSAUR_MEGA, gMonPalette_VenusaurMega),
     SPECIES_PAL(CHARIZARD_MEGA_X, gMonPalette_CharizardMegaX),
@@ -1283,6 +1284,7 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
 
     SPECIES_PAL(SNEASEL_HISUIAN, gMonPalette_SneaselHisuian),
     SPECIES_PAL(LILLIGANT_HISUIAN, gMonPalette_LilligantHisuian),
+    SPECIES_PAL(QWILFISH_HISUIAN, gMonPalette_QwilfishHisuian),
 
     SPECIES_PAL(EGG, gMonPalette_Egg),
 };

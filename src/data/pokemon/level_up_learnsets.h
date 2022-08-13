@@ -18150,6 +18150,20 @@ static const struct LevelUpMove sSneaslerLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sOverqwilLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
+    LEVEL_UP_MOVE( 5, MOVE_SPIKES),
+    LEVEL_UP_MOVE( 9, MOVE_PIN_MISSILE),
+    //LEVEL_UP_MOVE(15, MOVE_BARB_BARRAGE),
+    LEVEL_UP_MOVE(21, MOVE_WATER_PULSE),
+    LEVEL_UP_MOVE(26, MOVE_DARK_PULSE),
+    LEVEL_UP_MOVE(29, MOVE_POISON_JAB),
+    LEVEL_UP_MOVE(37, MOVE_AQUA_TAIL),
+    LEVEL_UP_MOVE(47, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(57, MOVE_SELF_DESTRUCT),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sSneaselHisuianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
@@ -18192,6 +18206,20 @@ static const struct LevelUpMove sLilligantHisuianLevelUpLearnset[] = {
     LEVEL_UP_MOVE(47, MOVE_LEAF_STORM),
     LEVEL_UP_MOVE(53, MOVE_PETAL_DANCE),
     LEVEL_UP_MOVE(57, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sQwilfishHisuianLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
+    LEVEL_UP_MOVE( 5, MOVE_SPIKES),
+    LEVEL_UP_MOVE( 9, MOVE_PIN_MISSILE),
+    //LEVEL_UP_MOVE(15, MOVE_BARB_BARRAGE),
+    LEVEL_UP_MOVE(21, MOVE_WATER_PULSE),
+    LEVEL_UP_MOVE(26, MOVE_DARK_PULSE),
+    LEVEL_UP_MOVE(29, MOVE_POISON_JAB),
+    LEVEL_UP_MOVE(37, MOVE_AQUA_TAIL),
+    LEVEL_UP_MOVE(47, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(57, MOVE_SELF_DESTRUCT),
     LEVEL_UP_END
 };
 

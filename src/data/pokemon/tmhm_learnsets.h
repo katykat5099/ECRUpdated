@@ -20231,6 +20231,13 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM44_REST)
                                             | TMHM(HM06_ROCK_SMASH)),
 
+    [SPECIES_OVERQWIL]    = TMHM_LEARNSET(TMHM(TM03_WATER_PULSE)
+                                            | TMHM(TM13_ICE_BEAM)
+                                            | TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM30_SHADOW_BALL)
+                                            | TMHM(TM36_SLUDGE_BOMB)
+                                            | TMHM(TM44_REST)),
+
     [SPECIES_RATTATA_ALOLAN]  = TMHM_LEARNSET(TMHM(TM14_BLIZZARD)
                                                | TMHM(HM01_CUT)
                                                | TMHM(TM28_DIG)
@@ -24806,5 +24813,11 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM40_AERIAL_ACE)
                                             | TMHM(TM44_REST)
                                             | TMHM(HM06_ROCK_SMASH)),
+
+    [SPECIES_QWILFISH_HISUIAN]      = TMHM_LEARNSET(TMHM(TM03_WATER_PULSE)
+                                            | TMHM(TM13_ICE_BEAM)
+                                            | TMHM(TM30_SHADOW_BALL)
+                                            | TMHM(TM36_SLUDGE_BOMB)
+                                            | TMHM(TM44_REST)),
 
 };

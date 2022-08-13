@@ -4004,6 +4004,10 @@ Cry_Sneasler::
 	.incbin "sound/direct_sound_samples/cries/sneasler.bin"
 
 	.align 2
+Cry_Overqwil::
+	.incbin "sound/direct_sound_samples/cries/overqwil.bin"
+
+	.align 2
 Cry_VenusaurMega::
 	.incbin "sound/direct_sound_samples/cries/mega_venusaur.bin"
 
@@ -4343,6 +4347,9 @@ Cry_SneaselHisuian::
 Cry_LilligantHisuian::
 	.incbin "sound/direct_sound_samples/cries/lilligant.bin"
 
+	.align 2
+Cry_QwilfishHisuian::
+	.incbin "sound/direct_sound_samples/cries/qwilfish.bin"
 
 	.align 2
 DirectSoundWaveData_register_noise::

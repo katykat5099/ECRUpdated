@@ -10847,4 +10847,16 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+
+    [NATIONAL_DEX_OVERQWIL] =
+    {
+        .categoryName = _("Pin Cluster"),
+        .height = 25,
+        .weight = 605,
+        .description = gOverqwilPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

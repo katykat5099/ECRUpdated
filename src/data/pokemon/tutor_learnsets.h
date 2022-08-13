@@ -10204,6 +10204,9 @@ static const u32 sTutorLearnsets[] =
 
     [SPECIES_SNEASLER]         = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)),
 
+    [SPECIES_OVERQWIL]      = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)
+                                            | TUTOR(MOVE_ICY_WIND)),
+
     [SPECIES_MEOWTH_GALARIAN]  = TUTOR_LEARNSET(TUTOR(MOVE_BODY_SLAM)
                                             | TUTOR(MOVE_DOUBLE_EDGE)
                                             | TUTOR(MOVE_ENDURE)
@@ -10615,5 +10618,8 @@ static const u32 sTutorLearnsets[] =
                                             | TUTOR(MOVE_ICY_WIND)),
 
     [SPECIES_LILLIGANT_HISUIAN]     = TUTOR_LEARNSET(0),
+
+    [SPECIES_QWILFISH_HISUIAN]      = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)
+                                            | TUTOR(MOVE_ICY_WIND)),
 
 };
