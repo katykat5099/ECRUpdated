@@ -4000,6 +4000,10 @@ Cry_Basculegion::
 	.incbin "sound/direct_sound_samples/cries/basculegion.bin"
 
 	.align 2
+Cry_Sneasler::
+	.incbin "sound/direct_sound_samples/cries/sneasler.bin"
+
+	.align 2
 Cry_VenusaurMega::
 	.incbin "sound/direct_sound_samples/cries/mega_venusaur.bin"
 
@@ -4330,6 +4334,11 @@ Cry_CalyrexShadowRider::
 	.align 2
 Cry_BasculegionFemale::
 	.incbin "sound/direct_sound_samples/cries/basculegion.bin"
+
+	.align 2
+Cry_SneaselHisuian::
+	.incbin "sound/direct_sound_samples/cries/sneasel.bin"
+
 
 	.align 2
 DirectSoundWaveData_register_noise::

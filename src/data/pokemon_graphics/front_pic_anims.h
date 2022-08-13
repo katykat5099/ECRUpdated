@@ -8551,6 +8551,12 @@ static const union AnimCmd sAnim_BASCULEGION_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_SNEASLER_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_VENUSAUR_MEGA_1[] =
 {
     ANIMCMD_FRAME(0, 1),
@@ -14087,6 +14093,11 @@ static const union AnimCmd *const sAnims_BASCULEGION[] ={
     sAnim_BASCULEGION_1,
 };
 
+static const union AnimCmd *const sAnims_SNEASLER[] ={
+    sAnim_GeneralFrame0,
+    sAnim_SNEASLER_1,
+};
+
 static const union AnimCmd *const sAnims_VENUSAUR_MEGA[] ={
     sAnim_GeneralFrame0,
     sAnim_VENUSAUR_MEGA_1,
@@ -15623,6 +15634,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(KLEAVOR),
     ANIM_CMD(URSALUNA),
     ANIM_CMD(BASCULEGION),
+    ANIM_CMD(SNEASLER),
     ANIM_CMD(VENUSAUR_MEGA),
     ANIM_CMD(CHARIZARD_MEGA_X),
     ANIM_CMD(CHARIZARD_MEGA_Y),
@@ -15933,6 +15945,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD_FULL(CALYREX_ICE_RIDER, sAnims_CALYREX),
     ANIM_CMD_FULL(CALYREX_SHADOW_RIDER, sAnims_CALYREX),
     ANIM_CMD_FULL(BASCULEGION_FEMALE, sAnims_BASCULEGION),
+    ANIM_CMD_FULL(SNEASEL_HISUIAN, sAnims_SNEASEL),
     ANIM_CMD(EGG),
 };
 

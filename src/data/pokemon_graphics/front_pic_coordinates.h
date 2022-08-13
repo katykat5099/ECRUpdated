@@ -4520,6 +4520,11 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = MON_COORDS_SIZE(63, 45),
         .y_offset = 6,
     },
+    [SPECIES_SNEASLER] =
+    {
+        .size = MON_COORDS_SIZE(44, 60),
+        .y_offset = 1,
+    },
     // Megas
     [SPECIES_VENUSAUR_MEGA] =
     {
@@ -6134,6 +6139,12 @@ const struct MonCoords gMonFrontPicCoords[] =
     [SPECIES_BASCULEGION_FEMALE] =
     {
         .size = MON_COORDS_SIZE(63, 42),
+        .y_offset = 0,
+    },
+    //Sneasel
+    [SPECIES_SNEASEL_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(48, 49),
         .y_offset = 0,
     },
     // Egg

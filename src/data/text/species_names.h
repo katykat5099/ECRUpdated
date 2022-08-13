@@ -902,6 +902,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_KLEAVOR] = _("Kleavor"),
     [SPECIES_URSALUNA] = _("Ursaluna"),
     [SPECIES_BASCULEGION] = _("Basculegin"),
+    [SPECIES_SNEASLER] = _("Sneasler"),
 
     // Megas
     [SPECIES_VENUSAUR_MEGA] = _("Venusaur"),
@@ -1281,4 +1282,6 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_CALYREX_SHADOW_RIDER] = _("Calyrex"),
     //Basculegion
     [SPECIES_BASCULEGION_FEMALE] = _("Basculegin"),
+    //Sneasel
+    [SPECIES_SNEASEL_HISUIAN] = _("Sneasel"),
 };

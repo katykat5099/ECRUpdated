@@ -4520,6 +4520,11 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = MON_COORDS_SIZE(60, 61),
         .y_offset = 0,
     },
+    [SPECIES_SNEASLER] =
+    {
+        .size = MON_COORDS_SIZE(64, 64),
+        .y_offset = 0,
+    },
     // Megas
     [SPECIES_VENUSAUR_MEGA] =
     {
@@ -6135,6 +6140,12 @@ const struct MonCoords gMonBackPicCoords[] =
     {
         .size = MON_COORDS_SIZE(60, 61),
         .y_offset = 0,
+    },
+    //Sneasel
+    [SPECIES_SNEASEL_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(39, 54),
+        .y_offset = 8,
     },
     // Egg
     [SPECIES_EGG] =

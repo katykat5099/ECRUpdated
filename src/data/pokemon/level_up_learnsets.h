@@ -18138,6 +18138,34 @@ static const struct LevelUpMove sBasculegionLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sSneaslerLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE( 6, MOVE_ROCK_SMASH),
+    LEVEL_UP_MOVE(11, MOVE_SWIFT),
+    //LEVEL_UP_MOVE(11, MOVE_DIRE_CLAW),
+    LEVEL_UP_MOVE(18, MOVE_SLASH),
+    LEVEL_UP_MOVE(25, MOVE_POISON_JAB),
+    LEVEL_UP_MOVE(34, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(43, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sSneaselHisuianLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE( 1, MOVE_LEER),
+    LEVEL_UP_MOVE( 6, MOVE_TAUNT),
+    LEVEL_UP_MOVE(12, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(18, MOVE_METAL_CLAW),
+    LEVEL_UP_MOVE(24, MOVE_ICY_WIND),
+    LEVEL_UP_MOVE(30, MOVE_FURY_SWIPES),
+    LEVEL_UP_MOVE(36, MOVE_HONE_CLAWS),
+    LEVEL_UP_MOVE(42, MOVE_BEAT_UP),
+    LEVEL_UP_MOVE(48, MOVE_AGILITY),
+    LEVEL_UP_MOVE(54, MOVE_SCREECH),
+    LEVEL_UP_MOVE(60, MOVE_SLASH),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sBasculinWhiteStripedLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 6, MOVE_AQUA_JET),

@@ -5371,3 +5371,9 @@ const u8 gBasculegionPokedexText[] = _(
     "Clads itself in the souls of comrades that\n"
     "perished before fulfilling their goals of\n"
     "journeying upstream.");
+
+const u8 gSneaslerPokedexText[] = _(
+    "Because of Sneasler's virulent poison and\n"
+    "daunting physical prowess, no other species\n"
+    "could hope to best in on the frozen\n"
+    "highlands.");

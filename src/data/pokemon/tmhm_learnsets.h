@@ -20222,6 +20222,15 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM44_REST)),
                                             //| TMHM(HM03_SURF)),
 
+    [SPECIES_SNEASLER]    = TMHM_LEARNSET(TMHM(TM04_CALM_MIND)
+                                            | TMHM(TM08_BULK_UP)
+                                            | TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM23_IRON_TAIL)
+                                            | TMHM(TM30_SHADOW_BALL)
+                                            | TMHM(TM40_AERIAL_ACE)
+                                            | TMHM(TM44_REST)
+                                            | TMHM(HM06_ROCK_SMASH)),
+
     [SPECIES_RATTATA_ALOLAN]  = TMHM_LEARNSET(TMHM(TM14_BLIZZARD)
                                                | TMHM(HM01_CUT)
                                                | TMHM(TM28_DIG)
@@ -24784,4 +24793,13 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM22_SOLAR_BEAM)
                                             | TMHM(TM11_SUNNY_DAY)
                                             | TMHM(TM12_TAUNT)),
+
+    [SPECIES_SNEASEL_HISUIAN]       = TMHM_LEARNSET(TMHM(TM04_CALM_MIND)
+                                            | TMHM(TM13_ICE_BEAM)
+                                            | TMHM(TM23_IRON_TAIL)
+                                            | TMHM(TM30_SHADOW_BALL)
+                                            | TMHM(TM40_AERIAL_ACE)
+                                            | TMHM(TM44_REST)
+                                            | TMHM(HM06_ROCK_SMASH)),
+
 };

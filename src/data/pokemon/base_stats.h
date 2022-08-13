@@ -22935,6 +22935,31 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
+    [SPECIES_SNEASLER] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 130,
+        .baseDefense   = 60,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 80,
+        .type1 = TYPE_FIGHTING,
+        .type2 = TYPE_POISON,
+        .catchRate = 25,
+        .expYield = 260,
+        .evYield_Attack  = 1,
+        .evYield_Speed   = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 120,
+        .friendship = 100,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroup1 = EGG_GROUP_FIELD,
+        .eggGroup2 = EGG_GROUP_FIELD,
+        .abilities = {ABILITY_PRESSURE, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_BLUE,
+        .noFlip = FALSE,
+    },
+
     [SPECIES_VENUSAUR_MEGA] =
     {
         .baseHP        = 80,
@@ -26394,5 +26419,30 @@ const struct BaseStats gBaseStats[] =
         .abilities = {ABILITY_RATTLED, ABILITY_ADAPTABILITY},
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
+    },
+
+    [SPECIES_SNEASEL_HISUIAN] =
+    {
+        .baseHP        = 55,
+        .baseAttack    = 95,
+        .baseDefense   = 55,
+        .baseSpeed     = 115,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 75,
+        .type1 = TYPE_FIGHTING,
+        .type2 = TYPE_POISON,
+        .catchRate = 60,
+        .expYield = 86,
+        .evYield_Speed    = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 35,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroup1 = EGG_GROUP_FIELD,
+        .eggGroup2 = EGG_GROUP_FIELD,
+        .abilities = {ABILITY_INNER_FOCUS, ABILITY_KEEN_EYE},
+        .bodyColor = BODY_COLOR_PURPLE,
+        .noFlip = FALSE,
+        .flags = FLAG_GENDER_DIFFERENCE,
     },
 };
