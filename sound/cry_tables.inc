@@ -1285,6 +1285,8 @@ gCryTable::
 	cry Cry_SneaselHisuian
 	cry Cry_LilligantHisuian
 	cry Cry_QwilfishHisuian
+	cry Cry_GrowlitheHisuian
+	cry Cry_ArcanineHisuian
 
 	.align 2
 gCryTable_Reverse::
@@ -2573,3 +2575,5 @@ gCryTable_Reverse::
     cry_reverse Cry_SneaselHisuian
     cry_reverse Cry_LilligantHisuian
     cry_reverse Cry_QwilfishHisuian
+    cry_reverse Cry_GrowlitheHisuian
+    cry_reverse Cry_ArcanineHisuian

@@ -1228,6 +1228,8 @@ extern const u32 gMonFrontPic_SneaselHisuian[];
 extern const u32 gMonFrontPic_SneaselHisuianF[];
 extern const u32 gMonFrontPic_LilligantHisuian[];
 extern const u32 gMonFrontPic_QwilfishHisuian[];
+extern const u32 gMonFrontPic_GrowlitheHisuian[];
+extern const u32 gMonFrontPic_ArcanineHisuian[];
 extern const u32 gMonFrontPic_Egg[];
 
 extern const u32 gMonBackPic_CircledQuestionMark[];
@@ -2392,6 +2394,8 @@ extern const u32 gMonBackPic_SneaselHisuian[];
 extern const u32 gMonBackPic_SneaselHisuianF[];
 extern const u32 gMonBackPic_LilligantHisuian[];
 extern const u32 gMonBackPic_QwilfishHisuian[];
+extern const u32 gMonBackPic_GrowlitheHisuian[];
+extern const u32 gMonBackPic_ArcanineHisuian[];
 
 extern const u32 gMonPalette_CircledQuestionMark[];
 extern const u32 gMonPalette_DoubleQuestionMark[];
@@ -3573,6 +3577,8 @@ extern const u32 gMonPalette_BasculegionFemale[];
 extern const u32 gMonPalette_SneaselHisuian[];
 extern const u32 gMonPalette_LilligantHisuian[];
 extern const u32 gMonPalette_QwilfishHisuian[];
+extern const u32 gMonPalette_GrowlitheHisuian[];
+extern const u32 gMonPalette_ArcanineHisuian[];
 extern const u32 gMonPalette_Egg[];
 
 extern const u32 gMonShinyPalette_CircledQuestionMark[];
@@ -4750,6 +4756,8 @@ extern const u32 gMonShinyPalette_BasculegionFemale[];
 extern const u32 gMonShinyPalette_SneaselHisuian[];
 extern const u32 gMonShinyPalette_LilligantHisuian[];
 extern const u32 gMonShinyPalette_QwilfishHisuian[];
+extern const u32 gMonShinyPalette_GrowlitheHisuian[];
+extern const u32 gMonShinyPalette_ArcanineHisuian[];
 
 extern const u8 gMonIcon_QuestionMark[];
 extern const u8 gMonIcon_Bulbasaur[];
@@ -5916,6 +5924,8 @@ extern const u8 gMonIcon_SneaselHisuian[];
 extern const u8 gMonIcon_SneaselHisuianF[];
 extern const u8 gMonIcon_LilligantHisuian[];
 extern const u8 gMonIcon_QwilfishHisuian[];
+extern const u8 gMonIcon_GrowlitheHisuian[];
+extern const u8 gMonIcon_ArcanineHisuian[];
 extern const u8 gMonIcon_Egg[];
 
 extern const u8 gMonFootprint_QuestionMark[];

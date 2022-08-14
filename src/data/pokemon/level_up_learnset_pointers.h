@@ -1286,4 +1286,6 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_SNEASEL_HISUIAN] = sSneaselHisuianLevelUpLearnset,
     [SPECIES_LILLIGANT_HISUIAN] = sLilligantHisuianLevelUpLearnset,
     [SPECIES_QWILFISH_HISUIAN] = sLilligantHisuianLevelUpLearnset,
+    [SPECIES_GROWLITHE_HISUIAN] = sGrowlitheHisuianLevelUpLearnset,
+    [SPECIES_ARCANINE_HISUIAN] = sArcanineHisuianLevelUpLearnset,
 };

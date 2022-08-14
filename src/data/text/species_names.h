@@ -1287,4 +1287,6 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_SNEASEL_HISUIAN] = _("Sneasel"),
     [SPECIES_LILLIGANT_HISUIAN] = _("Lilligant"),
     [SPECIES_QWILFISH_HISUIAN] = _("Qwilfish"),
+    [SPECIES_GROWLITHE_HISUIAN] = _("Growlithe"),
+    [SPECIES_ARCANINE_HISUIAN] = _("Arcanine"),
 };

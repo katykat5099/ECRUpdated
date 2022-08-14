@@ -1248,6 +1248,8 @@ const u8 *const gMonIconTable[] =
     [SPECIES_SNEASEL_HISUIAN] = gMonIcon_SneaselHisuian,
     [SPECIES_LILLIGANT_HISUIAN] = gMonIcon_LilligantHisuian,
     [SPECIES_QWILFISH_HISUIAN] = gMonIcon_QwilfishHisuian,
+    [SPECIES_GROWLITHE_HISUIAN] = gMonIcon_GrowlitheHisuian,
+    [SPECIES_ARCANINE_HISUIAN] = gMonIcon_ArcanineHisuian,
     [SPECIES_EGG] = gMonIcon_Egg,
 };
 
@@ -2455,6 +2457,8 @@ const u8 gMonIconPaletteIndices[] =
     [SPECIES_SNEASEL_HISUIAN] = 2,
     [SPECIES_LILLIGANT_HISUIAN] = 1,
     [SPECIES_QWILFISH_HISUIAN] = 1,
+    [SPECIES_GROWLITHE_HISUIAN] = 1,
+    [SPECIES_ARCANINE_HISUIAN] = 1,
     [SPECIES_EGG] = 1,
 };
 

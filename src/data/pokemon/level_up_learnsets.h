@@ -1083,6 +1083,18 @@ static const struct LevelUpMove sGrowlitheLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sGrowlitheHisuianLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 5, MOVE_EMBER),
+    LEVEL_UP_MOVE( 9, MOVE_BITE),
+    LEVEL_UP_MOVE(15, MOVE_FIRE_FANG),
+    LEVEL_UP_MOVE(21, MOVE_ROCK_SLIDE),
+    LEVEL_UP_MOVE(29, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(37, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(47, MOVE_FLARE_BLITZ),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sArcanineLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_FANG),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
@@ -1090,6 +1102,19 @@ static const struct LevelUpMove sArcanineLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ODOR_SLEUTH),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE(34, MOVE_EXTREME_SPEED),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sArcanineHisuianLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 5, MOVE_EMBER),
+    LEVEL_UP_MOVE( 9, MOVE_BITE),
+    LEVEL_UP_MOVE(15, MOVE_FIRE_FANG),
+    LEVEL_UP_MOVE(21, MOVE_ROCK_SLIDE),
+    //LEVEL_UP_MOVE(29, MOVE_RAGING_FURY),
+    LEVEL_UP_MOVE(29, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(37, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(47, MOVE_FLARE_BLITZ),
     LEVEL_UP_END
 };
 

@@ -4352,6 +4352,14 @@ Cry_QwilfishHisuian::
 	.incbin "sound/direct_sound_samples/cries/qwilfish.bin"
 
 	.align 2
+Cry_GrowlitheHisuian::
+	.incbin "sound/direct_sound_samples/cries/growlithe.bin"
+
+	.align 2
+Cry_ArcanineHisuian::
+	.incbin "sound/direct_sound_samples/cries/arcanine.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 

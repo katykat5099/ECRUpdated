@@ -10622,4 +10622,10 @@ static const u32 sTutorLearnsets[] =
     [SPECIES_QWILFISH_HISUIAN]      = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)
                                             | TUTOR(MOVE_ICY_WIND)),
 
+    [SPECIES_GROWLITHE_HISUIAN]     = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)
+                                            | TUTOR(MOVE_ROCK_SLIDE)),
+
+    [SPECIES_ARCANINE_HISUIAN]      = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)
+                                            | TUTOR(MOVE_ROCK_SLIDE)),
+
 };

@@ -6164,6 +6164,18 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = MON_COORDS_SIZE(55, 37),
         .y_offset = 14,
     },
+    // Growlithe
+    [SPECIES_GROWLITHE_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(60, 35),
+        .y_offset = 18,
+    },
+    // Arcanine
+    [SPECIES_ARCANINE_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(56, 55),
+        .y_offset = 12,
+    },
     // Egg
     [SPECIES_EGG] =
     {

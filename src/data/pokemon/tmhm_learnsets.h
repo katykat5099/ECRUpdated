@@ -24820,4 +24820,17 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM36_SLUDGE_BOMB)
                                             | TMHM(TM44_REST)),
 
+    [SPECIES_GROWLITHE_HISUIAN]     = TMHM_LEARNSET(TMHM(TM40_AERIAL_ACE)
+                                            | TMHM(TM44_REST)
+                                            | TMHM(TM23_IRON_TAIL)
+                                            | TMHM(TM35_FLAMETHROWER)
+                                            | TMHM(HM06_ROCK_SMASH)),
+
+    [SPECIES_ARCANINE_HISUIAN]     = TMHM_LEARNSET(TMHM(TM40_AERIAL_ACE)
+                                            | TMHM(TM44_REST)
+                                            | TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM23_IRON_TAIL)
+                                            | TMHM(TM35_FLAMETHROWER)
+                                            | TMHM(HM06_ROCK_SMASH)),
+
 };
