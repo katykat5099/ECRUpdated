@@ -4360,6 +4360,50 @@ Cry_ArcanineHisuian::
 	.incbin "sound/direct_sound_samples/cries/arcanine.bin"
 
 	.align 2
+Cry_VoltorbHisuian::
+	.incbin "sound/direct_sound_samples/cries/voltorb.bin"
+
+	.align 2
+Cry_ElectrodeHisuian::
+	.incbin "sound/direct_sound_samples/cries/electrode.bin"
+
+	.align 2
+Cry_ZoruaHisuian::
+	.incbin "sound/direct_sound_samples/cries/zorua.bin"
+
+	.align 2
+Cry_ZoroarkHisuian::
+	.incbin "sound/direct_sound_samples/cries/zoroark.bin"
+
+	.align 2
+Cry_BraviaryHisuian::
+	.incbin "sound/direct_sound_samples/cries/braviary.bin"
+
+	.align 2
+Cry_TyphlosionHisuian::
+	.incbin "sound/direct_sound_samples/cries/typhlosion.bin"
+
+	.align 2
+Cry_SamurottHisuian::
+	.incbin "sound/direct_sound_samples/cries/samurott.bin"
+
+	.align 2
+Cry_DecidueyeHisuian::
+	.incbin "sound/direct_sound_samples/cries/decidueye.bin"
+
+	.align 2
+Cry_AvaluggHisuian::
+	.incbin "sound/direct_sound_samples/cries/avalugg.bin"
+
+	.align 2
+Cry_SliggooHisuian::
+	.incbin "sound/direct_sound_samples/cries/sliggoo.bin"
+
+	.align 2
+Cry_GoodraHisuian::
+	.incbin "sound/direct_sound_samples/cries/goodra.bin"
+
+	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"
 

@@ -10628,4 +10628,34 @@ static const u32 sTutorLearnsets[] =
     [SPECIES_ARCANINE_HISUIAN]      = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)
                                             | TUTOR(MOVE_ROCK_SLIDE)),
 
+    [SPECIES_VOLTORB_HISUIAN]       = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)),
+
+    [SPECIES_ELECTRODE_HISUIAN]     = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)),
+
+    [SPECIES_ZORUA_HISUIAN]         = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)),
+
+    [SPECIES_ZOROARK_HISUIAN]       = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)),
+
+    [SPECIES_BRAVIARY_HISUIAN]      = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)
+                                            | TUTOR(MOVE_ROCK_SLIDE)),
+
+    [SPECIES_TYPHLOSION_HISUIAN]    = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)
+                                            | TUTOR(MOVE_FIRE_PUNCH)
+                                            | TUTOR(MOVE_THUNDER_PUNCH)
+                                            | TUTOR(MOVE_ROCK_SLIDE)),
+
+    [SPECIES_SAMUROTT_HISUIAN]      = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)
+                                            | TUTOR(MOVE_ICY_WIND)),
+
+    [SPECIES_DECIDUEYE_HISUIAN]     = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)),
+
+    [SPECIES_AVALUGG_HISUIAN]       = TUTOR_LEARNSET(TUTOR(MOVE_SWIFT)
+                                            | TUTOR(MOVE_ROCK_SLIDE)
+                                            | TUTOR(MOVE_ICY_WIND)),
+
+    [SPECIES_SLIGGOO_HISUIAN]    = TUTOR_LEARNSET(TUTOR(MOVE_ROCK_SLIDE)),
+
+    [SPECIES_GOODRA_HISUIAN]    = TUTOR_LEARNSET(TUTOR(MOVE_ROCK_SLIDE)
+                                            | TUTOR(MOVE_FIRE_PUNCH)
+                                            | TUTOR(MOVE_THUNDER_PUNCH)),
 };

@@ -24833,4 +24833,75 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM35_FLAMETHROWER)
                                             | TMHM(HM06_ROCK_SMASH)),
 
+    [SPECIES_VOLTORB_HISUIAN]       = TMHM_LEARNSET(TMHM(TM44_REST)
+                                            | TMHM(TM24_THUNDERBOLT)),
+
+    [SPECIES_ELECTRODE_HISUIAN]     = TMHM_LEARNSET(TMHM(TM44_REST)
+                                            | TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM24_THUNDERBOLT)),
+
+    [SPECIES_ZORUA_HISUIAN]         = TMHM_LEARNSET(TMHM(TM40_AERIAL_ACE)
+                                            | TMHM(TM04_CALM_MIND)
+                                            | TMHM(TM36_SLUDGE_BOMB)
+                                            | TMHM(TM44_REST)),
+
+    [SPECIES_ZOROARK_HISUIAN]       = TMHM_LEARNSET(TMHM(TM40_AERIAL_ACE)
+                                            | TMHM(TM04_CALM_MIND)
+                                            | TMHM(TM36_SLUDGE_BOMB)
+                                            | TMHM(HM06_ROCK_SMASH)
+                                            | TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM35_FLAMETHROWER)
+                                            | TMHM(TM44_REST)),
+
+    [SPECIES_BRAVIARY_HISUIAN]      = TMHM_LEARNSET(TMHM(TM40_AERIAL_ACE)
+                                            | TMHM(TM08_BULK_UP)
+                                            | TMHM(TM29_PSYCHIC)
+                                            | TMHM(HM06_ROCK_SMASH)
+                                            | TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM44_REST)),
+
+    [SPECIES_TYPHLOSION_HISUIAN]    = TMHM_LEARNSET(TMHM(TM40_AERIAL_ACE)
+                                            | TMHM(TM04_CALM_MIND)
+                                            | TMHM(TM23_IRON_TAIL)
+                                            | TMHM(HM06_ROCK_SMASH)
+                                            | TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM30_SHADOW_BALL)
+                                            | TMHM(TM35_FLAMETHROWER)
+                                            | TMHM(TM44_REST)),
+
+    [SPECIES_SAMUROTT_HISUIAN]      = TMHM_LEARNSET(TMHM(HM06_ROCK_SMASH)
+                                            | TMHM(TM40_AERIAL_ACE)
+                                            | TMHM(TM44_REST)
+                                            | TMHM(TM23_IRON_TAIL)
+                                            | TMHM(TM03_WATER_PULSE)
+                                            | TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM13_ICE_BEAM)),
+
+    [SPECIES_DECIDUEYE_HISUIAN]     = TMHM_LEARNSET(TMHM(HM06_ROCK_SMASH)
+                                            | TMHM(TM40_AERIAL_ACE)
+                                            | TMHM(TM44_REST)
+                                            | TMHM(TM08_BULK_UP)
+                                            | TMHM(TM15_HYPER_BEAM)),
+
+    [SPECIES_AVALUGG_HISUIAN]       = TMHM_LEARNSET(TMHM(HM06_ROCK_SMASH)
+                                            | TMHM(TM44_REST)
+                                            | TMHM(TM03_WATER_PULSE)
+                                            | TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM13_ICE_BEAM)),
+
+    [SPECIES_SLIGGOO_HISUIAN]       = TMHM_LEARNSET(TMHM(TM44_REST)
+                                            | TMHM(TM23_IRON_TAIL)
+                                            | TMHM(TM03_WATER_PULSE)
+                                            | TMHM(TM36_SLUDGE_BOMB)
+                                            | TMHM(TM24_THUNDERBOLT)
+                                            | TMHM(TM13_ICE_BEAM)),
+
+    [SPECIES_GOODRA_HISUIAN]       = TMHM_LEARNSET(TMHM(HM06_ROCK_SMASH)
+                                            | TMHM(TM44_REST)
+                                            | TMHM(TM23_IRON_TAIL)
+                                            | TMHM(TM03_WATER_PULSE)
+                                            | TMHM(TM36_SLUDGE_BOMB)
+                                            | TMHM(TM15_HYPER_BEAM)
+                                            | TMHM(TM24_THUNDERBOLT)
+                                            | TMHM(TM13_ICE_BEAM)),
 };

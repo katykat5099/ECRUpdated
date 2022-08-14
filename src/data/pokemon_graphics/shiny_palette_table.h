@@ -1287,6 +1287,17 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[] =
     SPECIES_SHINY_PAL(QWILFISH_HISUIAN, gMonShinyPalette_QwilfishHisuian),
     SPECIES_SHINY_PAL(GROWLITHE_HISUIAN, gMonShinyPalette_GrowlitheHisuian),
     SPECIES_SHINY_PAL(ARCANINE_HISUIAN, gMonShinyPalette_ArcanineHisuian),
+    SPECIES_PAL(VOLTORB_HISUIAN, gMonShinyPalette_VoltorbHisuian),
+    SPECIES_PAL(ELECTRODE_HISUIAN, gMonShinyPalette_ElectrodeHisuian),
+    SPECIES_PAL(ZORUA_HISUIAN, gMonShinyPalette_ZoruaHisuian),
+    SPECIES_PAL(ZOROARK_HISUIAN, gMonShinyPalette_ZoroarkHisuian),
+    SPECIES_PAL(BRAVIARY_HISUIAN, gMonShinyPalette_BraviaryHisuian),
+    SPECIES_PAL(TYPHLOSION_HISUIAN, gMonShinyPalette_TyphlosionHisuian),
+    SPECIES_PAL(SAMUROTT_HISUIAN, gMonShinyPalette_SamurottHisuian),
+    SPECIES_PAL(DECIDUEYE_HISUIAN, gMonShinyPalette_DecidueyeHisuian),
+    SPECIES_PAL(AVALUGG_HISUIAN, gMonShinyPalette_AvaluggHisuian),
+    SPECIES_PAL(SLIGGOO_HISUIAN, gMonShinyPalette_SliggooHisuian),
+    SPECIES_PAL(GOODRA_HISUIAN, gMonShinyPalette_GoodraHisuian),
 
     SPECIES_SHINY_PAL(EGG, gMonPalette_Egg),
 };

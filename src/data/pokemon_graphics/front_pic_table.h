@@ -1287,6 +1287,17 @@ const struct CompressedSpriteSheet gMonFrontPicTable[] =
     SPECIES_SPRITE(QWILFISH_HISUIAN, gMonFrontPic_QwilfishHisuian),
     SPECIES_SPRITE(GROWLITHE_HISUIAN, gMonFrontPic_GrowlitheHisuian),
     SPECIES_SPRITE(ARCANINE_HISUIAN, gMonFrontPic_ArcanineHisuian),
+    SPECIES_SPRITE(VOLTORB_HISUIAN, gMonFrontPic_VoltorbHisuian),
+    SPECIES_SPRITE(ELECTRODE_HISUIAN, gMonFrontPic_ElectrodeHisuian),
+    SPECIES_SPRITE(ZORUA_HISUIAN, gMonFrontPic_ZoruaHisuian),
+    SPECIES_SPRITE(ZOROARK_HISUIAN, gMonFrontPic_ZoroarkHisuian),
+    SPECIES_SPRITE(BRAVIARY_HISUIAN, gMonFrontPic_BraviaryHisuian),
+    SPECIES_SPRITE(TYPHLOSION_HISUIAN, gMonFrontPic_TyphlosionHisuian),
+    SPECIES_SPRITE(SAMUROTT_HISUIAN, gMonFrontPic_SamurottHisuian),
+    SPECIES_SPRITE(DECIDUEYE_HISUIAN, gMonFrontPic_DecidueyeHisuian),
+    SPECIES_SPRITE(AVALUGG_HISUIAN, gMonFrontPic_AvaluggHisuian),
+    SPECIES_SPRITE(SLIGGOO_HISUIAN, gMonFrontPic_SliggooHisuian),
+    SPECIES_SPRITE(GOODRA_HISUIAN, gMonFrontPic_GoodraHisuian),
 
     SPECIES_SPRITE(EGG, gMonFrontPic_Egg),
 };

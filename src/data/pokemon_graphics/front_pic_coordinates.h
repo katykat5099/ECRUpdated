@@ -6176,6 +6176,62 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = MON_COORDS_SIZE(60, 60),
         .y_offset = 1,
     },
+    [SPECIES_VOLTORB_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(60, 60),
+        .y_offset = 1,
+    },
+    [SPECIES_ELECTRODE_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(60, 60),
+        .y_offset = 1,
+    },
+    [SPECIES_ZORUA_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(60, 60),
+        .y_offset = 1,
+    },
+    [SPECIES_ZOROARK_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(60, 60),
+        .y_offset = 1,
+    },
+    [SPECIES_BRAVIARY_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(60, 60),
+        .y_offset = 1,
+    },
+    [SPECIES_TYPHLOSION_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(60, 60),
+        .y_offset = 1,
+    },
+    [SPECIES_SAMUROTT_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(60, 60),
+        .y_offset = 1,
+    },
+    [SPECIES_DECIDUEYE_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(60, 60),
+        .y_offset = 1,
+    },
+    [SPECIES_AVALUGG_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(60, 60),
+        .y_offset = 1,
+    },
+    [SPECIES_SLIGGOO_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(60, 60),
+        .y_offset = 1,
+    },
+    [SPECIES_GOODRA_HISUIAN] =
+    {
+        .size = MON_COORDS_SIZE(60, 60),
+        .y_offset = 1,
+    },
+
     // Egg
     [SPECIES_EGG] =
     {

@@ -1287,6 +1287,17 @@ gCryTable::
 	cry Cry_QwilfishHisuian
 	cry Cry_GrowlitheHisuian
 	cry Cry_ArcanineHisuian
+	cry Cry_VoltorbHisuian
+	cry Cry_ElectrodeHisuian
+	cry Cry_ZoruaHisuian
+	cry Cry_ZoroarkHisuian
+	cry Cry_BraviaryHisuian
+	cry Cry_TyphlosionHisuian
+	cry Cry_SamurottHisuian
+	cry Cry_DecidueyeHisuian
+	cry Cry_AvaluggHisuian
+	cry Cry_SliggooHisuian
+	cry Cry_GoodraHisuian
 
 	.align 2
 gCryTable_Reverse::
@@ -2577,3 +2588,14 @@ gCryTable_Reverse::
     cry_reverse Cry_QwilfishHisuian
     cry_reverse Cry_GrowlitheHisuian
     cry_reverse Cry_ArcanineHisuian
+	cry_reverse Cry_VoltorbHisuian
+	cry_reverse Cry_ElectrodeHisuian
+	cry_reverse Cry_ZoruaHisuian
+	cry_reverse Cry_ZoroarkHisuian
+	cry_reverse Cry_BraviaryHisuian
+	cry_reverse Cry_TyphlosionHisuian
+	cry_reverse Cry_SamurottHisuian
+	cry_reverse Cry_DecidueyeHisuian
+	cry_reverse Cry_AvaluggHisuian
+	cry_reverse Cry_SliggooHisuian
+	cry_reverse Cry_GoodraHisuian
