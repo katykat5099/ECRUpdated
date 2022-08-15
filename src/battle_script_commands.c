@@ -3254,10 +3254,10 @@ void SetMoveEffect(bool32 primary, u32 certain)
                 gBattleMons[gBattlerTarget].status2 |= STATUS2_NIGHTMARE;
                 gBattlescriptCurrInstr++;
                 break;
-            case MOVE_EFFECT_SPLINTERS:
+            /*case MOVE_EFFECT_SPLINTERS:
                 gBattleMons[gBattlerTarget].status2 |= STATUS2_SPLINTERS;
                 gBattlescriptCurrInstr++;
-                break;
+                break;*/
             case MOVE_EFFECT_ALL_STATS_UP:
                 if (!NoAliveMonsForEitherParty())
                 {
