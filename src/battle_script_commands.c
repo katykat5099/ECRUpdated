@@ -869,6 +869,7 @@ static const u32 sStatusFlagsForMoveEffects[NUM_MOVE_EFFECTS] =
     [MOVE_EFFECT_PREVENT_ESCAPE] = STATUS2_ESCAPE_PREVENTION,
     [MOVE_EFFECT_NIGHTMARE]      = STATUS2_NIGHTMARE,
     [MOVE_EFFECT_THRASH]         = STATUS2_LOCK_CONFUSE,
+    [MOVE_EFFECT_SPLINTERS]      = STATUS2_SPLINTERS,
 };
 
 static const u8* const sMoveEffectBS_Ptrs[] =
@@ -3026,6 +3027,32 @@ void SetMoveEffect(bool32 primary, u32 certain)
                     SetMoveEffect(FALSE, 0);
                 }
                 break;
+            case MOVE_EFFECT_DIRE_CLAW:
+                if (gBattleMons[gEffectBattler].status1)
+                {
+                    gBattlescriptCurrInstr++;
+                }
+                else
+                {
+                    u8 randStatus = 0;
+                    randStatus = Random() % 3 + 1;
+                    switch(randStatus)
+                    {
+                    case 1:
+                        gBattleScripting.moveEffect = randStatus;
+                        SetMoveEffect(FALSE, 0);
+                        break;
+                    case 2:
+                        gBattleScripting.moveEffect = randStatus;
+                        SetMoveEffect(FALSE, 0);
+                        break;
+                    case 3:
+                        gBattleScripting.moveEffect = randStatus + 2;
+                        SetMoveEffect(FALSE, 0);
+                        break;
+                    }
+                }
+                break;
             case MOVE_EFFECT_CHARGING:
                 gBattleMons[gEffectBattler].status2 |= STATUS2_MULTIPLETURNS;
                 gLockedMoves[gEffectBattler] = gCurrentMove;
@@ -3227,6 +3254,10 @@ void SetMoveEffect(bool32 primary, u32 certain)
                 gBattleMons[gBattlerTarget].status2 |= STATUS2_NIGHTMARE;
                 gBattlescriptCurrInstr++;
                 break;
+            case MOVE_EFFECT_SPLINTERS:
+                gBattleMons[gBattlerTarget].status2 |= STATUS2_SPLINTERS;
+                gBattlescriptCurrInstr++;
+                break;
             case MOVE_EFFECT_ALL_STATS_UP:
                 if (!NoAliveMonsForEitherParty())
                 {
@@ -3314,6 +3345,14 @@ void SetMoveEffect(bool32 primary, u32 certain)
                 break;
             case MOVE_EFFECT_RECOIL_HP_25: // Struggle
                 gBattleMoveDamage = (gBattleMons[gEffectBattler].maxHP) / 4;
+                if (gBattleMoveDamage == 0)
+                    gBattleMoveDamage = 1;
+
+                BattleScriptPush(gBattlescriptCurrInstr + 1);
+                gBattlescriptCurrInstr = BattleScript_MoveEffectRecoil;
+                break;
+            case MOVE_EFFECT_RECOIL_HP_50: // Struggle
+                gBattleMoveDamage = (gBattleMons[gEffectBattler].maxHP) / 2;
                 if (gBattleMoveDamage == 0)
                     gBattleMoveDamage = 1;
 

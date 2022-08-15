@@ -631,7 +631,9 @@
 #define STRINGID_SPECIESCLAUSECAPTUREBLOCKED          627
 #define STRINGID_SAMESPECIESCAPTUREBLOCKED            628
 
-#define BATTLESTRINGS_COUNT                           629
+#define STRINGID_PKMNAFFLICTEDBYSPLINTERS             629
+
+#define BATTLESTRINGS_COUNT                           630
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

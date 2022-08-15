@@ -2978,6 +2978,70 @@ static const u8 sEerieSpellDescription[] = _(
     "Attacks with psychic power.\n"
     "Foe's last move has 3 PP cut.");
 
+static const u8 sBarbBarrageDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sVictoryDanceDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sWaveCrashDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sDireClawDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sHeadlongRushDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sStoneAxeDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sPsyshieldBashDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sTripleArrowsDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sMountainGaleDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sShelterDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sEsperWingDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sBitterMaliceDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sCeaselessEdgeDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sInfernalParadeDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sChloroblastDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sRagingFuryDescription[] = _(
+    "Attacks with psychic power.\n"
+    "Foe's last move has 3 PP cut.");
+
 static const u8 sNotDoneYetDescription[] = _(
     "Not done yet.");
 
@@ -3740,4 +3804,20 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_GLACIAL_LANCE - 1] = sGlacialLanceDescription,
     [MOVE_ASTRAL_BARRAGE - 1] = sAstralBarrageDescription,
     [MOVE_EERIE_SPELL - 1] = sEerieSpellDescription,
+    [MOVE_BARB_BARRAGE - 1] = sBarbBarrageDescription,
+    [MOVE_VICTORY_DANCE - 1] = sVictoryDanceDescription,
+    [MOVE_WAVE_CRASH - 1] = sWaveCrashDescription,
+    [MOVE_DIRE_CLAW - 1] = sDireClawDescription,
+    [MOVE_HEADLONG_RUSH - 1] = sHeadlongRushDescription,
+    [MOVE_STONE_AXE - 1] = sStoneAxeDescription,
+    [MOVE_PSYSHIELD_BASH - 1] = sPsyshieldBashDescription,
+    [MOVE_TRIPLE_ARROWS - 1] = sTripleArrowsDescription,
+    [MOVE_MOUNTAIN_GALE - 1] = sMountainGaleDescription,
+    [MOVE_SHELTER - 1] = sShelterDescription,
+    [MOVE_ESPER_WING - 1] = sEsperWingDescription,
+    [MOVE_BITTER_MALICE - 1] = sBitterMaliceDescription,
+    [MOVE_CEASELESS_EDGE - 1] = sCeaselessEdgeDescription,
+    [MOVE_INFERNAL_PARADE - 1] = sInfernalParadeDescription,
+    [MOVE_CHLOROBLAST - 1] = sChloroblastDescription,
+    [MOVE_RAGING_FURY - 1] = sRagingFuryDescription,
 };

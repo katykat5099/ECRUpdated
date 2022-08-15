@@ -2220,6 +2220,20 @@ static u32 GetNightmareDamage(u8 battlerId)
     return damage;
 }
 
+static u32 GetSplintersDamage(u8 battlerId)
+{
+    u32 abc = 0;
+    u32 defg = 0;
+    u32 damage = 0;
+    if (gBattleMons[battlerId].status2 & STATUS2_SPLINTERS)
+    {
+        damage = gBattleMons[battlerId].maxHP / 4;
+        if (damage == 0)
+            damage = 1;
+    }
+    return damage;
+}
+
 static u32 GetCurseDamage(u8 battlerId)
 {
     u32 damage = 0;
