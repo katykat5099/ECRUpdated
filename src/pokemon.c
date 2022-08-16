@@ -12728,6 +12728,18 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                         }
                         break;
                     }
+                    case 8: // ITEM4_EVO_STONE
+                        {
+                            u16 targetSpecies = GetEvolutionTargetSpecies(mon, EVO_MODE_ITEM_USE, item, NULL);
+
+                            if (targetSpecies != SPECIES_NONE)
+                            {
+                                BeginEvolutionScene(mon, targetSpecies, FALSE, partyIndex);
+                                return FALSE;
+                            }
+                        }
+                        break;
+                    }
                 }
                 temp1++;
                 effectFlags >>= 1;
@@ -13382,8 +13394,13 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                 if (gEvolutionTable[species][i].param == evolutionItem)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
+            case EVO_ITEM_ITEM:
+                if (gEvolutionTable[species][i].param == evolutionItem)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
             case EVO_ITEM_FEMALE:
-                if (GetMonGender(mon) == MON_FEMALE && gEvolutionTable[species][i].param == evolutionItem)
+                if (GetMonGender(mon) == MON_FEMALE && gEvolutionTable[species][i].param == evolutionItem
+                    && gEvolutionTable[species][i].param2 == heldItem)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
             case EVO_ITEM_MALE:
