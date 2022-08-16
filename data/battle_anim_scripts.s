@@ -14696,17 +14696,17 @@ Move_CEASELESS_EDGE::
 	createsprite gNightSlashRightSpriteTemplate, ANIM_TARGET, 2, 1, 8, 0
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
-    delay 8
+    delay 12
     createsprite gNightSlashLeftSpriteTemplate, ANIM_TARGET, 2, 1, -8, 0
     createsprite gNightSlashLeftSpriteTemplate, ANIM_TARGET, 2, 1, 8, 0
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
     playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
-    delay 8
+    delay 12
     createsprite gNightSlashRightSpriteTemplate, ANIM_TARGET, 2, 1, -8, 0
     createsprite gNightSlashRightSpriteTemplate, ANIM_TARGET, 2, 1, 8, 0
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
     playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
-    delay 8
+    delay 12
     createsprite gNightSlashLeftSpriteTemplate, ANIM_TARGET, 2, 1, -8, 0
     createsprite gNightSlashLeftSpriteTemplate, ANIM_TARGET, 2, 1, 8, 0
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
