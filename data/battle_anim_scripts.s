@@ -14481,7 +14481,6 @@ Move_STONE_AXE::
 	monbg ANIM_DEF_PARTNER
     setalpha 12, 8
     delay 1
-	playsewithpan SE_M_CUT, SOUND_PAN_TARGET
 	createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 40, -32, 0
     playsewithpan SE_M_ROCK_THROW, SOUND_PAN_TARGET
     createsprite gRockFragmentSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 20, 24, 14, 2
