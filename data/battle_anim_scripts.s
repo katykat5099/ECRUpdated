@@ -14665,6 +14665,7 @@ Move_BITTER_MALICE::
 	createvisualtask AnimTask_DestinyBondWhiteShadow, 5, 0, 48
 	playsewithpan SE_M_CONFUSE_RAY, SOUND_PAN_ATTACKER
 	delay 48
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
 	call BlueFlareFireSpin
 	call BlueFlareFireSpin
 	playsewithpan SE_M_NIGHTMARE, SOUND_PAN_TARGET
