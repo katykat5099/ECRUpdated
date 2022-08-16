@@ -14535,6 +14535,7 @@ Move_PSYSHIELD_BASH::
     createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, 1, 0, 7
 	clearmonbg ANIM_ATK_PARTNER
 	clearmonbg ANIM_DEF_PARTNER
+	waitforvisualfinish
 	blendoff
 	call UnsetPsychicBg
 	end
