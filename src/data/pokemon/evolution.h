@@ -47,7 +47,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_POLIWAG]               = {{EVO_LEVEL, 25, SPECIES_POLIWHIRL}},
     [SPECIES_POLIWHIRL]             = {{EVO_ITEM, ITEM_WATER_STONE, SPECIES_POLIWRATH},
                                        {EVO_TRADE_ITEM, ITEM_KINGS_ROCK, SPECIES_POLITOED},
-                                       {EVO_ITEM_ITEM, ITEM_LINK_CABLE, ITEM_KINGS_ROCK, SPECIES_POLITOED}},
+                                       {EVO_ITEM, ITEM_LINK_CABLE, SPECIES_POLITOED}},
     [SPECIES_ABRA]                  = {{EVO_LEVEL, 16, SPECIES_KADABRA}},
     [SPECIES_KADABRA]               = {{EVO_TRADE, 0, SPECIES_ALAKAZAM},
                                        {EVO_ITEM, ITEM_LINK_CABLE, SPECIES_ALAKAZAM}},

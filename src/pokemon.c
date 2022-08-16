@@ -13092,7 +13092,7 @@ u8 GetNatureFromPersonality(u32 personality)
     return personality % NUM_NATURES;
 }
 
-u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, struct Pokemon *tradePartner, u16 secondaryEvolutionItem)
+u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, struct Pokemon *tradePartner)
 {
     int i, j;
     u16 targetSpecies = 0;
@@ -13108,7 +13108,6 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
     u16 partnerSpecies;
     u16 partnerHeldItem;
     u8 partnerHoldEffect;
-    secondaryEvolutionItem = heldItem;
 
     //tx_randomizer_and_challenges
     if (EvolutionBlockedByEvoLimit(species)) //No Evos already previously checked
@@ -13381,12 +13380,6 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
             {
             case EVO_ITEM:
                 if (gEvolutionTable[species][i].param == evolutionItem)
-                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
-                break;
-            case EVO_ITEM_ITEM:
-                if (gEvolutionTable[species][i].param == evolutionItem && gEvolutionTable[species][i].param == secondaryEvolutionItem)
-                    heldItem = ITEM_NONE;
-                    SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
             case EVO_ITEM_FEMALE:
