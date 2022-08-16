@@ -14541,7 +14541,7 @@ Move_PSYSHIELD_BASH::
 	end
 
 Move_TRIPLE_ARROWS::
-    loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT
+    loadspritegfx ANIM_TAG_RAZOR_LEAF
 	loadspritegfx ANIM_TAG_IMPACT
 	monbg ANIM_DEF_PARTNER
 	splitbgprio ANIM_TARGET
@@ -14582,9 +14582,8 @@ Move_TRIPLE_ARROWS::
     setarg 7, 0xFFFF
     waitbgfadein
     playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
-    createsprite gAuraSphereBlast, ANIM_TARGET, 1, 0
-    createsprite gAuraSphereBlast, ANIM_TARGET, 2, 0
-    createsprite gAuraSphereBlast, ANIM_TARGET, 3, 0
+	createsprite gRazorLeafCutterSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, 20, 1
+	createsprite gRazorLeafCutterSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, -20, 1
     delay 20
     playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 8, 1
