@@ -14696,29 +14696,31 @@ Move_CEASELESS_EDGE::
 	createsprite gNightSlashRightSpriteTemplate, ANIM_TARGET, 2, 1, 8, 0
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
-    delay 4
+    delay 8
     createsprite gNightSlashLeftSpriteTemplate, ANIM_TARGET, 2, 1, -8, 0
     createsprite gNightSlashLeftSpriteTemplate, ANIM_TARGET, 2, 1, 8, 0
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
     playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
-    delay 4
+    delay 8
     createsprite gNightSlashRightSpriteTemplate, ANIM_TARGET, 2, 1, -8, 0
     createsprite gNightSlashRightSpriteTemplate, ANIM_TARGET, 2, 1, 8, 0
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
     playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
-    delay 4
+    delay 8
     createsprite gNightSlashLeftSpriteTemplate, ANIM_TARGET, 2, 1, -8, 0
     createsprite gNightSlashLeftSpriteTemplate, ANIM_TARGET, 2, 1, 8, 0
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
     playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
     delay 30
+    playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
     createsprite gComplexPaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, 31, 3, 1, RGB_WHITE, 10, 0, 10
     createsprite gCrossImpactSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 1, 20
-    createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
-    playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
+    createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 7, 0, 9, 1
 	waitforvisualfinish
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 0, 1, 3, 12, 0, RGB_BLACK
 	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	blendoff
 	end
 
 Move_INFERNAL_PARADE::
