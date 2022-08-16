@@ -14582,9 +14582,9 @@ Move_TRIPLE_ARROWS::
     setarg 7, 0xFFFF
     waitbgfadein
     playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
-    createsprite gAuraSphereBlast, ANIM_ATTACKER, 3, 50, -50, 60, 0, 55, 20, 1
-    createsprite gAuraSphereBlast, ANIM_ATTACKER, 3, 20, -10, 20, 0, 22, -20, 1
-    createsprite gAuraSphereBlast, ANIM_ATTACKER, 3, 5, 20, 5, 0, 5, -40, 1
+    createsprite gAuraSphereBlast, ANIM_TARGET, 1, 0
+    createsprite gAuraSphereBlast, ANIM_TARGET, 2, 0
+    createsprite gAuraSphereBlast, ANIM_TARGET, 3, 0
     delay 20
     playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 8, 1
