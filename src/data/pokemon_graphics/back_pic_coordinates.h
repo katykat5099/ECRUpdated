@@ -4513,7 +4513,7 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_URSALUNA] =
     {
         .size = MON_COORDS_SIZE(56, 48),
-        .y_offset = 10,
+        .y_offset = 14,
     },
     [SPECIES_BASCULEGION] =
     {
@@ -4528,7 +4528,7 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_OVERQWIL] =
     {
         .size = MON_COORDS_SIZE(56, 48),
-        .y_offset = 19,
+        .y_offset = 7,
     },
     // Megas
     [SPECIES_VENUSAUR_MEGA] =
@@ -6179,22 +6179,22 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_VOLTORB_HISUIAN] =
     {
         .size = MON_COORDS_SIZE(56, 55),
-        .y_offset = 12,
+        .y_offset = 14,
     },
     [SPECIES_ELECTRODE_HISUIAN] =
     {
         .size = MON_COORDS_SIZE(56, 55),
-        .y_offset = 12,
+        .y_offset = 7,
     },
     [SPECIES_ZORUA_HISUIAN] =
     {
         .size = MON_COORDS_SIZE(56, 55),
-        .y_offset = 12,
+        .y_offset = 1,
     },
     [SPECIES_ZOROARK_HISUIAN] =
     {
         .size = MON_COORDS_SIZE(56, 55),
-        .y_offset = 12,
+        .y_offset = 0,
     },
     [SPECIES_BRAVIARY_HISUIAN] =
     {
@@ -6209,17 +6209,17 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_SAMUROTT_HISUIAN] =
     {
         .size = MON_COORDS_SIZE(56, 55),
-        .y_offset = 12,
+        .y_offset = 10,
     },
     [SPECIES_DECIDUEYE_HISUIAN] =
     {
         .size = MON_COORDS_SIZE(56, 55),
-        .y_offset = 12,
+        .y_offset = 15,
     },
     [SPECIES_AVALUGG_HISUIAN] =
     {
         .size = MON_COORDS_SIZE(56, 55),
-        .y_offset = 12,
+        .y_offset = 17,
     },
     [SPECIES_SLIGGOO_HISUIAN] =
     {
