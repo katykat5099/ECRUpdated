@@ -4430,6 +4430,16 @@
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/MegaStoneCave/border.bin",
       "blockdata_filepath": "data/layouts/MegaStoneCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLOWER_AREA",
+      "name": "FlowerArea_Layout",
+      "width": 10,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/FlowerArea/border.bin",
+      "blockdata_filepath": "data/layouts/FlowerArea/map.bin"
     }
   ]
 }

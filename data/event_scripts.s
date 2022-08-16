@@ -1062,3 +1062,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route135/scripts.inc"
 
 	.include "data/maps/MegaStoneCave/scripts.inc"
+
+	.include "data/maps/FlowerArea/scripts.inc"
