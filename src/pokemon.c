@@ -13384,7 +13384,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                 break;
             case EVO_ITEM_ITEM:
                 if (gEvolutionTable[species][i].param == evolutionItem
-                    && gEvolutionTable[species][i].param2 == heldItem))
+                    && gEvolutionTable[species][i].param2 == heldItem)
                     heldItem = ITEM_NONE;
                     SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
