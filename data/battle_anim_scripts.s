@@ -14755,6 +14755,14 @@ Move_INFERNAL_PARADE::
 	end
 
 Move_CHLOROBLAST::
+    loadspritegfx ANIM_TAG_ORBS
+    monbg ANIM_ATK_PARTNER
+    setalpha 12, 8
+    createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_ATTACKER, 1, 4, 0, 11, RGB(31, 31, 11)
+    playsewithpan SE_M_MEGA_KICK, SOUND_PAN_ATTACKER
+    call SolarBeamAbsorbEffect
+    waitforvisualfinish
+    clearmonbg ANIM_ATK_PARTNER
 	call SetSolarBeamBg
 	panse SE_M_SOLAR_BEAM, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
 	createvisualtask AnimTask_CreateSmallSolarBeamOrbs, 5
