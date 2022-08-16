@@ -14631,10 +14631,8 @@ Move_ESPER_WING::
 	monbg ANIM_ATK_PARTNER
 	createvisualtask AnimTask_InvertScreenColor, 2, 0x1 | 0x2 | 0x4
     createsprite gThinRingShrinkingSpriteTemplate, ANIM_ATTACKER, 40, 0, 0, 0, 0
-    SE_M_SUPERSONIC, SOUND_PAN_ATTACKER
 	delay 14
 	createsprite gThinRingShrinkingSpriteTemplate, ANIM_ATTACKER, 40, 0, 0, 0, 0
-	SE_M_SUPERSONIC, SOUND_PAN_ATTACKER
     delay 14
     createvisualtask AnimTask_InvertScreenColor, 2, 0x1 | 0x2 | 0x4
 	clearmonbg ANIM_ATK_PARTNER
