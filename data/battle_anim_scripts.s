@@ -14649,36 +14649,27 @@ Move_ESPER_WING::
 	end
 
 Move_BITTER_MALICE::
-	loadspritegfx ANIM_TAG_IMPACT
-	loadspritegfx ANIM_TAG_WHITE_SHADOW @Destiny Bond
-	loadspritegfx ANIM_TAG_QUICK_GUARD_HAND @Black Colour
-	loadspritegfx ANIM_TAG_POISON_BUBBLE @Poison
-	loadspritegfx ANIM_TAG_HANDS_AND_FEET
+    loadspritegfx ANIM_TAG_WHITE_SHADOW
+	loadspritegfx ANIM_TAG_PURPLE_FLAME
 	monbg ANIM_ATTACKER
-	launchtask AnimTask_BlendBattleAnimPal 0xa 0x5 ANIM_PAL_BG 0x1 0x0 0x7 0x0000
+	splitbgprio_all
+	fadetobg BG_DARK
+	playsewithpan SE_M_PSYBEAM, SOUND_PAN_ATTACKER
+	waitbgfadein
+	createvisualtask AnimTask_GrudgeFlames, 3
+	loopsewithpan SE_M_EMBER, SOUND_PAN_ATTACKER, 16, 4
+	delay 10
+	delay 80
+	createvisualtask AnimTask_DestinyBondWhiteShadow, 5, 0, 48
+	playsewithpan SE_M_CONFUSE_RAY, SOUND_PAN_ATTACKER
+	delay 48
+	call BlueFlareFireSpin
+	call BlueFlareFireSpin
+	playsewithpan SE_M_NIGHTMARE, SOUND_PAN_TARGET
 	waitforvisualfinish
-	playsewithpan SE_M_FAINT_ATTACK, SOUND_PAN_ATTACKER
-	launchtask AnimTask_TranslateMonEllipticalRespectSide 0x2 0x5 0x0 0x12 0x6 0x1 0x3
-	launchtask AnimTask_AttackerFadeToInvisible 0x2 0x1 0x1
-	waitforvisualfinish
+	restorebg
+	waitbgfadein
 	clearmonbg ANIM_ATTACKER
-	invisible ANIM_ATTACKER
-	delay 0x1
-	launchtask AnimTask_DestinyBondWhiteShadow 0x5 0x2 0x0 0x30
-	delay 0x30
-	launchtask AnimTask_BlendColorCycle 0x2 0x6 ANIM_PAL_DEF 0x2 0x2 0x0 0xF 0x0
-	createsprite gShadowSneakImpactSpriteTemplate, ANIM_TARGET, 2, 0xfff6, 0xfff6, 0x0
-	call ShadowSneakMovement
-	createsprite gShadowSneakImpactSpriteTemplate, ANIM_TARGET, 2, 0xa, 0x14, 0x0
-	call ShadowSneakMovement
-	createsprite gShadowSneakImpactSpriteTemplate, ANIM_TARGET, 2, 0xfffb, 0xa, 0x0
-	call ShadowSneakMovement
-	createsprite gShadowSneakImpactSpriteTemplate, ANIM_TARGET, 2, 0x11, 0xfff4, 0x0
-	call ShadowSneakMovement
-	waitforvisualfinish
-	visible ANIM_ATTACKER
-	launchtask AnimTask_BlendBattleAnimPal 0xa 0x5 ANIM_PAL_BG 0x1 0x7 0x0 0x0000
-	waitforvisualfinish
 	end
 
 Move_CEASELESS_EDGE::
