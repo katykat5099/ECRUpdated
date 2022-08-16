@@ -3163,6 +3163,18 @@ const struct Item gItems[] =
         .flingPower = 10,
     },
 
+    [ITEM_LINK_CABLE] =
+    {
+        .name = _("Link Cable"),
+        .itemId = ITEM_LINK_CABLE,
+        .price = 500,
+        .description = sRibbonSweetDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+    },
+
     [ITEM_EVERSTONE] =
     {
         .name = _("Everstone"),

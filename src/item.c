@@ -1419,6 +1419,7 @@ static const u16 sRandomValidItems[] =
     ITEM_FLOWER_SWEET,
     ITEM_STAR_SWEET,
     ITEM_RIBBON_SWEET,
+    ITEM_LINK_CABLE,
     #endif
     ITEM_EVERSTONE,
     // Nectars
