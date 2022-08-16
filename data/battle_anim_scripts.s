@@ -14501,39 +14501,28 @@ Move_STONE_AXE::
 
 Move_PSYSHIELD_BASH::
 	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT
-	loadspritegfx ANIM_TAG_WATER_IMPACT
-	monbg ANIM_DEF_PARTNER
-	monbg ANIM_ATTACKER
-	call SetPsychicBackground
-	setalpha 12, 8
-	createsprite gSimplePaletteBlendSpriteTemplate, 2, 5, 1, 2, 0, 4, 0
+	monbg ANIM_ATK_PARTNER
+	fadetobg BG_PSYCHIC
+	waitbgfadeout
+	createvisualtask AnimTask_FadeScreenToWhite, 5
+	waitbgfadein
+	delay 6
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_BG, 2, 8, 0, 10, RGB_BLACK
+	delay 0
+	splitbgprio ANIM_ATTACKER
+	setalpha 8, 8
+	delay 10
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATTACKER, 3, 0, 240, 0
+	loopsewithpan SE_M_PSYBEAM2, SOUND_PAN_ATTACKER, 14, 10
+	createsprite gPsychoBoostOrbSpriteTemplate, ANIM_ATTACKER, 2
+	delay 110
+	loopsewithpan SE_M_PSYBEAM2, SOUND_PAN_ATTACKER, 7, 10
 	waitforvisualfinish
-	createsprite gZenHeadbuttSpriteTemplate, 66, 1, 0
-	delay 18,
-	playsewithpan SE_M_MORNING_SUN, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, -8, 1, 24, 1
+	playsewithpan SE_M_LEER, SOUND_PAN_TARGET
 	waitforvisualfinish
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_ATTACKER, 0, 2, 0, 8, RGB(31, 23, 0)
-	waitforvisualfinish
-	delay 2,
-	playsewithpan SE_M_HEADBUTT, SOUND_PAN_ATTACKER
-	loadspritegfx ANIM_TAG_IMPACT
-	createsprite gBowMonSpriteTemplate, 2, 1, 0
-	playsewithpan SE_M_HEADBUTT, SOUND_PAN_ATTACKER
-	waitforvisualfinish
-	delay 2
-	createsprite gBowMonSpriteTemplate, 2, 1, 1
-	waitforvisualfinish
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 5, 0, 15, 1
-	createvisualtask AnimTask_ScaleMonAndRestore, 5, -6, -6, 15, ANIM_TARGET, 1
-	createsprite gBowMonSpriteTemplate, 2, 1, 2
-	createsprite gAquaTailHitSpriteTemplate, 131, 4, 0, 0, 1, 1
-	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
-	waitforvisualfinish
-	createsprite gSimplePaletteBlendSpriteTemplate, 2, 5, 1, 4, 4, 0, 0
-	clearmonbg ANIM_ATTACKER
-	clearmonbg ANIM_DEF_PARTNER
+	clearmonbg ANIM_ATK_PARTNER
 	blendoff
-	delay 1
 	call UnsetPsychicBg
 	end
 
