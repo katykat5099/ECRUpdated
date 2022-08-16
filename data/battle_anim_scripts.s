@@ -14541,8 +14541,7 @@ Move_PSYSHIELD_BASH::
 	end
 
 Move_TRIPLE_ARROWS::
-    loadspritegfx ANIM_TAG_LEAF
-	loadspritegfx ANIM_TAG_RAZOR_LEAF
+    loadspritegfx ANIM_TAG_SPIRIT_ARROW
 	loadspritegfx ANIM_TAG_IMPACT
 	monbg ANIM_DEF_PARTNER
 	splitbgprio ANIM_TARGET
@@ -14579,8 +14578,9 @@ Move_TRIPLE_ARROWS::
 	delay 4
 	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, 1, 0, 6
     playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
-    createsprite gRazorLeafCutterSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, 20, 1
-    createsprite gRazorLeafCutterSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, -20, 1
+    createsprite gSpiritShackleArrowTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, 20, 1
+    createsprite gSpiritShackleArrowTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, -20, 1
+    createsprite gSpiritShackleArrowTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, -40, 1
     delay 20
     playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 8, 1
