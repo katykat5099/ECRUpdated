@@ -14440,10 +14440,18 @@ Move_DIRE_CLAW::
 Move_HEADLONG_RUSH::
 	loadspritegfx ANIM_TAG_SMALL_EMBER
 	loadspritegfx ANIM_TAG_FIRE_PLUME
-	createvisualtask AnimTask_HorizontalShake, 3, 5, 10, 50
-	createvisualtask AnimTask_HorizontalShake, 3, 1, 10, 50
-	playsewithpan SE_M_EARTHQUAKE, SOUND_PAN_TARGET
-	delay 40
+	loadspritegfx ANIM_TAG_IMPACT
+	createsprite gBowMonSpriteTemplate, ANIM_ATTACKER, 2, 0
+	playsewithpan SE_M_HEADBUTT, SOUND_PAN_ATTACKER
+	waitforvisualfinish
+	delay 2
+    createsprite gBowMonSpriteTemplate, ANIM_ATTACKER, 2, 1
+    waitforvisualfinish
+    createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_ATTACKER, 2, 0, 4, 1
+    createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 5, 0, 6, 1
+    createsprite gBowMonSpriteTemplate, ANIM_ATTACKER, 2, 2
+    createsprite gFlashingHitSplatSpriteTemplate, ANIM_TARGET, 3, 0, 0, ANIM_TARGET, 1
+    playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
 	loopsewithpan 145, SOUND_PAN_TARGET 11, 3
 	createvisualtask AnimTask_ShakeMon 5, 5, ANIM_TARGET, 0, 3, 25, 1
 	createsprite gDragonRageFirePlumeSpriteTemplate, 194, 3, 1, 5, 0
