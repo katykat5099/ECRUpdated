@@ -14647,8 +14647,6 @@ Move_ESPER_WING::
 	delay 2
 	createsprite gPsychoCutSpriteTemplate, 130, 5, 20, 0, -8, 0, 20
 	waitforvisualfinish
-	createvisualtask AnimTask_BlendBattleAnimPal, 1, 1, 2, 4,  0, RGB_BLACK
-	createvisualtask AnimTask_BlendBattleAnimPal, 1, 2, 2, 10, 0, RGB(20, 12, 23)
 	clearmonbg ANIM_TARGET
 	blendoff
 	waitforvisualfinish
