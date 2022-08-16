@@ -14604,6 +14604,7 @@ Move_MOUNTAIN_GALE::
 	call SetHighSpeedBg
 	waitforvisualfinish
 	createsprite gIcicleSpearSpriteTemplate, ANIM_ATTACKER, 2, 20, -8, -8, -8, 20, -32
+	delay 4
 	panse SE_M_BLIZZARD, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
     createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 3, -8, -8, ANIM_TARGET, 2
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 3, 0, 2, 1
@@ -14614,6 +14615,8 @@ Move_MOUNTAIN_GALE::
 	delay 20
 	call UnsetHighSpeedBg
 	clearmonbg ANIM_DEF_PARTNER
+	clearmonbg ANIM_TARGET
+	blendoff
 	end
 
 Move_SHELTER::
