@@ -14388,6 +14388,7 @@ Move_WAVE_CRASH::
 	setalpha 12, 8
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 0, 2, 23, 1
 	delay 5
+	createvisualtask AnimTask_InvertScreenColor, 2, 0x1 | 0x2 | 0x4
 	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
 	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 10, 10, 25, ANIM_ATTACKER
 	delay 4
@@ -14405,9 +14406,7 @@ Move_WAVE_CRASH::
 	delay 4
 	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
 	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, 25, 20, 25, ANIM_ATTACKER
-	delay 2
-	createvisualtask AnimTask_CreateSurfWave, 2, ANIM_SURF_PAL_SURF
-	delay 2
+	delay 4
 	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_ATTACKER
 	createsprite gSmallBubblePairSpriteTemplate, ANIM_ATTACKER, 2, -20, 20, 25, ANIM_ATTACKER
 	delay 4
@@ -14419,6 +14418,7 @@ Move_WAVE_CRASH::
 	delay 6
 	call RisingWaterHitEffect
 	waitforvisualfinish
+	createvisualtask AnimTask_InvertScreenColor, 2, 0x1 | 0x2 | 0x4
 	clearmonbg ANIM_DEF_PARTNER
 	blendoff
 	end
