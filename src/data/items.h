@@ -3165,7 +3165,7 @@ const struct Item gItems[] =
 
     [ITEM_LINK_CABLE] =
     {
-        .name = _("Link Cable"),
+        .name = _("Linking Cord"),
         .itemId = ITEM_LINK_CABLE,
         .price = 500,
         .description = sRibbonSweetDesc,
