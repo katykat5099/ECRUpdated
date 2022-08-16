@@ -355,6 +355,9 @@ LilycoveCity_DepartmentStore_4F_Pokemart_EvolutionStones:
 	.2byte ITEM_WHIPPED_DREAM
 	.2byte ITEM_SACHET
 	.2byte ITEM_OVAL_STONE
+	.2byte ITEM_BLACK_AUGURITE
+	.2byte ITEM_PEAT_BLOCK
+	.2byte ITEM_LINK_CABLE
 	.2byte ITEM_NONE
 	release
 	end
