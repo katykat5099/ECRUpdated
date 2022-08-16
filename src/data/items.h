@@ -3175,6 +3175,30 @@ const struct Item gItems[] =
         .flingPower = 10,
     },
 
+    [ITEM_BLACK_AUGURITE] =
+    {
+        .name = _("BlckAugurite"),
+        .itemId = ITEM_BLACK_AUGURITE,
+        .price = 500,
+        .description = sRibbonSweetDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 10,
+    },
+
+    [ITEM_PEAT_BLOCK] =
+    {
+        .name = _("Peat Block"),
+        .itemId = ITEM_PEAT_BLOCK,
+        .price = 500,
+        .description = sRibbonSweetDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 10,
+    },
+
     [ITEM_EVERSTONE] =
     {
         .name = _("Everstone"),
