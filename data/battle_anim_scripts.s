@@ -14651,6 +14651,8 @@ Move_ESPER_WING::
 Move_BITTER_MALICE::
     loadspritegfx ANIM_TAG_WHITE_SHADOW
 	loadspritegfx ANIM_TAG_PURPLE_FLAME
+	loadspritegfx ANIM_TAG_SMALL_EMBER
+    loadspritegfx ANIM_TAG_METAL_BITS
 	monbg ANIM_ATTACKER
 	splitbgprio_all
 	fadetobg BG_DARK
