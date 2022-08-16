@@ -14556,20 +14556,20 @@ Move_TRIPLE_ARROWS::
 	delay 4
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 6, 1
 	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, 5, 28, ANIM_TARGET, 1
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, 5, -52, ANIM_TARGET, 1
 	delay 1
 	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, 0, 8, ANIM_TARGET, 1
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, 0, -32, ANIM_TARGET, 1
 	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
 	delay 1
 	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, -5, -12, ANIM_TARGET, 1
 	delay 1
 	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, -15, -32, ANIM_TARGET, 1
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, -15, 8, ANIM_TARGET, 1
 	delay 1
 	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, -28, -52, ANIM_TARGET, 1
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, -28, 28, ANIM_TARGET, 1
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 1, -26, 16, 1, 4
 	delay 4
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 0, 3, 6, 1
@@ -14582,9 +14582,9 @@ Move_TRIPLE_ARROWS::
     setarg 7, 0xFFFF
     waitbgfadein
     playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
-    createsprite gAuraSphereBlast, ANIM_TARGET, 3, 20, -10, 20, 0, 22, 20, 1
-    createsprite gAuraSphereBlast, ANIM_TARGET, 3, 20, -10, 20, 0, 22, -20, 1
-    createsprite gAuraSphereBlast, ANIM_TARGET, 3, 20, -10, 20, 0, 22, -40, 1
+    createsprite gAuraSphereBlast, ANIM_ATTACKER, 3, 50, -50, 60, 0, 55, 20, 1
+    createsprite gAuraSphereBlast, ANIM_ATTACKER, 3, 20, -10, 20, 0, 22, -20, 1
+    createsprite gAuraSphereBlast, ANIM_ATTACKER, 3, 5, 20, 5, 0, 5, -40, 1
     delay 20
     playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 8, 1
