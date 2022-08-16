@@ -14626,19 +14626,27 @@ Move_SHELTER::
 	end
 
 Move_ESPER_WING::
-	loadspritegfx ANIM_TAG_SPIRAL
+    loadspritegfx ANIM_TAG_THIN_RING
 	loadspritegfx ANIM_TAG_PSYCHO_CUT
 	monbg ANIM_ATK_PARTNER
-	createsprite gPsychoCutSpiralSpriteTemplate, 2, 4, 0, 0, 0, 0
-	createvisualtask AnimTask_BlendBattleAnimPal, 1, 1, 2, 0,  4, RGB_BLACK
-	createvisualtask AnimTask_BlendBattleAnimPal, 1, 2, 2, 0, 10, RGB(20, 12, 23)
-	delay 30
+	createvisualtask AnimTask_InvertScreenColor, 2, 0x1 | 0x2 | 0x4
+    createsprite gThinRingShrinkingSpriteTemplate, ANIM_ATTACKER, 40, 0, 0, 0, 0
+    SE_M_SUPERSONIC, SOUND_PAN_ATTACKER
+	delay 14
+	createsprite gThinRingShrinkingSpriteTemplate, ANIM_ATTACKER, 40, 0, 0, 0, 0
+	SE_M_SUPERSONIC, SOUND_PAN_ATTACKER
+    delay 14
+    createvisualtask AnimTask_InvertScreenColor, 2, 0x1 | 0x2 | 0x4
 	clearmonbg ANIM_ATK_PARTNER
 	waitforvisualfinish
 	monbg ANIM_TARGET
 	splitbgprio ANIM_TARGET
 	setalpha 12, 8
 	playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER,
+	createsprite gPsychoCutSpriteTemplate, 130, 5, 20, 0, -8, 0, 20
+	delay 2
+	createsprite gPsychoCutSpriteTemplate, 130, 5, 20, 0, -8, 0, 20
+	delay 2
 	createsprite gPsychoCutSpriteTemplate, 130, 5, 20, 0, -8, 0, 20
 	waitforvisualfinish
 	createvisualtask AnimTask_BlendBattleAnimPal, 1, 1, 2, 4,  0, RGB_BLACK
