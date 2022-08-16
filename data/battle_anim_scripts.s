@@ -14426,8 +14426,6 @@ Move_DIRE_CLAW::
 	loadspritegfx ANIM_TAG_CROSS_IMPACT
 	monbg ANIM_TARGET
 	setalpha 12, 8
-	createvisualtask AnimTask_MetallicShine, 5, 1, 1, RGB(24, 6, 23)
-	waitforvisualfinish
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
 	createsprite gComplexPaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, 31, 3, 1, RGB_WHITE, 10, 0, 10
 	createsprite gCrossImpactSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 1, 20
@@ -14597,12 +14595,18 @@ Move_TRIPLE_ARROWS::
 
 Move_MOUNTAIN_GALE::
 	loadspritegfx ANIM_TAG_ICE_CRYSTALS
+	loadspritegfx ANIM_TAG_ICICLE_SPEAR
+    loadspritegfx ANIM_TAG_IMPACT
 	monbg ANIM_DEF_PARTNER
+	monbg ANIM_TARGET
+	splitbgprio ANIM_TARGET
+    setalpha 12, 8
 	call SetHighSpeedBg
 	waitforvisualfinish
+	createsprite gIcicleSpearSpriteTemplate, ANIM_ATTACKER, 2, 20, -8, -8, -8, 20, -32
 	panse SE_M_BLIZZARD, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
-	call BlizzardIceCrystals
-	call BlizzardIceCrystals
+    createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 3, -8, -8, ANIM_TARGET, 2
+    createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 3, 0, 2, 1
 	playsewithpan SE_M_BLIZZARD2, SOUND_PAN_TARGET
 	waitforvisualfinish
 	call IceCrystalEffectLong
