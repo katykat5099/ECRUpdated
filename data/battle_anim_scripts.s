@@ -14541,7 +14541,7 @@ Move_PSYSHIELD_BASH::
 	end
 
 Move_TRIPLE_ARROWS::
-    loadspritegfx ANIM_TAG_SPIRIT_ARROW
+    loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT
 	loadspritegfx ANIM_TAG_IMPACT
 	monbg ANIM_DEF_PARTNER
 	splitbgprio ANIM_TARGET
@@ -14577,10 +14577,14 @@ Move_TRIPLE_ARROWS::
 	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 6
 	delay 4
 	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, 1, 0, 6
+	restorebg
+    waitbgfadeout
+    setarg 7, 0xFFFF
+    waitbgfadein
     playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
-    createsprite gSpiritShackleArrowTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, 20, 1
-    createsprite gSpiritShackleArrowTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, -20, 1
-    createsprite gSpiritShackleArrowTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, -40, 1
+    createsprite gAuraSphereBlast, ANIM_TARGET, 3, 20, -10, 20, 0, 22, 20, 1
+    createsprite gAuraSphereBlast, ANIM_TARGET, 3, 20, -10, 20, 0, 22, -20, 1
+    createsprite gAuraSphereBlast, ANIM_TARGET, 3, 20, -10, 20, 0, 22, -40, 1
     delay 20
     playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
     createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 8, 1
@@ -14588,10 +14592,6 @@ Move_TRIPLE_ARROWS::
     waitforvisualfinish
 	clearmonbg ANIM_DEF_PARTNER
 	blendoff
-	restorebg
-	waitbgfadeout
-	setarg 7, 0xFFFF
-	waitbgfadein
 	end
 
 Move_MOUNTAIN_GALE::
