@@ -14501,7 +14501,9 @@ Move_STONE_AXE::
 
 Move_PSYSHIELD_BASH::
 	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT
+	loadspritegfx ANIM_TAG_IMPACT
 	monbg ANIM_ATK_PARTNER
+	monbg ANIM_DEF_PARTNER
 	fadetobg BG_PSYCHIC
 	waitbgfadeout
 	createvisualtask AnimTask_FadeScreenToWhite, 5
@@ -14515,13 +14517,20 @@ Move_PSYSHIELD_BASH::
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATTACKER, 3, 0, 240, 0
 	loopsewithpan SE_M_PSYBEAM2, SOUND_PAN_ATTACKER, 14, 10
 	createsprite gPsychoBoostOrbSpriteTemplate, ANIM_ATTACKER, 2
-	delay 110
-	loopsewithpan SE_M_PSYBEAM2, SOUND_PAN_ATTACKER, 7, 10
+	delay 75
+	createvisualtask AnimTask_WindUpLunge, 5, ANIM_ATTACKER, -24, 8, 23, 10, 40, 10
+    delay 35
+	createsprite gComplexPaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG | F_PAL_BATTLERS, 3, 1, RGB_BLACK, 10, RGB_BLACK, 0
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 4, -10, 0, ANIM_TARGET, 0
+	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
+	delay 1
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 1, -16, 0, 0, 4
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, -8, 1, 24, 1
 	playsewithpan SE_M_LEER, SOUND_PAN_TARGET
 	waitforvisualfinish
 	clearmonbg ANIM_ATK_PARTNER
+	clearmonbg ANIM_DEF_PARTNER
 	blendoff
 	call UnsetPsychicBg
 	end
