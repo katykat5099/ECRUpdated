@@ -315,7 +315,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_BRONZOR]               = {{EVO_LEVEL, 33, SPECIES_BRONZONG}},
     [SPECIES_BONSLY]                = {{EVO_MOVE, MOVE_MIMIC, SPECIES_SUDOWOODO}},
     [SPECIES_MIME_JR]               = {{EVO_MOVE, MOVE_MIMIC, SPECIES_MR_MIME},
-                                       {EVO_MOVE_ITEM_HOLD, MOVE_MIMIC, SPECIES_MR_MIME_GALARIAN, ITEM_FARAWAY_STONE}},//Faraway Stone
+                                       {EVO_MOVE_ITEM_HOLD, MOVE_MIMIC, SPECIES_MR_MIME_GALARIAN, ITEM_FARAWAY_STONE}},
     [SPECIES_HAPPINY]               = {{EVO_ITEM_HOLD_DAY, ITEM_OVAL_STONE, SPECIES_CHANSEY}},
     [SPECIES_GIBLE]                 = {{EVO_LEVEL, 24, SPECIES_GABITE}},
     [SPECIES_GABITE]                = {{EVO_LEVEL, 48, SPECIES_GARCHOMP}},
@@ -461,7 +461,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_DIANCIE]               = {{EVO_MEGA_EVOLUTION, ITEM_DIANCITE, SPECIES_DIANCIE_MEGA}},
     [SPECIES_ROWLET]                = {{EVO_LEVEL, 17, SPECIES_DARTRIX}},
     [SPECIES_DARTRIX]               = {{EVO_LEVEL, 34, SPECIES_DECIDUEYE},
-                                       {EVO_LEVEL_ITEM_HOLD, 34, SPECIES_DECIDUEYE_HISUIAN, ITEM_FARAWAY_STONE},
+                                       {EVO_LEVEL_ITEM_HOLD, 34, SPECIES_DECIDUEYE_HISUIAN, ITEM_FARAWAY_STONE}},
     [SPECIES_LITTEN]                = {{EVO_LEVEL, 17, SPECIES_TORRACAT}},
     [SPECIES_TORRACAT]              = {{EVO_LEVEL, 34, SPECIES_INCINEROAR}},
     [SPECIES_POPPLIO]               = {{EVO_LEVEL, 17, SPECIES_BRIONNE}},
