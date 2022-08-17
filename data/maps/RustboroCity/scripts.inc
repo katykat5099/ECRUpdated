@@ -21,18 +21,22 @@ RustboroCity_OnTransition:
 
 RustboroCity_EventScript_ShadyManPos1::
     setobjectxyperm LOCALID_SHADYMAN, 10, 24
+    release
     end
 
 RustboroCity_EventScript_ShadyManPos2::
     setobjectxyperm LOCALID_SHADYMAN, 12, 24
+    release
     end
 
 RustboroCity_EventScript_ShadyManPos3::
     setobjectxyperm LOCALID_SHADYMAN, 13, 24
+    release
     end
 
 RustboroCity_EventScript_ShadyManPos4::
     setobjectxyperm LOCALID_SHADYMAN, 14, 24
+    release
     end
 
 RustboroCity_EventScript_ShadyManComesTowardYouTrigger1::
