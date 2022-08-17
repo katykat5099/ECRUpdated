@@ -563,6 +563,60 @@
       "var": "VAR_SHADYMANTRIGGER",
       "var_value": "0",
       "script": "RustboroCity_EventScript_ShadyManComesTowardYouTrigger4"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManPos2"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManComesTowardYouTrigger5"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManPos1"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManPos1"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManPos3"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManPos4"
     }
   ],
   "bg_events": [
