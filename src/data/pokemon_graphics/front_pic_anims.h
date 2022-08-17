@@ -6302,7 +6302,7 @@ static const union AnimCmd sAnim_DARUMAKA_1[] =
 
 static const union AnimCmd sAnim_DARMANITAN_1[] =
 {
-    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
@@ -6335,8 +6335,8 @@ static const union AnimCmd sAnim_CRUSTLE_1[] =
 
 static const union AnimCmd sAnim_SCRAGGY_1[] =
 {
-    ANIMCMD_FRAME(0, 30),
-    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
@@ -6446,7 +6446,7 @@ static const union AnimCmd sAnim_MINCCINO_1[] =
 
 static const union AnimCmd sAnim_CINCCINO_1[] =
 {
-    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(0, 40),
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_FRAME(1, 20),
@@ -6641,7 +6641,6 @@ static const union AnimCmd sAnim_ALOMOMOLA_1[] =
 
 static const union AnimCmd sAnim_JOLTIK_1[] =
 {
-    ANIMCMD_FRAME(0, 35),
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
@@ -9231,6 +9230,21 @@ static const union AnimCmd sAnim_GIRATINA_ORIGIN_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_SAWSBUCK_SUMMER[] ={
+    sAnim_GeneralFrame0,
+    sAnim_SAWSBUCK_SUMMER_1,
+};
+
+static const union AnimCmd *const sAnims_SAWSBUCK_AUTUMN[] ={
+    sAnim_GeneralFrame0,
+    sAnim_SAWSBUCK_AUTUMN_1,
+};
+
+static const union AnimCmd *const sAnims_SAWSBUCK_WINTER[] ={
+    sAnim_GeneralFrame0,
+    sAnim_SAWSBUCK_WINTER_1,
 };
 
 static const union AnimCmd sAnim_DARMANITAN_ZEN_MODE_1[] =
@@ -15956,9 +15970,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD_FULL(DEERLING_SUMMER, sAnims_DEERLING),
     ANIM_CMD_FULL(DEERLING_AUTUMN, sAnims_DEERLING),
     ANIM_CMD_FULL(DEERLING_WINTER, sAnims_DEERLING),
-    ANIM_CMD_FULL(SAWSBUCK_SUMMER, sAnims_SAWSBUCK),
-    ANIM_CMD_FULL(SAWSBUCK_AUTUMN, sAnims_SAWSBUCK),
-    ANIM_CMD_FULL(SAWSBUCK_WINTER, sAnims_SAWSBUCK),
+    ANIM_CMD(SAWSBUCK_SUMMER),
+    ANIM_CMD(SAWSBUCK_AUTUMN),
+    ANIM_CMD(SAWSBUCK_WINTER),
     ANIM_CMD(TORNADUS_THERIAN),
     ANIM_CMD(THUNDURUS_THERIAN),
     ANIM_CMD(LANDORUS_THERIAN),
