@@ -9260,21 +9260,6 @@ static const union AnimCmd sAnim_GIRATINA_ORIGIN_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd *const sAnims_SAWSBUCK_SUMMER[] ={
-    sAnim_GeneralFrame0,
-    sAnim_SAWSBUCK_SUMMER_1,
-};
-
-static const union AnimCmd *const sAnims_SAWSBUCK_AUTUMN[] ={
-    sAnim_GeneralFrame0,
-    sAnim_SAWSBUCK_AUTUMN_1,
-};
-
-static const union AnimCmd *const sAnims_SAWSBUCK_WINTER[] ={
-    sAnim_GeneralFrame0,
-    sAnim_SAWSBUCK_WINTER_1,
-};
-
 static const union AnimCmd sAnim_DARMANITAN_ZEN_MODE_1[] =
 {
     ANIMCMD_FRAME(0, 1),
@@ -14936,6 +14921,21 @@ static const union AnimCmd *const sAnims_PIKACHU_WORLD_CAP[] ={
 static const union AnimCmd *const sAnims_PICHU_SPIKY_EARED[] ={
     sAnim_GeneralFrame0,
     sAnim_PICHU_SPIKY_EARED_1,
+};
+
+static const union AnimCmd *const sAnims_SAWSBUCK_SUMMER[] ={
+    sAnim_GeneralFrame0,
+    sAnim_SAWSBUCK_SUMMER_1,
+};
+
+static const union AnimCmd *const sAnims_SAWSBUCK_AUTUMN[] ={
+    sAnim_GeneralFrame0,
+    sAnim_SAWSBUCK_AUTUMN_1,
+};
+
+static const union AnimCmd *const sAnims_SAWSBUCK_WINTER[] ={
+    sAnim_GeneralFrame0,
+    sAnim_SAWSBUCK_WINTER_1,
 };
 
 #define ANIM_CMD(name)             [SPECIES_##name] = sAnims_##name
