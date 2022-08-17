@@ -31,7 +31,7 @@ RustboroCity_EventScript_ShadyManPos3::
     setobjectxyperm LOCALID_SHADYMAN, 13, 24
     end
 
-RustboroCity_EventScript_ShadyManPos1::
+RustboroCity_EventScript_ShadyManPos4::
     setobjectxyperm LOCALID_SHADYMAN, 14, 24
     end
 
