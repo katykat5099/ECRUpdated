@@ -61,6 +61,7 @@ RustboroCity_EventScript_ShadyManComesTowardYouTrigger2::
     call RustboroCity_EventScript_ShadyManTalksToYou
     applymovement LOCALID_SHADYMAN, RustboroCity_Movement_ShadyManGoesBack2
     waitmovement 0
+    setobjectxyperm LOCALID_SHADYMAN, 10, 24
     setvar VAR_SHADYMANTRIGGER, 1
     releaseall
     end
@@ -74,6 +75,7 @@ RustboroCity_EventScript_ShadyManComesTowardYouTrigger3::
     call RustboroCity_EventScript_ShadyManTalksToYou
     applymovement LOCALID_SHADYMAN, RustboroCity_Movement_ShadyManGoesBack3
     waitmovement 0
+    setobjectxyperm LOCALID_SHADYMAN, 10, 24
     setvar VAR_SHADYMANTRIGGER, 1
     releaseall
     end
@@ -87,6 +89,7 @@ RustboroCity_EventScript_ShadyManComesTowardYouTrigger4::
     call RustboroCity_EventScript_ShadyManTalksToYou
     applymovement LOCALID_SHADYMAN, RustboroCity_Movement_ShadyManGoesBack4
     waitmovement 0
+    setobjectxyperm LOCALID_SHADYMAN, 10, 24
     setvar VAR_SHADYMANTRIGGER, 1
     releaseall
     end
@@ -100,6 +103,7 @@ RustboroCity_EventScript_ShadyManComesTowardYouTrigger5::
     call RustboroCity_EventScript_ShadyManTalksToYou
     applymovement LOCALID_SHADYMAN, RustboroCity_Movement_ShadyManGoesBack5
     waitmovement 0
+    setobjectxyperm LOCALID_SHADYMAN, 10, 24
     setvar VAR_SHADYMANTRIGGER, 1
     releaseall
     end

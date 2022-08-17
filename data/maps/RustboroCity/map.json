@@ -584,15 +584,6 @@
     },
     {
       "type": "trigger",
-      "x": 19,
-      "y": 25,
-      "elevation": 0,
-      "var": "VAR_SHADYMANTRIGGER",
-      "var_value": "0",
-      "script": "RustboroCity_EventScript_ShadyManPos1"
-    },
-    {
-      "type": "trigger",
       "x": 18,
       "y": 26,
       "elevation": 0,
@@ -617,6 +608,69 @@
       "var": "VAR_SHADYMANTRIGGER",
       "var_value": "0",
       "script": "RustboroCity_EventScript_ShadyManPos4"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManComesTowardYouTrigger6"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManComesTowardYouTrigger7"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManPos1"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManPos1"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManPos1"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManPos1"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManPos1"
     }
   ],
   "bg_events": [
