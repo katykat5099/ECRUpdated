@@ -167,9 +167,11 @@ RustboroCity_Movement_ShadyManTrigger3:
 	walk_faster_right
 	walk_faster_right
 	walk_faster_right
+	walk_faster_right
 	step_end
 
 RustboroCity_Movement_ShadyManTrigger4:
+	walk_faster_right
 	walk_faster_right
 	walk_faster_right
 	walk_faster_right
@@ -233,9 +235,11 @@ RustboroCity_Movement_ShadyManGoesBack3:
 	walk_faster_left
 	walk_faster_left
 	walk_faster_left
+	walk_faster_left
 	step_end
 
 RustboroCity_Movement_ShadyManGoesBack4:
+	walk_faster_left
 	walk_faster_left
 	walk_faster_left
 	walk_faster_left
