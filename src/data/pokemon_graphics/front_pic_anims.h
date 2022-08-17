@@ -4807,11 +4807,8 @@ static const union AnimCmd sAnim_UNOWN_QMARK_1[] =
 
 static const union AnimCmd sAnim_TURTWIG_1[] =
 {
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 15),
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_FRAME(1, 15),
-    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
@@ -4819,7 +4816,7 @@ static const union AnimCmd sAnim_GROTLE_1[] =
 {
     ANIMCMD_FRAME(0, 27),
     ANIMCMD_FRAME(1, 27),
-    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
@@ -4839,21 +4836,15 @@ static const union AnimCmd sAnim_CHIMCHAR_1[] =
 
 static const union AnimCmd sAnim_MONFERNO_1[] =
 {
-    ANIMCMD_FRAME(0, 12),
-    ANIMCMD_FRAME(1, 12),
-    ANIMCMD_FRAME(0, 12),
-    ANIMCMD_FRAME(1, 12),
-    ANIMCMD_FRAME(0, 12),
-    ANIMCMD_FRAME(1, 12),
-    ANIMCMD_FRAME(0, 7),
+    ANIMCMD_FRAME(1, 34),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_INFERNAPE_1[] =
 {
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 25),
-    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(1, 34),//Delay 34
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
@@ -4866,17 +4857,15 @@ static const union AnimCmd sAnim_PIPLUP_1[] =
 
 static const union AnimCmd sAnim_PRINPLUP_1[] =
 {
-    ANIMCMD_FRAME(0, 30),
-    ANIMCMD_FRAME(1, 30),
-    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_EMPOLEON_1[] =
 {
-    ANIMCMD_FRAME(0, 30),
-    ANIMCMD_FRAME(1, 30),
-    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(1, 52),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
@@ -4892,17 +4881,19 @@ static const union AnimCmd sAnim_STARLY_1[] =
 
 static const union AnimCmd sAnim_STARAVIA_1[] =
 {
-    ANIMCMD_FRAME(0, 30),
-    ANIMCMD_FRAME(1, 30),
-    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(1, 16),
+    ANIMCMD_FRAME(0, 14),
+    ANIMCMD_FRAME(1, 14),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sAnim_STARAPTOR_1[] =
 {
-    ANIMCMD_FRAME(0, 30),
-    ANIMCMD_FRAME(1, 30),
-    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(1, 14),
+    ANIMCMD_FRAME(0, 6),
+    ANIMCMD_FRAME(1, 42),//Delay starts at the end of here
+    ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
 
