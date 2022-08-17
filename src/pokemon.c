@@ -13429,6 +13429,13 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                 if (gEvolutionTable[species][i].param <= level)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
+            case EVO_LEVEL_ITEM_HOLD:
+                if (gEvolutionTable[species][i].param <= level
+                    && gEvolutionTable[species][i].param2 == heldItem)
+                    heldItem = ITEM_NONE;
+                    SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
             case EVO_BEAUTY:
                 if (gEvolutionTable[species][i].param <= beauty)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
@@ -13439,7 +13446,9 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                 break;
             case EVO_MOVE_ITEM_HOLD:
                 if (MonKnowsMove(mon, gEvolutionTable[species][i].param
-                    && gEvolutionTable[species][i].param2 == heldItem))
+                    && heldItem == gEvolutionTable[species][i].param2))
+                    heldItem = ITEM_NONE;
+                    SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
             case EVO_MOVE_TYPE:
@@ -13538,11 +13547,6 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                         break;
                     }
                 }
-                break;
-            case EVO_LEVEL_ITEM_HOLD:
-                if (gEvolutionTable[species][i].param <= level
-                    && gEvolutionTable[species][i].param2 == heldItem)
-                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
             }
         }
