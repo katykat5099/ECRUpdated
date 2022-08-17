@@ -3167,7 +3167,7 @@ const struct Item gItems[] =
     {
         .name = _("Linking Cord"),
         .itemId = ITEM_LINK_CABLE,
-        .price = 500,
+        .price = 2000,
         .description = sRibbonSweetDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
@@ -3179,7 +3179,7 @@ const struct Item gItems[] =
     {
         .name = _("BlckAugurite"),
         .itemId = ITEM_BLACK_AUGURITE,
-        .price = 500,
+        .price = 2000,
         .description = sRibbonSweetDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
@@ -3191,11 +3191,23 @@ const struct Item gItems[] =
     {
         .name = _("Peat Block"),
         .itemId = ITEM_PEAT_BLOCK,
-        .price = 500,
+        .price = 2000,
         .description = sRibbonSweetDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .flingPower = 10,
+    },
+
+    [ITEM_FARAWAY_STONE] =
+    {
+        .name = _("FarawayStone"),
+        .itemId = ITEM_FARAWAY_STONE,
+        .price = 2000,
+        .description = sFarawayStoneSweetDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
     },
 

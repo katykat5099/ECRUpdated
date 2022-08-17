@@ -1295,6 +1295,11 @@ static const u8 sRibbonSweetDesc[] = _(
     "sweet loved by\n"
     "Milcery.");
 
+static const u8 sFarawayStoneSweetDesc[] = _(
+    "A colourful stone\n"
+    "that seems to\n"
+    "shift when moved.");
+
 static const u8 sEverstoneDesc[] = _(
     "A wondrous hold\n"
     "item that prevents\n"
