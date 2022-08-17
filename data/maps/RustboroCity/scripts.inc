@@ -4,6 +4,7 @@
 .set LOCALID_GRUNT, 10
 .set LOCALID_RIVAL, 14
 .set LOCALID_SCIENTIST, 15
+.set LOCALID_SHADYMAN, 17
 
 RustboroCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_OnTransition
@@ -17,6 +18,92 @@ RustboroCity_OnTransition:
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 	goto_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_PositionScientistForExit
 	end
+
+RustboroCity_EventScript_ShadyManComesTowardYouTrigger1::
+    lockall
+    msgbox RustboroCity_Text_ShadyManHey, MSGBOX_DEFAULT
+    closemessage
+    applymovement LOCALID_SHADYMAN, RustboroCity_Movement_ShadyManTrigger1
+    waitmovement 0
+    call RustboroCity_EventScript_ShadyManTalksToYou
+    applymovement LOCALID_SHADYMAN, RustboroCity_Movement_ShadyManGoesBack1
+    waitmovement 0
+    setvar VAR_SHADYMANTRIGGER, 1
+    releaseall
+    end
+
+RustboroCity_EventScript_ShadyManTalksToYou::
+    msgbox RustboroCity_Text_ShadyManStones, MSGBOX_DEFAULT
+    closemessage
+    return
+
+RustboroCity_Movement_ShadyManTrigger1:
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	step_end
+
+RustboroCity_Movement_ShadyManGoesBack1:
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	step_end
+
+RustboroCity_Text_ShadyManHey:
+	.string "HEY!$"
+
+RustboroCity_Text_ShadyManStones:
+    .string "Come to my stone shop…\p"
+    .string "Follow me.$"
+
+RustboroCity_EventScript_ShadyManStoneShop::
+    call_if_eq VAR_SHADYMANTRIGGER, 1, RustboroCity_EventScript_ShadyManStoneShopExplain
+	lock
+	faceplayer
+	message RustboroCity_Text_ShadyGuyStoreWelcome
+	waitmessage
+	pokemart RustboroCity_Pokemart_ShadyManStoneShop
+	msgbox RustboroCity_Text_ShadyGuyStoreGoodbye, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+RustboroCity_Pokemart_ShadyManStoneShop:
+	.2byte ITEM_FARAWAY_STONE
+	.2byte ITEM_NONE
+	release
+	end
+
+RustboroCity_Text_ShadyGuyStoreWelcome:
+    .string "Welcome…$"
+
+RustboroCity_Text_ShadyGuyStoreGoodbye:
+    .string "Goodbye…$"
+
+RustboroCity_EventScript_ShadyManStoneShopExplain::
+    lock
+    msgbox RustboroCity_Text_ShadyManExplain, MSGBOX_DEFAULT
+    closemessage
+    setvar VAR_SHADYMANTRIGGER, 2
+    release
+    end
+
+RustboroCity_Text_ShadyManExplain:
+    .string "Welco- oh, you came.\p"
+    .string "I have these stones here\n"
+    .string "apparently they make some\l"
+    .string "POKéMON evolve into different\p"
+    .string "types or something. That seems\n"
+    .string "pretty expensive to me.\l"
+    .string "Why not buy some?$"
 
 RustboroCity_EventScript_PositionScientistForExit::
 	goto_if_eq VAR_TEMP_0, 11, RustboroCity_EventScript_PositionScientistLeftExit
