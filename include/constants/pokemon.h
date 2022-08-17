@@ -389,6 +389,8 @@
 #define EVO_DARK_SCROLL                   37     // interacts with Scroll of Darkness
 #define EVO_WATER_SCROLL                  38     // interacts with Scroll of Waters
 #define EVO_ITEM_ITEM                     39     // Held Item + Link Cable Item
+#define EVO_LEVEL_ITEM_HOLD               40     // Level up past certain level + holding item
+#define EVO_MOVE_ITEM_HOLD                41     // Level up with move + holding item
 
 //tx_randomizer_and_challenges
 #ifndef POKEMON_EXPANSION 
