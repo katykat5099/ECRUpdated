@@ -191,11 +191,6 @@ void ForceTimeBasedEvents(void)
         gTasks[taskId].tForceTimeUpdate = 1;
 }
 
-#undef tState
-#undef tAmbientCryState
-#undef tAmbientCryDelay
-#undef tForceTimeUpdate
-
 void SetUpFieldTasks(void)
 {
     if (!FuncIsActiveTask(Task_RunPerStepCallback))
