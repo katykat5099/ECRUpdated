@@ -156,10 +156,7 @@ RustboroCity_Movement_ShadyManTrigger2:
 	walk_faster_right
 	walk_faster_right
 	walk_faster_right
-	walk_faster_down
 	walk_faster_right
-	walk_faster_right
-	walk_in_place_faster_up
 	step_end
 
 RustboroCity_Movement_ShadyManTrigger3:
@@ -169,11 +166,7 @@ RustboroCity_Movement_ShadyManTrigger3:
 	walk_faster_right
 	walk_faster_right
 	walk_faster_right
-	walk_faster_down
 	walk_faster_right
-	walk_faster_right
-	walk_faster_right
-	walk_in_place_faster_up
 	step_end
 
 RustboroCity_Movement_ShadyManTrigger4:
@@ -181,13 +174,9 @@ RustboroCity_Movement_ShadyManTrigger4:
 	walk_faster_right
 	walk_faster_right
 	walk_faster_right
-	walk_faster_down
 	walk_faster_right
 	walk_faster_right
 	walk_faster_right
-	walk_faster_right
-	walk_faster_right
-	walk_in_place_faster_up
 	step_end
 
 RustboroCity_Movement_ShadyManTrigger5:
@@ -229,8 +218,6 @@ RustboroCity_Movement_ShadyManGoesBack1:
 RustboroCity_Movement_ShadyManGoesBack2:
 	walk_faster_left
 	walk_faster_left
-    walk_faster_up
-	walk_faster_left
 	walk_faster_left
 	walk_faster_left
 	walk_faster_left
@@ -240,9 +227,6 @@ RustboroCity_Movement_ShadyManGoesBack2:
 
 RustboroCity_Movement_ShadyManGoesBack3:
 	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-    walk_faster_up
 	walk_faster_left
 	walk_faster_left
 	walk_faster_left
@@ -257,15 +241,11 @@ RustboroCity_Movement_ShadyManGoesBack4:
 	walk_faster_left
 	walk_faster_left
 	walk_faster_left
-    walk_faster_up
-	walk_faster_left
-	walk_faster_left
 	walk_faster_left
 	walk_faster_left
 	step_end
 
 RustboroCity_Movement_ShadyManGoesBack5:
-    walk_faster_up
 	walk_faster_left
 	walk_faster_left
 	walk_faster_left
