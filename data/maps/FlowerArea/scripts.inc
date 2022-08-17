@@ -20,3 +20,11 @@ FlowerArea_Pokemart_Nectar:
 	.2byte ITEM_NONE
 	release
 	end
+
+FlowerArea_EventScript_NectarShop_Sign::
+    msgbox FlowerArea_Text_NectarShop_Sign, MSGBOX_SIGN
+    end
+
+FlowerArea_EventScript_NectarShop_Sign
+	.string "NECTAR SHOP\p"
+	.string "The door is locked…$"
