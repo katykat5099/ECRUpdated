@@ -32,6 +32,45 @@ RustboroCity_EventScript_ShadyManComesTowardYouTrigger1::
     releaseall
     end
 
+RustboroCity_EventScript_ShadyManComesTowardYouTrigger2::
+    lockall
+    msgbox RustboroCity_Text_ShadyManHey, MSGBOX_DEFAULT
+    closemessage
+    applymovement LOCALID_SHADYMAN, RustboroCity_Movement_ShadyManTrigger2
+    waitmovement 0
+    call RustboroCity_EventScript_ShadyManTalksToYou
+    applymovement LOCALID_SHADYMAN, RustboroCity_Movement_ShadyManGoesBack2
+    waitmovement 0
+    setvar VAR_SHADYMANTRIGGER, 1
+    releaseall
+    end
+
+RustboroCity_EventScript_ShadyManComesTowardYouTrigger3::
+    lockall
+    msgbox RustboroCity_Text_ShadyManHey, MSGBOX_DEFAULT
+    closemessage
+    applymovement LOCALID_SHADYMAN, RustboroCity_Movement_ShadyManTrigger3
+    waitmovement 0
+    call RustboroCity_EventScript_ShadyManTalksToYou
+    applymovement LOCALID_SHADYMAN, RustboroCity_Movement_ShadyManGoesBack3
+    waitmovement 0
+    setvar VAR_SHADYMANTRIGGER, 1
+    releaseall
+    end
+
+RustboroCity_EventScript_ShadyManComesTowardYouTrigger4::
+    lockall
+    msgbox RustboroCity_Text_ShadyManHey, MSGBOX_DEFAULT
+    closemessage
+    applymovement LOCALID_SHADYMAN, RustboroCity_Movement_ShadyManTrigger4
+    waitmovement 0
+    call RustboroCity_EventScript_ShadyManTalksToYou
+    applymovement LOCALID_SHADYMAN, RustboroCity_Movement_ShadyManGoesBack4
+    waitmovement 0
+    setvar VAR_SHADYMANTRIGGER, 1
+    releaseall
+    end
+
 RustboroCity_EventScript_ShadyManTalksToYou::
     msgbox RustboroCity_Text_ShadyManStones, MSGBOX_DEFAULT
     closemessage
@@ -47,7 +86,102 @@ RustboroCity_Movement_ShadyManTrigger1:
 	walk_faster_right
 	step_end
 
+RustboroCity_Movement_ShadyManTrigger2:
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_down
+	walk_faster_right
+	walk_faster_right
+	walk_in_place_faster_up
+	step_end
+
+RustboroCity_Movement_ShadyManTrigger3:
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_down
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_in_place_faster_up
+	step_end
+
+RustboroCity_Movement_ShadyManTrigger4:
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_down
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_in_place_faster_up
+	step_end
+
 RustboroCity_Movement_ShadyManGoesBack1:
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	step_end
+
+RustboroCity_Movement_ShadyManGoesBack2:
+	walk_faster_left
+	walk_faster_left
+    walk_faster_up
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	step_end
+
+RustboroCity_Movement_ShadyManGoesBack3:
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+    walk_faster_up
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	step_end
+
+RustboroCity_Movement_ShadyManGoesBack4:
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+    walk_faster_up
+	walk_faster_left
 	walk_faster_left
 	walk_faster_left
 	walk_faster_left
@@ -94,15 +228,15 @@ RustboroCity_EventScript_ShadyManStoneShopExplain::
     closemessage
     setvar VAR_SHADYMANTRIGGER, 2
     release
-    end
+    return
 
 RustboroCity_Text_ShadyManExplain:
-    .string "Welco- oh, you came.\p"
-    .string "I have these stones here\n"
-    .string "apparently they make some\l"
-    .string "POKéMON evolve into different\p"
-    .string "types or something. That seems\n"
-    .string "pretty expensive to me.\l"
+    .string "Welco- Oh-\n"
+    .string "You came.\p"
+    .string "I have these stones here apparently\n"
+    .string "they make some POKéMON evolve into\l"
+    .string "different types or something.\p"
+    .string "That seems pretty expensive to me.\n"
     .string "Why not buy some?$"
 
 RustboroCity_EventScript_PositionScientistForExit::

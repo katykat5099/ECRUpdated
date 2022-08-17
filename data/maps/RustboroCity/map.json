@@ -536,6 +536,33 @@
       "var": "VAR_SHADYMANTRIGGER",
       "var_value": "0",
       "script": "RustboroCity_EventScript_ShadyManComesTowardYouTrigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManComesTowardYouTrigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManComesTowardYouTrigger3"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_SHADYMANTRIGGER",
+      "var_value": "0",
+      "script": "RustboroCity_EventScript_ShadyManComesTowardYouTrigger4"
     }
   ],
   "bg_events": [
