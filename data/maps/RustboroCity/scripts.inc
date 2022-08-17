@@ -87,6 +87,19 @@ RustboroCity_EventScript_ShadyManComesTowardYouTrigger4::
     releaseall
     end
 
+RustboroCity_EventScript_ShadyManComesTowardYouTrigger5::
+    lockall
+    msgbox RustboroCity_Text_ShadyManHey, MSGBOX_DEFAULT
+    closemessage
+    applymovement LOCALID_SHADYMAN, RustboroCity_Movement_ShadyManTrigger5
+    waitmovement 0
+    call RustboroCity_EventScript_ShadyManTalksToYou
+    applymovement LOCALID_SHADYMAN, RustboroCity_Movement_ShadyManGoesBack5
+    waitmovement 0
+    setvar VAR_SHADYMANTRIGGER, 1
+    releaseall
+    end
+
 RustboroCity_EventScript_ShadyManTalksToYou::
     msgbox RustboroCity_Text_ShadyManStones, MSGBOX_DEFAULT
     closemessage
@@ -151,6 +164,18 @@ RustboroCity_Movement_ShadyManTrigger4:
 	walk_in_place_faster_up
 	step_end
 
+RustboroCity_Movement_ShadyManTrigger5:
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_down
+	walk_in_place_faster_right
+	step_end
+
 RustboroCity_Movement_ShadyManGoesBack1:
 	walk_faster_left
 	walk_faster_left
@@ -198,6 +223,17 @@ RustboroCity_Movement_ShadyManGoesBack4:
 	walk_faster_left
     walk_faster_up
 	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	step_end
+
+RustboroCity_Movement_ShadyManGoesBack5:
+    walk_faster_up
 	walk_faster_left
 	walk_faster_left
 	walk_faster_left
