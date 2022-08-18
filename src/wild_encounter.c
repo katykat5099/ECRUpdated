@@ -429,6 +429,7 @@ static void CreateWildMon(u16 species, u8 level)
 
     u8 randForm = 0;
     switch(species)
+    {
     case SPECIES_FLABEBE:
         randForm = Random() % 5 + 1;
         switch(randForm)
@@ -669,6 +670,7 @@ static void CreateWildMon(u16 species, u8 level)
         break;
         }
     break;
+    }
 
     CreateMonWithNature(&gEnemyParty[0], species, level, USE_RANDOM_IVS, PickWildMonNature());
 }
