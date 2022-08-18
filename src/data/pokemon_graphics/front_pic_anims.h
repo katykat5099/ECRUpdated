@@ -6993,6 +6993,13 @@ static const union AnimCmd sAnim_BRAVIARY_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_BRAVIARY_HISUIAN_1[] =
+{
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_VULLABY_1[] =
 {
     ANIMCMD_FRAME(0, 10),
@@ -12903,6 +12910,11 @@ static const union AnimCmd *const sAnims_BRAVIARY[] ={
     sAnim_BRAVIARY_1,
 };
 
+static const union AnimCmd *const sAnims_BRAVIARY_HISUIAN[] ={
+    sAnim_GeneralFrame0,
+    sAnim_BRAVIARY_HISUIAN_1,
+};
+
 static const union AnimCmd *const sAnims_VULLABY[] ={
     sAnim_GeneralFrame0,
     sAnim_VULLABY_1,
@@ -16155,7 +16167,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD_FULL(ELECTRODE_HISUIAN, sAnims_ELECTRODE),
     ANIM_CMD_FULL(ZORUA_HISUIAN, sAnims_ZORUA),
     ANIM_CMD_FULL(ZOROARK_HISUIAN, sAnims_ZOROARK),
-    ANIM_CMD_FULL(BRAVIARY_HISUIAN, sAnims_BRAVIARY),
+    ANIM_CMD(BRAVIARY_HISUIAN),
     ANIM_CMD_FULL(TYPHLOSION_HISUIAN, sAnims_TYPHLOSION),
     ANIM_CMD_FULL(SAMUROTT_HISUIAN, sAnims_SAMUROTT),
     ANIM_CMD_FULL(DECIDUEYE_HISUIAN, sAnims_DECIDUEYE),
