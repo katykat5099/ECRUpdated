@@ -14867,21 +14867,6 @@ static const union AnimCmd *const sAnims_GIRATINA_ORIGIN[] ={
     sAnim_GIRATINA_ORIGIN_1,
 };
 
-static const union AnimCmd *const sAnims_SAWSBUCK_SUMMER[] ={
-    sAnim_GeneralFrame0,
-    sAnim_SAWSBUCK_SUMMER_1,
-};
-
-static const union AnimCmd *const sAnims_SAWSBUCK_AUTUMN[] ={
-    sAnim_GeneralFrame0,
-    sAnim_SAWSBUCK_AUTUMN_1,
-};
-
-static const union AnimCmd *const sAnims_SAWSBUCK_WINTER[] ={
-    sAnim_GeneralFrame0,
-    sAnim_SAWSBUCK_WINTER_1,
-};
-
 static const union AnimCmd *const sAnims_DARMANITAN_ZEN_MODE[] ={
     sAnim_GeneralFrame0,
     sAnim_DARMANITAN_ZEN_MODE_1,
