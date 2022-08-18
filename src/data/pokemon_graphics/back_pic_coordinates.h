@@ -6198,13 +6198,13 @@ const struct MonCoords gMonBackPicCoords[] =
     },
     [SPECIES_BRAVIARY_HISUIAN] =
     {
-        .size = MON_COORDS_SIZE(56, 55),
-        .y_offset = 12,
+        .size = MON_COORDS_SIZE(59, 47),
+        .y_offset = 3,
     },
     [SPECIES_TYPHLOSION_HISUIAN] =
     {
-        .size = MON_COORDS_SIZE(56, 55),
-        .y_offset = 12,
+        .size = MON_COORDS_SIZE(60, 58),
+        .y_offset = 0,
     },
     [SPECIES_SAMUROTT_HISUIAN] =
     {
@@ -6223,13 +6223,13 @@ const struct MonCoords gMonBackPicCoords[] =
     },
     [SPECIES_SLIGGOO_HISUIAN] =
     {
-        .size = MON_COORDS_SIZE(56, 55),
-        .y_offset = 12,
+        .size = MON_COORDS_SIZE(56, 59),
+        .y_offset = 0,
     },
     [SPECIES_GOODRA_HISUIAN] =
     {
-        .size = MON_COORDS_SIZE(56, 55),
-        .y_offset = 12,
+        .size = MON_COORDS_SIZE(62, 64),
+        .y_offset = 0,
     },
     // Egg
     [SPECIES_EGG] =
