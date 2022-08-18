@@ -428,24 +428,26 @@ static void CreateWildMon(u16 species, u8 level)
     }
 
     if(species == SPECIES_FLABEBE)
-    randForm = Random() % 5 + 1;
-    switch(randForm)
     {
-    case 1:
-    species == SPECIES_FLABEBE_YELLOW_FLOWER;
-    break;
-    case 2:
-    species == SPECIES_FLABEBE_BLUE_FLOWER;
-    break;
-    case 3:
-    species == SPECIES_FLABEBE_ORANGE_FLOWER;
-    break;
-    case 4:
-    species == SPECIES_FLABEBE_WHITE_FLOWER;
-    break;
-    case 5:
-    species == SPECIES_FLABEBE;
-    break;
+        u8 randForm = Random() % 5 + 1;
+        switch(randForm)
+        {
+        case 1:
+        species == SPECIES_FLABEBE_YELLOW_FLOWER;
+        break;
+        case 2:
+        species == SPECIES_FLABEBE_BLUE_FLOWER;
+        break;
+        case 3:
+        species == SPECIES_FLABEBE_ORANGE_FLOWER;
+        break;
+        case 4:
+        species == SPECIES_FLABEBE_WHITE_FLOWER;
+        break;
+        case 5:
+        species == SPECIES_FLABEBE;
+        break;
+        }
     }
 
     CreateMonWithNature(&gEnemyParty[0], species, level, USE_RANDOM_IVS, PickWildMonNature());
