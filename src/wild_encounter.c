@@ -427,9 +427,9 @@ static void CreateWildMon(u16 species, u8 level)
         return;
     }
 
-    u8 randForm = 0;
     switch(species)
     {
+    u8 randForm = 0;
     case SPECIES_FLABEBE:
         randForm = Random() % 5 + 1;
         switch(randForm)
