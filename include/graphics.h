@@ -7797,6 +7797,14 @@ extern const u32 gItemIconPalette_StarSweet[];
 extern const u32 gItemIcon_RibbonSweet[];
 extern const u32 gItemIconPalette_RibbonSweet[];
 extern const u32 gItemIcon_Everstone[];
+extern const u32 gItemIcon_LinkCable[];
+extern const u32 gItemIconPalette_LinkCable[];
+extern const u32 gItemIcon_BlackAugurite[];
+extern const u32 gItemIconPalette_BlackAugurite[];
+extern const u32 gItemIcon_PeatBlock[];
+extern const u32 gItemIconPalette_PeatBlock[];
+extern const u32 gItemIcon_FarawayStone[];
+extern const u32 gItemIconPalette_FarawayStone[];
 extern const u32 gItemIconPalette_Everstone[];
 // Nectars
 extern const u32 gItemIcon_RedNectar[];
