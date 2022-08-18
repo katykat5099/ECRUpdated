@@ -445,7 +445,7 @@ static void CreateWildMon(u16 species, u8 level)
     switch (species)
     {
     case SPECIES_BASCULIN:
-    species = sBasculinForms[Random() sizeof(sBasculinForms)];
+    species = sBasculinForms[Random() % 3];
     break;
     case SPECIES_FLABEBE:
     species = sFlabebeForms[Random() % 5];
