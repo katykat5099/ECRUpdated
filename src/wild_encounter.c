@@ -427,9 +427,11 @@ static void CreateWildMon(u16 species, u8 level)
         return;
     }
 
+    u8 randForm = 0;
+
     switch(species)
     case SPECIES_FLABEBE:
-        u8 randForm = Random() % 5 + 1;
+        randForm = Random() % 5 + 1;
         switch(randForm)
         {
         case 1:
@@ -449,7 +451,7 @@ static void CreateWildMon(u16 species, u8 level)
         break;
         }
     case SPECIES_FLOETTE:
-        u8 randForm = Random() % 5 + 1;
+        randForm = Random() % 5 + 1;
         switch(randForm)
         {
         case 1:
@@ -469,7 +471,7 @@ static void CreateWildMon(u16 species, u8 level)
         break;
         }
     case SPECIES_FLORGES:
-        u8 randForm = Random() % 5 + 1;
+        randForm = Random() % 5 + 1;
         switch(randForm)
         {
         case 1:
@@ -489,7 +491,7 @@ static void CreateWildMon(u16 species, u8 level)
         break;
         }
     case SPECIES_DEERLING:
-        u8 randForm = Random() % 4 + 1;
+        randForm = Random() % 4 + 1;
         switch(randForm)
         {
         case 1:
@@ -506,7 +508,7 @@ static void CreateWildMon(u16 species, u8 level)
         break;
         }
     case SPECIES_SAWSBUCK:
-        u8 randForm = Random() % 4 + 1;
+        randForm = Random() % 4 + 1;
         switch(randForm)
         {
         case 1:
@@ -523,7 +525,7 @@ static void CreateWildMon(u16 species, u8 level)
         break;
         }
     case SPECIES_VIVILLON:
-        u8 randForm = Random() % 19 + 1;
+        randForm = Random() % 19 + 1;
         switch(randForm)
         {
         case 1:
@@ -585,7 +587,7 @@ static void CreateWildMon(u16 species, u8 level)
         break;
         }
     case SPECIES_PUMPKABOO:
-        u8 randForm = Random() % 4 + 1;
+        randForm = Random() % 4 + 1;
         switch(randForm)
         {
         case 1:
@@ -602,7 +604,7 @@ static void CreateWildMon(u16 species, u8 level)
         break;
         }
     case SPECIES_GOURGEIST:
-        u8 randForm = Random() % 4 + 1;
+        randForm = Random() % 4 + 1;
         switch(randForm)
         {
         case 1:
@@ -619,7 +621,7 @@ static void CreateWildMon(u16 species, u8 level)
         break;
         }
     case SPECIES_MINIOR:
-        u8 randForm = Random() % 4 + 1;
+        randForm = Random() % 4 + 1;
         switch(randForm)
         {
         case 1:
@@ -645,7 +647,7 @@ static void CreateWildMon(u16 species, u8 level)
         break;
         }
     case SPECIES_BASCULIN:
-        u8 randForm = Random() % 3 + 1;
+        randForm = Random() % 3 + 1;
         switch(randForm)
         {
         case 1:
