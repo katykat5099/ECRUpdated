@@ -13237,7 +13237,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_BARB_BARRAGE] =
     {
         .effect = EFFECT_BARB_BARRAGE,
-        .power = 60,
+        .power = 75,
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = 15,
@@ -13269,7 +13269,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_WAVE_CRASH] =
     {
         .effect = EFFECT_WAVE_CRASH,
-        .power = 75,
+        .power = 90,
         .type = TYPE_WATER,
         .accuracy = 0,
         .pp = 10,
@@ -13285,7 +13285,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_DIRE_CLAW] =
     {
         .effect = EFFECT_DIRE_CLAW,
-        .power = 60,
+        .power = 75,
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = 15,
@@ -13301,7 +13301,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_HEADLONG_RUSH] =
     {
         .effect = EFFECT_DEFENSE_DOWN_HIT,
-        .power = 100,
+        .power = 120,
         .type = TYPE_GROUND,
         .accuracy = 100,
         .pp = 5,
@@ -13317,7 +13317,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_STONE_AXE] =
     {
         .effect = EFFECT_SPLINTERS,
-        .power = 65,
+        .power = 80,
         .type = TYPE_ROCK,
         .accuracy = 90,
         .pp = 15,
@@ -13333,7 +13333,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_PSYSHIELD_BASH] =
     {
         .effect = EFFECT_PSYSHIELD_BASH,
-        .power = 70,
+        .power = 85,
         .type = TYPE_PSYCHIC,
         .accuracy = 90,
         .pp = 10,
@@ -13349,7 +13349,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_TRIPLE_ARROWS] =
     {
         .effect = EFFECT_TRIPLE_ARROWS,
-        .power = 50,
+        .power = 60,
         .type = TYPE_FIGHTING,
         .accuracy = 100,
         .pp = 15,
@@ -13365,7 +13365,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_MOUNTAIN_GALE] =
     {
         .effect = EFFECT_SPEED_DOWN_HIT,
-        .power = 100,
+        .power = 120,
         .type = TYPE_ICE,
         .accuracy = 85,
         .pp = 5,
@@ -13397,7 +13397,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_ESPER_WING] =
     {
         .effect = EFFECT_SPEED_UP_HIT,
-        .power = 75,
+        .power = 90,
         .type = TYPE_PSYCHIC,
         .accuracy = 90,
         .pp = 10,
@@ -13413,7 +13413,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_BITTER_MALICE] =
     {
         .effect = EFFECT_BITTER_MALICE,
-        .power = 60,
+        .power = 75,
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 15,
@@ -13429,7 +13429,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_CEASELESS_EDGE] =
     {
         .effect = EFFECT_SPLINTERS,
-        .power = 65,
+        .power = 80,
         .type = TYPE_DARK,
         .accuracy = 90,
         .pp = 15,
@@ -13445,7 +13445,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_INFERNAL_PARADE] =
     {
         .effect = EFFECT_INFERNAL_PARADE,
-        .power = 60,
+        .power = 75,
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 15,
@@ -13461,7 +13461,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_CHLOROBLAST] =
     {
         .effect = EFFECT_CHLOROBLAST,
-        .power = 120,
+        .power = 140,
         .type = TYPE_GRASS,
         .accuracy = 95,
         .pp = 5,
@@ -13477,7 +13477,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_RAGING_FURY] =
     {
         .effect = EFFECT_RAMPAGE,
-        .power = 90,
+        .power = 120,
         .type = TYPE_FIRE,
         .accuracy = 85,
         .pp = 10,
