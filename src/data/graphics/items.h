@@ -642,6 +642,18 @@ const u32 gItemIconPalette_StarSweet[] = INCBIN_U32("graphics/items/icon_palette
 const u32 gItemIcon_RibbonSweet[] = INCBIN_U32("graphics/items/icons/ribbon_sweet.4bpp.lz");
 const u32 gItemIconPalette_RibbonSweet[] = INCBIN_U32("graphics/items/icon_palettes/ribbon_sweet.gbapal.lz");
 
+const u32 gItemIcon_LinkCable[] = INCBIN_U32("graphics/items/icons/link_cable.4bpp.lz");
+const u32 gItemIconPalette_LinkCable[] = INCBIN_U32("graphics/items/icon_palettes/link_cable.gbapal.lz");
+
+const u32 gItemIcon_BlackAugurite[] = INCBIN_U32("graphics/items/icons/black_augurite.4bpp.lz");
+const u32 gItemIconPalette_BlackAugurite[] = INCBIN_U32("graphics/items/icon_palettes/black_augurite.gbapal.lz");
+
+const u32 gItemIcon_PeatBlock[] = INCBIN_U32("graphics/items/icons/peat_block.4bpp.lz");
+const u32 gItemIconPalette_PeatBlock[] = INCBIN_U32("graphics/items/icon_palettes/peat_block.gbapal.lz");
+
+const u32 gItemIcon_FarawayStone[] = INCBIN_U32("graphics/items/icons/faraway_stone.4bpp.lz");
+const u32 gItemIconPalette_FarawayStone[] = INCBIN_U32("graphics/items/icon_palettes/faraway_stone.gbapal.lz");
+
 const u32 gItemIcon_Everstone[] = INCBIN_U32("graphics/items/icons/everstone.4bpp.lz");
 const u32 gItemIconPalette_Everstone[] = INCBIN_U32("graphics/items/icon_palettes/everstone.gbapal.lz");
 
