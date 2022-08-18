@@ -427,8 +427,8 @@ static void CreateWildMon(u16 species, u8 level)
         return;
     }
 
-    if(species == SPECIES_FLABEBE)
-    {
+    switch(species)
+    case SPECIES_FLABEBE:
         u8 randForm = Random() % 5 + 1;
         switch(randForm)
         {
@@ -448,7 +448,217 @@ static void CreateWildMon(u16 species, u8 level)
         species == SPECIES_FLABEBE;
         break;
         }
-    }
+    case SPECIES_FLOETTE:
+        u8 randForm = Random() % 5 + 1;
+        switch(randForm)
+        {
+        case 1:
+        species == SPECIES_FLOETTE_YELLOW_FLOWER;
+        break;
+        case 2:
+        species == SPECIES_FLOETTE_ORANGE_FLOWER;
+        break;
+        case 3:
+        species == SPECIES_FLOETTE_BLUE_FLOWER;
+        break;
+        case 4:
+        species == SPECIES_FLOETTE_WHITE_FLOWER;
+        break;
+        case 5:
+        species == SPECIES_FLOETTE;
+        break;
+        }
+    case SPECIES_FLORGES:
+        u8 randForm = Random() % 5 + 1;
+        switch(randForm)
+        {
+        case 1:
+        species == SPECIES_FLORGES_YELLOW_FLOWER;
+        break;
+        case 2:
+        species == SPECIES_FLORGES_ORANGE_FLOWER;
+        break;
+        case 3:
+        species == SPECIES_FLORGES_BLUE_FLOWER;
+        break;
+        case 4:
+        species == SPECIES_FLORGES_WHITE_FLOWER;
+        break;
+        case 5:
+        species == SPECIES_FLORGES;
+        break;
+        }
+    case SPECIES_DEERLING:
+        u8 randForm = Random() % 4 + 1;
+        switch(randForm)
+        {
+        case 1:
+        species == SPECIES_DEERLING;
+        break;
+        case 2:
+        species == SPECIES_DEERING_SUMMER;
+        break;
+        case 3:
+        species == SPECIES_DEERING_AUTUMN;
+        break;
+        case 4:
+        species == SPECIES_DEERING_WINTER;
+        break;
+        }
+    case SPECIES_SAWSBUCK:
+        u8 randForm = Random() % 4 + 1;
+        switch(randForm)
+        {
+        case 1:
+        species == SPECIES_SAWSBUCK;
+        break;
+        case 2:
+        species == SPECIES_SAWSBUCK_SUMMER;
+        break;
+        case 3:
+        species == SPECIES_SAWSBUCK_AUTUMN;
+        break;
+        case 4:
+        species == SPECIES_SAWSBUCK_WINTER;
+        break;
+        }
+    case SPECIES_VIVILLON:
+        u8 randForm = Random() % 19 + 1;
+        switch(randForm)
+        {
+        case 1:
+        species == SPECIES_VIVILLON_POLAR;
+        break;
+        case 2:
+        species == SPECIES_VIVILLON_TUNDRA;
+        break;
+        case 3:
+        species == SPECIES_VIVILLON_CONTINENTAL;
+        break;
+        case 4:
+        species == SPECIES_VIVILLON_GARDEN;
+        break;
+        case 5:
+        species == SPECIES_VIVILLON_ELEGANT;
+        break;
+        case 6:
+        species == SPECIES_VIVILLON_MEADOW;
+        break;
+        case 7:
+        species == SPECIES_VIVILLON_MODERN;
+        break;
+        case 8:
+        species == SPECIES_VIVILLON_MARINE;
+        break;
+        case 9:
+        species == SPECIES_VIVILLON_ARCHIPELAGO;
+        break;
+        case 10:
+        species == SPECIES_VIVILLON_HIGH_PLAINS;
+        break;
+        case 11:
+        species == SPECIES_VIVILLON_SANDSTORM;
+        break;
+        case 12:
+        species == SPECIES_VIVILLON_RIVER;
+        break;
+        case 13:
+        species == SPECIES_VIVILLON_MONSOON;
+        break;
+        case 14:
+        species == SPECIES_VIVILLON_SAVANNA;
+        break;
+        case 15:
+        species == SPECIES_VIVILLON_SUN;
+        break;
+        case 16:
+        species == SPECIES_VIVILLON_OCEAN;
+        break;
+        case 17:
+        species == SPECIES_VIVILLON_JUNGLE;
+        break;
+        case 18:
+        species == SPECIES_VIVILLON_FANCY;
+        break;
+        case 19:
+        species == SPECIES_VIVILLON_POKE_BALL;
+        break;
+        }
+    case SPECIES_PUMPKABOO:
+        u8 randForm = Random() % 4 + 1;
+        switch(randForm)
+        {
+        case 1:
+        species == SPECIES_PUMPKABOO;
+        break;
+        case 2:
+        species == SPECIES_PUMPKABOO_SMALL;
+        break;
+        case 3:
+        species == SPECIES_PUMPKABOO_LARGE;
+        break;
+        case 4:
+        species == SPECIES_PUMPKABOO_SUPER;
+        break;
+        }
+    case SPECIES_GOURGEIST:
+        u8 randForm = Random() % 4 + 1;
+        switch(randForm)
+        {
+        case 1:
+        species == SPECIES_GOURGEIST;
+        break;
+        case 2:
+        species == SPECIES_GOURGEIST_SMALL;
+        break;
+        case 3:
+        species == SPECIES_GOURGEIST_LARGE;
+        break;
+        case 4:
+        species == SPECIES_GOURGEIST_SUPER;
+        break;
+        }
+    case SPECIES_MINIOR:
+        u8 randForm = Random() % 4 + 1;
+        switch(randForm)
+        {
+        case 1:
+        species == SPECIES_MINIOR;
+        break;
+        case 2:
+        species == SPECIES_MINIOR_METEOR_ORANGE;
+        break;
+        case 3:
+        species == SPECIES_MINIOR_METEOR_YELLOW;
+        break;
+        case 4:
+        species == SPECIES_MINIOR_METEOR_GREEN;
+        break;
+        case 5:
+        species == SPECIES_MINIOR_METEOR_BLUE;
+        break;
+        case 6:
+        species == SPECIES_MINIOR_METEOR_INDIGO;
+        break;
+        case 7:
+        species == SPECIES_MINIOR_METEOR_VIOLET;
+        break;
+        }
+    case SPECIES_BASCULIN:
+        u8 randForm = Random() % 3 + 1;
+        switch(randForm)
+        {
+        case 1:
+        species == SPECIES_BASCULIN;
+        break;
+        case 2:
+        species == SPECIES_BASCULIN_BLUE_STRIPED;
+        break;
+        case 3:
+        species == SPECIES_BASCULIN_WHITE_STRIPED;
+        break;
+        }
+    break;
 
     CreateMonWithNature(&gEnemyParty[0], species, level, USE_RANDOM_IVS, PickWildMonNature());
 }
