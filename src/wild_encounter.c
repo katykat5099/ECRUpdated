@@ -428,236 +428,244 @@ static void CreateWildMon(u16 species, u8 level)
     }
 
     u8 randForm = 0;
-
     switch(species)
     case SPECIES_FLABEBE:
         randForm = Random() % 5 + 1;
         switch(randForm)
         {
         case 1:
-        species == SPECIES_FLABEBE_YELLOW_FLOWER;
+        species = SPECIES_FLABEBE_YELLOW_FLOWER;
         break;
         case 2:
-        species == SPECIES_FLABEBE_BLUE_FLOWER;
+        species = SPECIES_FLABEBE_BLUE_FLOWER;
         break;
         case 3:
-        species == SPECIES_FLABEBE_ORANGE_FLOWER;
+        species = SPECIES_FLABEBE_ORANGE_FLOWER;
         break;
         case 4:
-        species == SPECIES_FLABEBE_WHITE_FLOWER;
+        species = SPECIES_FLABEBE_WHITE_FLOWER;
         break;
         case 5:
-        species == SPECIES_FLABEBE;
+        species = SPECIES_FLABEBE;
         break;
         }
+    break;
     case SPECIES_FLOETTE:
         randForm = Random() % 5 + 1;
         switch(randForm)
         {
         case 1:
-        species == SPECIES_FLOETTE_YELLOW_FLOWER;
+        species = SPECIES_FLOETTE_YELLOW_FLOWER;
         break;
         case 2:
-        species == SPECIES_FLOETTE_ORANGE_FLOWER;
+        species = SPECIES_FLOETTE_ORANGE_FLOWER;
         break;
         case 3:
-        species == SPECIES_FLOETTE_BLUE_FLOWER;
+        species = SPECIES_FLOETTE_BLUE_FLOWER;
         break;
         case 4:
-        species == SPECIES_FLOETTE_WHITE_FLOWER;
+        species = SPECIES_FLOETTE_WHITE_FLOWER;
         break;
         case 5:
-        species == SPECIES_FLOETTE;
+        species = SPECIES_FLOETTE;
         break;
         }
+    break;
     case SPECIES_FLORGES:
         randForm = Random() % 5 + 1;
         switch(randForm)
         {
         case 1:
-        species == SPECIES_FLORGES_YELLOW_FLOWER;
+        species = SPECIES_FLORGES_YELLOW_FLOWER;
         break;
         case 2:
-        species == SPECIES_FLORGES_ORANGE_FLOWER;
+        species = SPECIES_FLORGES_ORANGE_FLOWER;
         break;
         case 3:
-        species == SPECIES_FLORGES_BLUE_FLOWER;
+        species = SPECIES_FLORGES_BLUE_FLOWER;
         break;
         case 4:
-        species == SPECIES_FLORGES_WHITE_FLOWER;
+        species = SPECIES_FLORGES_WHITE_FLOWER;
         break;
         case 5:
-        species == SPECIES_FLORGES;
+        species = SPECIES_FLORGES;
         break;
         }
+    break;
     case SPECIES_DEERLING:
         randForm = Random() % 4 + 1;
         switch(randForm)
         {
         case 1:
-        species == SPECIES_DEERLING;
+        species = SPECIES_DEERLING;
         break;
         case 2:
-        species == SPECIES_DEERING_SUMMER;
+        species = SPECIES_DEERLING_SUMMER;
         break;
         case 3:
-        species == SPECIES_DEERING_AUTUMN;
+        species = SPECIES_DEERLING_AUTUMN;
         break;
         case 4:
-        species == SPECIES_DEERING_WINTER;
+        species = SPECIES_DEERLING_WINTER;
         break;
         }
+    break;
     case SPECIES_SAWSBUCK:
         randForm = Random() % 4 + 1;
         switch(randForm)
         {
         case 1:
-        species == SPECIES_SAWSBUCK;
+        species = SPECIES_SAWSBUCK;
         break;
         case 2:
-        species == SPECIES_SAWSBUCK_SUMMER;
+        species = SPECIES_SAWSBUCK_SUMMER;
         break;
         case 3:
-        species == SPECIES_SAWSBUCK_AUTUMN;
+        species = SPECIES_SAWSBUCK_AUTUMN;
         break;
         case 4:
-        species == SPECIES_SAWSBUCK_WINTER;
+        species = SPECIES_SAWSBUCK_WINTER;
         break;
         }
+    break;
     case SPECIES_VIVILLON:
         randForm = Random() % 19 + 1;
         switch(randForm)
         {
         case 1:
-        species == SPECIES_VIVILLON_POLAR;
+        species = SPECIES_VIVILLON_POLAR;
         break;
         case 2:
-        species == SPECIES_VIVILLON_TUNDRA;
+        species = SPECIES_VIVILLON_TUNDRA;
         break;
         case 3:
-        species == SPECIES_VIVILLON_CONTINENTAL;
+        species = SPECIES_VIVILLON_CONTINENTAL;
         break;
         case 4:
-        species == SPECIES_VIVILLON_GARDEN;
+        species = SPECIES_VIVILLON_GARDEN;
         break;
         case 5:
-        species == SPECIES_VIVILLON_ELEGANT;
+        species = SPECIES_VIVILLON_ELEGANT;
         break;
         case 6:
-        species == SPECIES_VIVILLON_MEADOW;
+        species = SPECIES_VIVILLON_MEADOW;
         break;
         case 7:
-        species == SPECIES_VIVILLON_MODERN;
+        species = SPECIES_VIVILLON_MODERN;
         break;
         case 8:
-        species == SPECIES_VIVILLON_MARINE;
+        species = SPECIES_VIVILLON_MARINE;
         break;
         case 9:
-        species == SPECIES_VIVILLON_ARCHIPELAGO;
+        species = SPECIES_VIVILLON_ARCHIPELAGO;
         break;
         case 10:
-        species == SPECIES_VIVILLON_HIGH_PLAINS;
+        species = SPECIES_VIVILLON_HIGH_PLAINS;
         break;
         case 11:
-        species == SPECIES_VIVILLON_SANDSTORM;
+        species = SPECIES_VIVILLON_SANDSTORM;
         break;
         case 12:
-        species == SPECIES_VIVILLON_RIVER;
+        species = SPECIES_VIVILLON_RIVER;
         break;
         case 13:
-        species == SPECIES_VIVILLON_MONSOON;
+        species = SPECIES_VIVILLON_MONSOON;
         break;
         case 14:
-        species == SPECIES_VIVILLON_SAVANNA;
+        species = SPECIES_VIVILLON_SAVANNA;
         break;
         case 15:
-        species == SPECIES_VIVILLON_SUN;
+        species = SPECIES_VIVILLON_SUN;
         break;
         case 16:
-        species == SPECIES_VIVILLON_OCEAN;
+        species = SPECIES_VIVILLON_OCEAN;
         break;
         case 17:
-        species == SPECIES_VIVILLON_JUNGLE;
+        species = SPECIES_VIVILLON_JUNGLE;
         break;
         case 18:
-        species == SPECIES_VIVILLON_FANCY;
+        species = SPECIES_VIVILLON_FANCY;
         break;
         case 19:
-        species == SPECIES_VIVILLON_POKE_BALL;
+        species = SPECIES_VIVILLON_POKE_BALL;
         break;
         }
+    break;
     case SPECIES_PUMPKABOO:
         randForm = Random() % 4 + 1;
         switch(randForm)
         {
         case 1:
-        species == SPECIES_PUMPKABOO;
+        species = SPECIES_PUMPKABOO;
         break;
         case 2:
-        species == SPECIES_PUMPKABOO_SMALL;
+        species = SPECIES_PUMPKABOO_SMALL;
         break;
         case 3:
-        species == SPECIES_PUMPKABOO_LARGE;
+        species = SPECIES_PUMPKABOO_LARGE;
         break;
         case 4:
-        species == SPECIES_PUMPKABOO_SUPER;
+        species = SPECIES_PUMPKABOO_SUPER;
         break;
         }
+    break;
     case SPECIES_GOURGEIST:
         randForm = Random() % 4 + 1;
         switch(randForm)
         {
         case 1:
-        species == SPECIES_GOURGEIST;
+        species = SPECIES_GOURGEIST;
         break;
         case 2:
-        species == SPECIES_GOURGEIST_SMALL;
+        species = SPECIES_GOURGEIST_SMALL;
         break;
         case 3:
-        species == SPECIES_GOURGEIST_LARGE;
+        species = SPECIES_GOURGEIST_LARGE;
         break;
         case 4:
-        species == SPECIES_GOURGEIST_SUPER;
+        species = SPECIES_GOURGEIST_SUPER;
         break;
         }
+    break;
     case SPECIES_MINIOR:
         randForm = Random() % 4 + 1;
         switch(randForm)
         {
         case 1:
-        species == SPECIES_MINIOR;
+        species = SPECIES_MINIOR;
         break;
         case 2:
-        species == SPECIES_MINIOR_METEOR_ORANGE;
+        species = SPECIES_MINIOR_METEOR_ORANGE;
         break;
         case 3:
-        species == SPECIES_MINIOR_METEOR_YELLOW;
+        species = SPECIES_MINIOR_METEOR_YELLOW;
         break;
         case 4:
-        species == SPECIES_MINIOR_METEOR_GREEN;
+        species = SPECIES_MINIOR_METEOR_GREEN;
         break;
         case 5:
-        species == SPECIES_MINIOR_METEOR_BLUE;
+        species = SPECIES_MINIOR_METEOR_BLUE;
         break;
         case 6:
-        species == SPECIES_MINIOR_METEOR_INDIGO;
+        species = SPECIES_MINIOR_METEOR_INDIGO;
         break;
         case 7:
-        species == SPECIES_MINIOR_METEOR_VIOLET;
+        species = SPECIES_MINIOR_METEOR_VIOLET;
         break;
         }
+    break;
     case SPECIES_BASCULIN:
         randForm = Random() % 3 + 1;
         switch(randForm)
         {
         case 1:
-        species == SPECIES_BASCULIN;
+        species = SPECIES_BASCULIN;
         break;
         case 2:
-        species == SPECIES_BASCULIN_BLUE_STRIPED;
+        species = SPECIES_BASCULIN_BLUE_STRIPED;
         break;
         case 3:
-        species == SPECIES_BASCULIN_WHITE_STRIPED;
+        species = SPECIES_BASCULIN_WHITE_STRIPED;
         break;
         }
     break;
