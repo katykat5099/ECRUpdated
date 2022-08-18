@@ -384,6 +384,21 @@ static u8 PickWildMonNature(void)
     return Random() % NUM_NATURES;
 }
 
+static const sBasculinForms[]  = {SPECIES_BASCULIN, SPECIES_BASCULIN_BLUE_STRIPED, SPECIES_BASCULIN_WHITE_STRIPED};
+static const sFlabebeForms[]   = {SPECIES_FLABEBE, SPECIES_FLABEBE_YELLOW_FLOWER, SPECIES_FLABEBE_BLUE_FLOWER, SPECIES_FLABEBE_ORANGE_FLOWER, SPECIES_FLABEBE_WHITE_FLOWER};
+static const sFloetteForms[]   = {SPECIES_FLOETTE, SPECIES_FLOETTE_YELLOW_FLOWER, SPECIES_FLOETTE_BLUE_FLOWER, SPECIES_FLOETTE_ORANGE_FLOWER, SPECIES_FLOETTE_WHITE_FLOWER};
+static const sFlorgesForms[]   = {SPECIES_FLORGES, SPECIES_FLORGES_YELLOW_FLOWER, SPECIES_FLORGES_BLUE_FLOWER, SPECIES_FLORGES_ORANGE_FLOWER, SPECIES_FLORGES_WHITE_FLOWER};
+static const sDeerlingForms[]  = {SPECIES_DEERLING, SPECIES_DEERLING_AUTUMN, SPECIES_DEERLING_SUMMER, SPECIES_DEERLING_WINTER};
+static const sSawsbuckForms[]  = {SPECIES_SAWSBUCK, SPECIES_SAWSBUCK_AUTUMN, SPECIES_SAWSBUCK_SUMMER, SPECIES_SAWSBUCK_WINTER};
+static const sVivillonForms[]  = {SPECIES_VIVILLON, SPECIES_VIVILLON_POLAR, SPECIES_VIVILLON_TUNDRA, SPECIES_VIVILLON_CONTINENTAL, SPECIES_VIVILLON_GARDEN, SPECIES_VIVILLON_ELEGANT,
+                                  SPECIES_VIVILLON_MEADOW, SPECIES_VIVILLON_MODERN, SPECIES_VIVILLON_MARINE, SPECIES_VIVILLON_ARCHIPELAGO, SPECIES_VIVILLON_HIGH_PLAINS,
+                                  SPECIES_VIVILLON_SANDSTORM, SPECIES_VIVILLON_RIVER, SPECIES_VIVILLON_MONSOON, SPECIES_VIVILLON_SAVANNA, SPECIES_VIVILLON_SUN, SPECIES_VIVILLON_OCEAN,
+                                  SPECIES_VIVILLON_JUNGLE, SPECIES_VIVILLON_FANCY, SPECIES_VIVILLON_POKE_BALL};
+static const sPumpkabooForms[] = {SPECIES_PUMPKABOO, SPECIES_PUMPKABOO_SMALL, SPECIES_PUMPKABOO_LARGE, SPECIES_PUMPKABOO_SUPER};
+static const sGourgeistForms[] = {SPECIES_GOURGEIST, SPECIES_GOURGEIST_SMALL, SPECIES_GOURGEIST_LARGE, SPECIES_GOURGEIST_SUPER};
+static const sMiniorForms[]    = {SPECIES_MINIOR, SPECIES_MINIOR_METEOR_BLUE, SPECIES_MINIOR_METEOR_GREEN, SPECIES_MINIOR_METEOR_INDIGO, SPECIES_MINIOR_METEOR_ORANGE,
+                                  SPECIES_MINIOR_METEOR_VIOLET, SPECIES_MINIOR_METEOR_YELLOW};
+
 static void CreateWildMon(u16 species, u8 level)
 {
     bool32 checkCuteCharm;
@@ -427,21 +442,6 @@ static void CreateWildMon(u16 species, u8 level)
         return;
     }
 
-    static const sBasculinForms[]  = {SPECIES_BASCULIN, SPECIES_BASCULIN_BLUE_STRIPED, SPECIES_BASCULIN_WHITE_STRIPED};
-    static const sFlabebeForms[]   = {SPECIES_FLABEBE, SPECIES_FLABEBE_YELLOW_FLOWER, SPECIES_FLABEBE_BLUE_FLOWER, SPECIES_FLABEBE_ORANGE_FLOWER, SPECIES_FLABEBE_WHITE_FLOWER};
-    static const sFloetteForms[]   = {SPECIES_FLOETTE, SPECIES_FLOETTE_YELLOW_FLOWER, SPECIES_FLOETTE_BLUE_FLOWER, SPECIES_FLOETTE_ORANGE_FLOWER, SPECIES_FLOETTE_WHITE_FLOWER};
-    static const sFlorgesForms[]   = {SPECIES_FLORGES, SPECIES_FLORGES_YELLOW_FLOWER, SPECIES_FLORGES_BLUE_FLOWER, SPECIES_FLORGES_ORANGE_FLOWER, SPECIES_FLORGES_WHITE_FLOWER};
-    static const sDeerlingForms[]  = {SPECIES_DEERLING, SPECIES_DEERLING_AUTUMN, SPECIES_DEERLING_SUMMER, SPECIES_DEERLING_WINTER};
-    static const sSawsbuckForms[]  = {SPECIES_SAWSBUCK, SPECIES_SAWSBUCK_AUTUMN, SPECIES_SAWSBUCK_SUMMER, SPECIES_SAWSBUCK_WINTER};
-    static const sVivillonForms[]  = {SPECIES_VIVILLON, SPECIES_VIVILLON_POLAR, SPECIES_VIVILLON_TUNDRA, SPECIES_VIVILLON_CONTINENTAL, SPECIES_VIVILLON_GARDEN, SPECIES_VIVILLON_ELEGANT,
-                                      SPECIES_VIVILLON_MEADOW, SPECIES_VIVILLON_MODERN, SPECIES_VIVILLON_MARINE, SPECIES_VIVILLON_ARCHIPELAGO, SPECIES_VIVILLON_HIGH_PLAINS,
-                                      SPECIES_VIVILLON_SANDSTORM, SPECIES_VIVILLON_RIVER, SPECIES_VIVILLON_MONSOON, SPECIES_VIVILLON_SAVANNA, SPECIES_VIVILLON_SUN, SPECIES_VIVILLON_OCEAN,
-                                      SPECIES_VIVILLON_JUNGLE, SPECIES_VIVILLON_FANCY, SPECIES_VIVILLON_POKE_BALL};
-    static const sPumpkabooForms[] = {SPECIES_PUMPKABOO, SPECIES_PUMPKABOO_SMALL, SPECIES_PUMPKABOO_LARGE, SPECIES_PUMPKABOO_SUPER};
-    static const sGourgeistForms[] = {SPECIES_GOURGEIST, SPECIES_GOURGEIST_SMALL, SPECIES_GOURGEIST_LARGE, SPECIES_GOURGEIST_SUPER};
-    static const sMiniorForms[]    = {SPECIES_MINIOR, SPECIES_MINIOR_METEOR_BLUE, SPECIES_MINIOR_METEOR_GREEN, SPECIES_MINIOR_METEOR_INDIGO, SPECIES_MINIOR_METEOR_ORANGE,
-                                      SPECIES_MINIOR_METEOR_VIOLET, SPECIES_MINIOR_METEOR_YELLOW};
-
     switch (species)
     {
     case SPECIES_BASCULIN:
@@ -475,252 +475,6 @@ static void CreateWildMon(u16 species, u8 level)
     species = sMiniorForms[Random() % 7];
     break;
     }
-    /*u8 randForm = 0;
-    if(species == SPECIES_FLABEBE)
-    {
-        randForm = Random() % 5 + 1;
-        switch(randForm)
-        {
-        case 1:
-        species = SPECIES_FLABEBE_YELLOW_FLOWER;
-        break;
-        case 2:
-        species = SPECIES_FLABEBE_BLUE_FLOWER;
-        break;
-        case 3:
-        species = SPECIES_FLABEBE_ORANGE_FLOWER;
-        break;
-        case 4:
-        species = SPECIES_FLABEBE_WHITE_FLOWER;
-        break;
-        case 5:
-        species = SPECIES_FLABEBE;
-        break;
-        }
-    }
-    else if (species == SPECIES_FLOETTE)
-    {
-        randForm = Random() % 5 + 1;
-        switch(randForm)
-        {
-        case 1:
-        species = SPECIES_FLOETTE_YELLOW_FLOWER;
-        break;
-        case 2:
-        species = SPECIES_FLOETTE_ORANGE_FLOWER;
-        break;
-        case 3:
-        species = SPECIES_FLOETTE_BLUE_FLOWER;
-        break;
-        case 4:
-        species = SPECIES_FLOETTE_WHITE_FLOWER;
-        break;
-        case 5:
-        species = SPECIES_FLOETTE;
-        break;
-        }
-    }
-    else if(species == SPECIES_FLORGES)
-    {
-        randForm = Random() % 5 + 1;
-        switch(randForm)
-        {
-        case 1:
-        species = SPECIES_FLORGES_YELLOW_FLOWER;
-        break;
-        case 2:
-        species = SPECIES_FLORGES_ORANGE_FLOWER;
-        break;
-        case 3:
-        species = SPECIES_FLORGES_BLUE_FLOWER;
-        break;
-        case 4:
-        species = SPECIES_FLORGES_WHITE_FLOWER;
-        break;
-        case 5:
-        species = SPECIES_FLORGES;
-        break;
-        }
-    }
-    else if(species == SPECIES_DEERLING)
-    {
-        randForm = Random() % 4 + 1;
-        switch(randForm)
-        {
-        case 1:
-        species = SPECIES_DEERLING;
-        break;
-        case 2:
-        species = SPECIES_DEERLING_SUMMER;
-        break;
-        case 3:
-        species = SPECIES_DEERLING_AUTUMN;
-        break;
-        case 4:
-        species = SPECIES_DEERLING_WINTER;
-        break;
-        }
-    }
-    case SPECIES_SAWSBUCK:
-        randForm = Random() % 4 + 1;
-        switch(randForm)
-        {
-        case 1:
-        species = SPECIES_SAWSBUCK;
-        break;
-        case 2:
-        species = SPECIES_SAWSBUCK_SUMMER;
-        break;
-        case 3:
-        species = SPECIES_SAWSBUCK_AUTUMN;
-        break;
-        case 4:
-        species = SPECIES_SAWSBUCK_WINTER;
-        break;
-        }
-    break;
-    case SPECIES_VIVILLON:
-        randForm = Random() % 19 + 1;
-        switch(randForm)
-        {
-        case 1:
-        species = SPECIES_VIVILLON_POLAR;
-        break;
-        case 2:
-        species = SPECIES_VIVILLON_TUNDRA;
-        break;
-        case 3:
-        species = SPECIES_VIVILLON_CONTINENTAL;
-        break;
-        case 4:
-        species = SPECIES_VIVILLON_GARDEN;
-        break;
-        case 5:
-        species = SPECIES_VIVILLON_ELEGANT;
-        break;
-        case 6:
-        species = SPECIES_VIVILLON_MEADOW;
-        break;
-        case 7:
-        species = SPECIES_VIVILLON_MODERN;
-        break;
-        case 8:
-        species = SPECIES_VIVILLON_MARINE;
-        break;
-        case 9:
-        species = SPECIES_VIVILLON_ARCHIPELAGO;
-        break;
-        case 10:
-        species = SPECIES_VIVILLON_HIGH_PLAINS;
-        break;
-        case 11:
-        species = SPECIES_VIVILLON_SANDSTORM;
-        break;
-        case 12:
-        species = SPECIES_VIVILLON_RIVER;
-        break;
-        case 13:
-        species = SPECIES_VIVILLON_MONSOON;
-        break;
-        case 14:
-        species = SPECIES_VIVILLON_SAVANNA;
-        break;
-        case 15:
-        species = SPECIES_VIVILLON_SUN;
-        break;
-        case 16:
-        species = SPECIES_VIVILLON_OCEAN;
-        break;
-        case 17:
-        species = SPECIES_VIVILLON_JUNGLE;
-        break;
-        case 18:
-        species = SPECIES_VIVILLON_FANCY;
-        break;
-        case 19:
-        species = SPECIES_VIVILLON_POKE_BALL;
-        break;
-        }
-    break;
-    case SPECIES_PUMPKABOO:
-        randForm = Random() % 4 + 1;
-        switch(randForm)
-        {
-        case 1:
-        species = SPECIES_PUMPKABOO;
-        break;
-        case 2:
-        species = SPECIES_PUMPKABOO_SMALL;
-        break;
-        case 3:
-        species = SPECIES_PUMPKABOO_LARGE;
-        break;
-        case 4:
-        species = SPECIES_PUMPKABOO_SUPER;
-        break;
-        }
-    break;
-    case SPECIES_GOURGEIST:
-        randForm = Random() % 4 + 1;
-        switch(randForm)
-        {
-        case 1:
-        species = SPECIES_GOURGEIST;
-        break;
-        case 2:
-        species = SPECIES_GOURGEIST_SMALL;
-        break;
-        case 3:
-        species = SPECIES_GOURGEIST_LARGE;
-        break;
-        case 4:
-        species = SPECIES_GOURGEIST_SUPER;
-        break;
-        }
-    break;
-    case SPECIES_MINIOR:
-        randForm = Random() % 4 + 1;
-        switch(randForm)
-        {
-        case 1:
-        species = SPECIES_MINIOR;
-        break;
-        case 2:
-        species = SPECIES_MINIOR_METEOR_ORANGE;
-        break;
-        case 3:
-        species = SPECIES_MINIOR_METEOR_YELLOW;
-        break;
-        case 4:
-        species = SPECIES_MINIOR_METEOR_GREEN;
-        break;
-        case 5:
-        species = SPECIES_MINIOR_METEOR_BLUE;
-        break;
-        case 6:
-        species = SPECIES_MINIOR_METEOR_INDIGO;
-        break;
-        case 7:
-        species = SPECIES_MINIOR_METEOR_VIOLET;
-        break;
-        }
-    break;
-    case SPECIES_BASCULIN:
-        randForm = Random() % 3 + 1;
-        switch(randForm)
-        {
-        case 1:
-        species = SPECIES_BASCULIN;
-        break;
-        case 2:
-        species = SPECIES_BASCULIN_BLUE_STRIPED;
-        break;
-        case 3:
-        species = SPECIES_BASCULIN_WHITE_STRIPED;
-        break;
-        }
-    break;
-    }*/
 
     CreateMonWithNature(&gEnemyParty[0], species, level, USE_RANDOM_IVS, PickWildMonNature());
 }
