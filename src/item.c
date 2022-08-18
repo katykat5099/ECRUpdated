@@ -30,6 +30,12 @@ EWRAM_DATA struct BagPocket gBagPockets[POCKETS_COUNT] = {0};
 #include "data/text/item_descriptions.h"
 #include "data/items.h"
 
+void ItemId_GetHoldEffectParam_Script();
+void ItemId_GetHoldEffectParam_Script()
+{
+    VarSet(VAR_RESULT, ItemId_GetHoldEffectParam(VarGet(VAR_0x8004)));
+}
+
 // code
 static u16 GetBagItemQuantity(u16 *quantity)
 {
