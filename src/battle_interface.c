@@ -3346,7 +3346,7 @@ bool32 CanThrowLastUsedBall(void)
         return FALSE;
     if (gSaveBlock1Ptr->tx_Challenges_Nuzlocke && NuzlockeIsSpeciesClauseActive == 2) //already have THIS_mon
         return FALSE;
-    if (gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge && TypeChallengeCaptureBlocked) //pkmn not of the TYPE CHALLENGE type
+    if (gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge && OneTypeChallengeCaptureBlocked) //pkmn not of the TYPE CHALLENGE type
         return FALSE;
     if (gSaveBlock1Ptr->tx_Challenges_Nuzlocke && NuzlockeIsSpeciesClauseActive)
         return FALSE;
