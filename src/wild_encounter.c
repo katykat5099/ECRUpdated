@@ -427,10 +427,57 @@ static void CreateWildMon(u16 species, u8 level)
         return;
     }
 
-    switch(species)
+    static const sBasculinForms[]  = {SPECIES_BASCULIN, SPECIES_BASCULIN_BLUE_STRIPED, SPECIES_BASCULIN_WHITE_STRIPED};
+    static const sFlabebeForms[]   = {SPECIES_FLABEBE, SPECIES_FLABEBE_YELLOW_FLOWER, SPECIES_FLABEBE_BLUE_FLOWER, SPECIES_FLABEBE_ORANGE_FLOWER, SPECIES_FLABEBE_WHITE_FLOWER};
+    static const sFloetteForms[]   = {SPECIES_FLOETTE, SPECIES_FLOETTE_YELLOW_FLOWER, SPECIES_FLOETTE_BLUE_FLOWER, SPECIES_FLOETTE_ORANGE_FLOWER, SPECIES_FLOETTE_WHITE_FLOWER};
+    static const sFlorgesForms[]   = {SPECIES_FLORGES, SPECIES_FLORGES_YELLOW_FLOWER, SPECIES_FLORGES_BLUE_FLOWER, SPECIES_FLORGES_ORANGE_FLOWER, SPECIES_FLORGES_WHITE_FLOWER};
+    static const sDeerlingForms[]  = {SPECIES_DEERLING, SPECIES_DEERLING_AUTUMN, SPECIES_DEERLING_SUMMER, SPECIES_DEERLING_WINTER};
+    static const sSawsbuckForms[]  = {SPECIES_SAWSBUCK, SPECIES_SAWSBUCK_AUTUMN, SPECIES_SAWSBUCK_SUMMER, SPECIES_SAWSBUCK_WINTER};
+    static const sVivillonForms[]  = {SPECIES_VIVILLON, SPECIES_VIVILLON_POLAR, SPECIES_VIVILLON_TUNDRA, SPECIES_VIVILLON_CONTINENTAL, SPECIES_VIVILLON_GARDEN, SPECIES_VIVILLON_ELEGANT,
+                                      SPECIES_VIVILLON_MEADOW, SPECIES_VIVILLON_MODERN, SPECIES_VIVILLON_MARINE, SPECIES_VIVILLON_ARCHIPELAGO, SPECIES_VIVILLON_HIGH_PLAINS,
+                                      SPECIES_VIVILLON_SANDSTORM, SPECIES_VIVILLON_RIVER, SPECIES_VIVILLON_MONSOON, SPECIES_VIVILLON_SAVANNA, SPECIES_VIVILLON_SUN, SPECIES_VIVILLON_OCEAN,
+                                      SPECIES_VIVILLON_JUNGLE, SPECIES_VIVILLON_FANCY, SPECIES_VIVILLON_POKE_BALL};
+    static const sPumpkabooForms[] = {SPECIES_PUMPKABOO, SPECIES_PUMPKABOO_SMALL, SPECIES_PUMPKABOO_LARGE, SPECIES_PUMPKABOO_SUPER};
+    static const sGourgeistForms[] = {SPECIES_GOURGEIST, SPECIES_GOURGEIST_SMALL, SPECIES_GOURGEIST_LARGE, SPECIES_GOURGEIST_SUPER};
+    static const sMiniorForms[]    = {SPECIES_MINIOR, SPECIES_MINIOR_METEOR_BLUE, SPECIES_MINIOR_METEOR_GREEN, SPECIES_MINIOR_METEOR_INDIGO, SPECIES_MINIOR_METEOR_ORANGE,
+                                      SPECIES_MINIOR_METEOR_VIOLET, SPECIES_MINIOR_METEOR_YELLOW};
+
+    switch (species)
     {
-    u8 randForm = 0;
+    case SPECIES_BASCULIN:
+    species = sBasculinForms[Random() % 3];
+    break;
     case SPECIES_FLABEBE:
+    species = sFlabebeForms[Random() % 5];
+    break;
+    case SPECIES_FLOETTE:
+    species = sFloetteForms[Random() % 5];
+    break;
+    case SPECIES_FLORGES:
+    species = sFlorgesForms[Random() % 5];
+    break;
+    case SPECIES_DEERLING:
+    species = sDeerlingForms[Random() % 4];
+    break;
+    case SPECIES_SAWSBUCK:
+    species = sSawsbuckForms[Random() % 4];
+    break;
+    case SPECIES_VIVILLON:
+    species = sVivillonForms[Random() % 20];
+    break;
+    case SPECIES_PUMPKABOO:
+    species = sPumpkabooForms[Random() % 4];
+    break;
+    case SPECIES_GOURGEIST:
+    species = sGourgeistForms[Random() % 4];
+    break;
+    case SPECIES_MINIOR:
+    species = sMiniorForms[Random() % 7];
+    break;
+    }
+    /*u8 randForm = 0;
+    if(species == SPECIES_FLABEBE)
+    {
         randForm = Random() % 5 + 1;
         switch(randForm)
         {
@@ -450,8 +497,9 @@ static void CreateWildMon(u16 species, u8 level)
         species = SPECIES_FLABEBE;
         break;
         }
-    break;
-    case SPECIES_FLOETTE:
+    }
+    else if (species == SPECIES_FLOETTE)
+    {
         randForm = Random() % 5 + 1;
         switch(randForm)
         {
@@ -471,8 +519,9 @@ static void CreateWildMon(u16 species, u8 level)
         species = SPECIES_FLOETTE;
         break;
         }
-    break;
-    case SPECIES_FLORGES:
+    }
+    else if(species == SPECIES_FLORGES)
+    {
         randForm = Random() % 5 + 1;
         switch(randForm)
         {
@@ -492,8 +541,9 @@ static void CreateWildMon(u16 species, u8 level)
         species = SPECIES_FLORGES;
         break;
         }
-    break;
-    case SPECIES_DEERLING:
+    }
+    else if(species == SPECIES_DEERLING)
+    {
         randForm = Random() % 4 + 1;
         switch(randForm)
         {
@@ -510,7 +560,7 @@ static void CreateWildMon(u16 species, u8 level)
         species = SPECIES_DEERLING_WINTER;
         break;
         }
-    break;
+    }
     case SPECIES_SAWSBUCK:
         randForm = Random() % 4 + 1;
         switch(randForm)
@@ -670,7 +720,7 @@ static void CreateWildMon(u16 species, u8 level)
         break;
         }
     break;
-    }
+    }*/
 
     CreateMonWithNature(&gEnemyParty[0], species, level, USE_RANDOM_IVS, PickWildMonNature());
 }
