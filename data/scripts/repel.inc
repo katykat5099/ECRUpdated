@@ -1,8 +1,4 @@
 EventScript_RepelWoreOff::
-	msgbox Text_RepelWoreOff, MSGBOX_SIGN
-	end
-
-EventScript_RepelWoreOff::
 	lockall
 	checkitem VAR_REPEL_LAST_USED, 1
 	compare VAR_RESULT, FALSE
