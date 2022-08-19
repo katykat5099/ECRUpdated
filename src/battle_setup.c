@@ -1928,12 +1928,12 @@ u8 NuzlockeIsCaptureBlockedBySpeciesClause(u16 species) // @Kurausukun
     
     //disable double catch
     if (GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
-        return 2; //player already has this exact pokemon
+        return FALSE; //player already has this exact pokemon
 
     for (i = 0; i < EVOS_PER_LINE; i++)
     {
         if (GetSetPokedexFlag(SpeciesToNationalPokedexNum(gEvolutionLines[species][i]), FLAG_GET_CAUGHT))
-            return TRUE;
+            return FALSE;
     }
     return FALSE;
 }
