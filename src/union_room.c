@@ -4557,10 +4557,10 @@ bool32 InSaveableMap(void)//too lazy to make a real place to store this. Copying
             && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BATTLE_FRONTIER_POKEMON_CENTER_1F))
             ? TRUE : FALSE;
         }
-    else if(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(#define MAP_INSIDE_OF_TRUCK) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(#define MAP_INSIDE_OF_TRUCK))
+    else if(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(INSIDE_OF_TRUCK) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(INSIDE_OF_TRUCK))
         {
-        return (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(#define MAP_INSIDE_OF_TRUCK)
-            && gSaveBlock1Ptr->location.mapNum == MAP_NUM(#define MAP_INSIDE_OF_TRUCK))
+        return (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(INSIDE_OF_TRUCK)
+            && gSaveBlock1Ptr->location.mapNum == MAP_NUM(INSIDE_OF_TRUCK))
             ? TRUE : FALSE;
         }
 }
