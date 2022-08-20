@@ -2667,7 +2667,7 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_STEENEE - 1]       = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_TSAREENA - 1]      = ANIM_SHRINK_GROW,
     [SPECIES_COMFEY - 1]        = ANIM_H_SLIDE_WOBBLE,
-    [SPECIES_ORANGURU - 1]      = ANIM_SHRINK_GROW,
+    [SPECIES_ORANGURU - 1]      = ANIM_SHRINK_GROW_SLOW,
     [SPECIES_PASSIMIAN - 1]     = ANIM_H_SHAKE,
     [SPECIES_WIMPOD - 1]        = ANIM_V_SHAKE_H_SLIDE_FAST,
     [SPECIES_GOLISOPOD - 1]     = ANIM_SHRINK_GROW_VIBRATE_FAST,
@@ -2904,7 +2904,7 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_ARCANINE_HISUIAN - 1]       = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_VOLTORB_HISUIAN - 1]        = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_ELECTRODE_HISUIAN - 1]      = ANIM_V_SQUISH_AND_BOUNCE,
-    [SPECIES_ZORUA_HISUIAN - 1]          = ANIM_V_SQUISH_AND_BOUNCE,
+    [SPECIES_ZORUA_HISUIAN - 1]          = ANIM_H_STRETCH,
     [SPECIES_ZOROARK_HISUIAN - 1]        = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_BRAVIARY_HISUIAN - 1]       = ANIM_SHRINK_GROW_VIBRATE_FAST,
     [SPECIES_TYPHLOSION_HISUIAN - 1]     = ANIM_V_SQUISH_AND_BOUNCE,
@@ -13386,9 +13386,11 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                 break;
             case EVO_LEVEL_ITEM_HOLD:
                 if (gEvolutionTable[species][i].param <= level && gEvolutionTable[species][i].param2 == heldItem)
+                {
                     heldItem = ITEM_NONE;
                     SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                }
                 break;
             case EVO_BEAUTY:
                 if (gEvolutionTable[species][i].param <= beauty)

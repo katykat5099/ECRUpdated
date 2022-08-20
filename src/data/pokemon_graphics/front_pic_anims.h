@@ -6468,6 +6468,7 @@ static const union AnimCmd sAnim_ZORUA_1[] =
 
 static const union AnimCmd sAnim_ZORUA_HISUIAN_1[] =
 {
+    ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
@@ -8040,7 +8041,8 @@ static const union AnimCmd sAnim_COMFEY_1[] =
 
 static const union AnimCmd sAnim_ORANGURU_1[] =
 {
-    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
