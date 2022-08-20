@@ -52,7 +52,7 @@ void PlayTimeCounter_Update(void)
     // Reset the game if an in battle state is loaded
     RtcCalcLocalTime();
     CalcTimeDifference(&timeDiff, &antiCheatTime, &gLocalTime);
-    if (gMain.inBattle && (abs(timeDiff.seconds) > 8 || abs(timeDiff.minutes) > 1 || abs(timeDiff.hours) > 1 || abs(timeDiff.days) > 1))
+    if (gMain.inBattle && (abs(timeDiff.seconds) > 10 || abs(timeDiff.minutes) > 1 || abs(timeDiff.hours) > 1 || abs(timeDiff.days) > 1))
         DoSoftReset();
     antiCheatTime = gLocalTime;
 
