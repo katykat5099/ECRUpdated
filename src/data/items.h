@@ -3268,7 +3268,7 @@ const struct Item gItems[] =
     {
         .name = _("Pink Nectar"),
         .itemId = ITEM_PINK_NECTAR,
-        .price = 2000,
+        .price = 300,
         .holdEffectParam = 0,
         .description = sPinkNectarDesc,
         .pocket = POCKET_ITEMS,
